@@ -1,0 +1,29 @@
+input{ display: none; }
+
+label{
+	
+	text-decoration: underline;
+}
+
+
+
+.red{background-color: red;
+	color: #fff;
+	border-radius: 5px;}
+.green{background-color: green;
+	color: #fff;
+	border-radius: 5px;} 
+.blue{background-color: blue;
+	color: #fff;
+	border-radius: 5px;}
+
+input#red:not(:checked) ~ span.red{
+ display: none;}
+
+input#green:not(:checked) ~ span.green{
+ display: none;}
+
+input#blue:not(:checked) ~ span.blue{
+ display: none; }
+
+
