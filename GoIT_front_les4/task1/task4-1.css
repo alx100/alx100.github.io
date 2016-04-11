@@ -1,32 +1,46 @@
-body{
-	font-family: Economica;
-	font-size: 150%;
+body {
+	margin: 0;
+	padding: 0;
 }
 
-ul{
-	margin-left: 50px;
+.menu {
+	margin-top: 20px;
+	
+	background-color: #b33dfa;
 }
 
-li{
-	display: inline-block;
-	margin-left: 20px;
-
-
-}
-.menu{
-	background-color: #B14AFF;
- 
-}
-a{  
-	display: block;
-	line-height: 2em;
+.menu_list {
+	font-family: Economica, Arial, sans-serif;
+	font-size: 16px;
 	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
+	 
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+
+	list-style-type: none;
+
+	text-transform: uppercase; 
 }
 
-.menu li a:hover{
-	color: grey;
-	background-color: silver;
+.menu_item {
+	display: inline-block;
+}
+
+.menu_link {
+	display: inline-block;
+
+	padding: 10px 15px;
+
+	text-decoration: none;
+
+	color: #ffffff;
+}
+
+.menu_item:hover {
+	background-color: #eeeeee;
+}
+
+.menu_item:hover .menu_link {
+	color: #a0a0a0;
 }

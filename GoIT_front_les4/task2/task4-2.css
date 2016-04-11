@@ -1,0 +1,33 @@
+body{
+	font-family: Economica;
+	font-size: 150%;
+	
+	}
+	.menu{
+	background-color: #B14AFF;
+	float: left;
+	margin: 4px;
+	}
+     
+
+
+     
+
+
+	
+} 
+
+
+	a{  
+	line-height: 2em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+    
+     }
+
+	.menu li a:hover{
+	color: grey;
+	background-color: silver;
+	}
