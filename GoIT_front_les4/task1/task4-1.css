@@ -43,4 +43,5 @@ body {
 
 .menu_item:hover .menu_link {
 	color: #a0a0a0;
+	background-color: #eeeeee;
 }
