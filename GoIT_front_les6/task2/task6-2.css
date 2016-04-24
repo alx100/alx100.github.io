@@ -1,0 +1,90 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-image: url(background.png);
+}
+
+.clients {
+	width: 100%;
+	margin-top: 10%;
+}
+
+.container{
+	width: 100%
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+ 
+h1 {
+	display: block;
+	text-align: center;
+	font: 40px Trebuchet MS;
+	color: #3170a8;
+	padding-top: 58px;
+}
+
+h1::before {
+	content "WHAT";
+	color: #ee8129;
+    margin-right: 14px; 
+}
+
+.textarea {
+    display: inline-block;
+    width: 364px;
+    height: 98px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.textarea::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 37px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 16px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+span {
+    font: 13px Trebuchet MS;
+    font-style: italic;
+    color: #3070a8;
+}
+
+.name {
+    float: left;
+}
+
+.customer {
+    float: right;
+}
+
+.topper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.topper {
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+}
+
+img {
+    margin: 0 26px;
+}
+
+p {
+    font: 13px Trebuchet MS;
+    text-align: justify;
+    padding-right: 27px;
+    color: #666666;
+}
