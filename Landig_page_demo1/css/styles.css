@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "Open Sans semibold";
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Futura Bk BT";
+    src: url(../fonts/Futura_Book_BT.ttf);
+}
+
+@font-face {
+    font-family: "Futura Md BT";
+    src: url(../fonts/Futura Bold BT.ttf);
+}
+
+/*обнуляем все отступы*/
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.@font-face {
+    font-family: "Open Sans semibold";
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Futura Bk BT";
+    src: url(../fonts/Futura_Book_BT.ttf);
+}
+
+@font-face {
+    font-family: "Futura Md BT";
+    src: url(../fonts/Futura Bold BT.ttf);
+}
+
+/*обнуляем все отступы*/
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Задаем стили для части сайта <header>*/
+
+header {
+    height: 116px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    list-style-type: none;
+    height: 112px;
+    line-height: 112px;
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu li:last-child {
+    margin-right: 0;
+}
+
+.header-menu li a {
+    font: 14px "Open Sans semibold";
+    color: #989898;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+.header-menu__active,
+.header-menu li:hover {
+    border-bottom: 4px solid #3070a8;
+}
+
+header .header-menu__active a,
+.header-menu li:hover a {
+    color: #3070a8;
+}
+
+.banner-1 {
+    background: url("../images/section-1_bg.jpg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 140px 0 100px;
+}
+
+.banner-1_main-row .first-row {
+    font: 36px "Futura Bk BT";
+}
+
+.banner-1_main-row .second-row {
+    font: 48px "Futura Md BT";
+    text-transform: uppercase;
+    display: block;
+}
+
+.banner-1_main-row {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-1_secondary-row {
+    font: 20px Calibri;
+    font-style: italic;
+    width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.button__banner-1 {
+    font: 16px "Open Sans Semibold";
+    display: inline-block;
+    padding: 20px 65px;
+    border: 1px solid white;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+/*Часть-2 - Инфографика (ALERT-DETECT-PROTECT)*/
+
+.banner-2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px;
+    background-color: #fff;
+}
+
+.banner-2 .banner_title {
+    padding: 0;
+    font: 30px "Trebuchet MS Bold";
+    color: #41525c;
+    text-transform: uppercase;
+}
+
+.banner-2_icon-menu-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.banner-2_icon-menu {
+    width: 305px;
+}
+
+.banner-2_icon-menu h2 {
+    font: 30px "Futura Bk BT";
+    color: #3070a8;
+    text-transform: uppercase;
+    padding: 25px 0 20px;
+}
+
+.banner-2_icon-menu p {
+    font: 14px "Open Sans Regular";
+    color: #999999;
+    line-height: 25px;
+}
+
+/*Часть-3 - Много текста в ней)  */
+
+.banner-3 {
+    background: url("../images/section-3_bg.jpg") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 90px 180px 80px;
+}
+
+.banner-3_wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #525252;
+    opacity: 0.2;
+}
+
+.banner-3 .banner-3__upper-row {
+    font: 26px "Futura Bk BT";
+    color: #ee8129;
+    text-transform: uppercase;
+    width: 690px;
+    line-height: 40px;
+}
+
+.banner-3 .banner-3__middle-row {
+    font: 19px "Open Sans";
+    font-style: italic;
+    color: #fff;
+    width: 630px;
+}
+
+.banner-3 ul {
+    margin-top: 30px;
+}
+
+.banner-3 li {
+    font: 14px "Open Sans";
+    width: 610px;
+    color: #9d9d9d;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.banner-3 li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.banner-3 li:nth-of-type(2) {
+    color: #3070a8;
+}
+
+  /*Задаем стили для части сайта с ценами main_prices*/
+
+/*Часть-4 - Ценовые предложение*/
+
+.banner-4 {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0;
+}
+
+.banner-4__price-menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.banner-4 .banner-4__title {
+    font: 36px "Trebuchet MS Bold";
+    color: #41525c;
+    text-transform: uppercase;
+}
+
+.outer-wrapper {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 6px;
+    width: 288px;
+    height: 387px;
+    font-family: Trebuchet MS;
+    background: #fff;
+    transition: 0.8s;
+}
+
+.outer-wrapper:hover {
+    height: 400px;
+    border-top-width: 15px;
+    border-width: 4px;
+    transition: 0.8s;
+    transform: scale(1.1);
+    z-index: 999;
+    position: relative;
+}
+
+.icon-1 {
+    border-color: #37c2d3;
+}
+
+.icon-2 {
+    border-color: #ee8129;
+}
+
+.icon-3 {
+    border-color: #1cb79a;
+}
+
+.inner-wrapper {
+    padding: 5px;
+}
+
+.outer-wrapper p {
+    display: block;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.standard {
+    background: #37c2d3;
+}
+
+.best {
+    background: #ee8129;
+}
+
+.ultimate {
+    background: #1cb79a;
+}
+
+.inner-wrapper h3 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: #3f4042;
+    font-size: 22px;
+    padding-top: 5px;
+
+}
+
+.price {
+    width: 100%;
+    font-size: 72px;
+    font-weight: bold;
+    color: #35495a;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.price:before {
+    content: "$";
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.price:after {
+    content: "Mothly";
+    font-size: 18px;
+    vertical-align: sub;
+}
+
+.list {
+    list-style: none;
+    padding: 5px;
+    text-align: justify;
+}
+
+.list li {
+    background-color: gray;
+    padding: 3px 0 3px 45px;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+.list li::before {
+    content: url(../images/tick-mark.png);
+    margin-right: 10px;
+}
+
+.list li:nth-of-type(odd) { background-color: #edf5fd; }
+
+.list li:nth-of-type(even) { background-color: #e8f2fb; }
+
+.inner-wrapper a {
+    display: block;
+    color: white;
+    width: 253px;
+    height: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 11px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blue {
+    background-color: rgb(51, 113, 166);
+    box-shadow: 0 3 0 0 rgba(22, 67, 106, 0.004);
+}
+
+.orange {
+    background-color: rgb(236, 129, 54);
+    box-shadow: 0 3 0 0 rgba(177, 86, 27, 0.004);
+}
+
+/*Часть-5 - Комментарии клиентов*/
+
+.banner-5 {
+    background: url("../images/section-5_bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 60px 0 80px;
+}
+
+.feedback__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.feedback__row {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback__title {
+    font: 40px "Futura Md BT";
+    color: #3170a8;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.feedback__title span:first-of-type {
+    font: 40px "Futura Bk BT";
+    color: #ee8129;
+
+}
+
+.feedback__col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user__answer {
+    max-width: 310px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 25px;
+    padding: 15px;
+    position: relative;
+}
+
+.user__answer::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 37px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 16px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.user__data {
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+    font: 13px Trebuchet MS;
+    font-style: italic;
+    color: #3070a8;
+}
+
+.user__data .customer {
+    float: right;
+}
+
+.user__text {
+    width: 95%;
+    margin-top: 10px;
+    font: 13px Trebuchet MS;
+    text-align: justify;
+    color: #666666;
+}
+
+/*Часть-6 - Контакты*/
+
+.banner-6 {
+    max-width: 1200px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts {
+    margin-top: 40px;
+}
+
+.location__info {
+    display: inline-block;
+    line-height: 25px;
+    width: 110px;
+}
+
+.fa-map-marker {
+    vertical-align: top;
+}
+
+.location__info,
+.phone__number,
+.email__address {
+    font: 14px "Open Sans";
+    color: #3070a8;
+}
+
+i.fa-envelope {
+    font-size: 20px;
+}
+
+.fa-map-marker,
+.fa-mobile,
+.fa-envelope { width: 50px; }
+
+.fa { color: #3070a8; display: inline-block; }
+
+i.fa-facebook,
+i.fa-twitter,
+i.fa-linkedin
+{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.social-network { margin-top: 35px; }
+
+i.fa-facebook { background-color: #4967a9; }
+
+i.fa-twitter { background-color: #1ab2e8; }
+
+i.fa-linkedin { background-color: #007ab9; }
+
+/*footer*/
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #3070a8;
+}
+
+.footer {
+    font: 14px "Open Sans";
+    color: #fff;
+    max-width: 380px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.company-name,
+.iconic {
+    font-weight: bold;
+}
+
+.iconic {
+    color: #000;
+}
