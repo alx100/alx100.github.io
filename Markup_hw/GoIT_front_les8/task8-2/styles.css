@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 20px;
+    min-width: 250px;
+    max-width: 960px;
+    background-image: linear-gradient(to bottom, yellow, orange);
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.first-row {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 25px;
+}
+
+input[type="text"] {
+    width: 85%;
+}
+
+input[type="submit"] {
+  width: 70px;
+  margin-left: 5px;
+}
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -19.6px;
+  display: block;
+  width: 39.24px;
+  height: 39.24px;
+  background-image: linear-gradient(45deg, yellow, orange);
+  transform: translateY(-50%) scale(.5, 1) rotate(135deg);
+  z-index: -1;
+}

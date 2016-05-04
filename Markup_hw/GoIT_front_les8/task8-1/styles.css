@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 20px;
+	min-width: 250px;
+	max-width: 960px;
+	background-color: #ffcc66;
+	padding: 5px 10px;
+	position: relative; 
+}
+
+.first-row {
+	display: flex;
+	flex-wrap: nowrap;
+	height: 25px;
+}
+
+input[type="text"] {
+	width: 85%;
+}
+
+input[type="submit"] {
+	width: 70px;
+	margin-left: 5px;
+}
+
+.wrapper::after{
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 28px 0 28px 16px;
+	border-color: transparent transparent transparent #ffcc66;
+
+}
