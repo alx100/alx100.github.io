@@ -1,0 +1,377 @@
+h1, h2, h3, p, ul, li
+	margin: 0
+
+ul
+	list-style: none
+	padding: 0
+
+a, a:hover
+	text-decoration: none
+
+h2
+	font-family: "AleoBold"
+	font-size: 20px 
+	text-transform: uppercase
+	margin: 0 0 80px
+	position: relative
+
+h2::after
+	content: ''
+	width: 200px
+	height: 1px
+	position: absolute
+	top: 15px
+	background: #e5e3e3
+
+h3
+	font-family: "AleoRegular"
+	font-size: 16px
+
+img
+	max-width: 100%
+	vertical-align: top
+	
+body
+	font-family: "AleoRegular", sans-serif
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	overflow-x: hidden
+
+.container
+	padding: 0
+
+.menu_list, .popular_dishes, .gallery
+	margin: 0 0 100px
+
+.popular_dishes, .gallery, #footer
+	padding: 100px 0
+
+$main_color: #f34949
+
+@mixin white_line
+	content: ''
+	width: 40px
+	height: 2px
+	position: absolute
+	top: 10px
+	background: #fff
+
+@mixin grey_line_short
+	content: ''
+	width: 192px
+	height: 1px
+	position: absolute
+	top: 14px
+	right: 20px
+	background: #e3e1e1
+
+@mixin grey_line_long
+	content: ''
+	width: 212px
+	height: 1px
+	position: absolute
+	top: 14px
+	right: 20px
+	background: #e3e1e1
+
+#header
+	padding: 40px 0
+
+	.menu_button
+		display: none
+		float: right
+		color: #fff
+		width: 28px
+		height: 32px
+		padding: 0 2px
+		background: $main_color
+		border: none
+		border-radius: 100%
+
+		.glyphicon
+			display: block
+			font-size: 16px
+			line-height: 32px
+
+	#main_menu
+		text-align: right
+
+		li
+			display: inline-block
+			padding: 0 20px
+
+		li:first-child
+			padding-left: 0
+
+		li:last-child
+			padding-right: 0
+
+		a
+			display: block
+			line-height: 1.8
+			color: #000
+			padding: 0 4px
+
+		a:hover
+			border-bottom: 2px solid $main_color 
+
+.billboard
+	position: relative
+	min-height: 570px
+	background: url(../img/billboard.png) center center no-repeat
+	background-size: cover
+	text-align: center
+	color: #fff
+	border-bottom: 4px solid $main_color
+
+	.dark_bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(63,63,63, 0.6) 
+		display: flex
+		align-items: center
+		justify-content: center 
+		overflow: auto
+
+	h1
+		font-family: "WCManoNegraBta"
+		font-size: 100px
+		line-height: 1.2
+	
+	span
+		position: relative
+
+	span::before
+		@include white_line
+		left: -66px
+
+	span::after
+		@include white_line
+		right: -66px
+
+.menu_list
+	text-align: center
+
+	h2
+		line-height: 3.8
+		text-transform: none
+		margin: -4px 0 0
+		color: #fff
+		background: url(../img/menu_title.png) center center no-repeat
+	
+	h2::after 
+		display: none
+
+	.menu_wrapper
+		padding: 80px 0
+
+	.left_part, .right_part
+		padding: 0 15px
+	
+	.left_part 
+		padding-right: 75px
+	
+	.right_part
+		padding-left: 60px
+		
+	.menu_item
+		text-align: left
+		color: #555
+		margin: 0 0 60px
+
+	.description
+		position: relative
+		
+		span
+			display: block
+
+		span:last-child
+			font-family: "AleoLightItalic"
+			font-size: 12px
+			color: #b7b7b7
+
+	.description::after
+		@include grey_line_short
+
+	.left_part
+
+		.menu_item:nth-child(2), .menu_item:last-child
+
+			.description::after
+				@include grey_line_long
+
+	.right_part
+
+		.menu_item:first-child, .menu_item:nth-child(3)
+
+			.description::after
+				@include grey_line_long
+	
+	.price
+		padding: 0
+
+	.load_button
+		padding: 10px 2px 10px 14px
+		color: #b7b7b7
+		border: 1px solid #b7b7b7
+
+		.glyphicon
+			font-size: 8px
+			color: #b7b7b7
+			padding: 2px 12px
+			margin: 0 0 0 12px
+			border-left: 1px solid #b7b7b7
+
+	.load_button:hover
+		color: #329932
+		border-color: #329932
+			
+		.glyphicon
+			color: #329932
+			border-color: #329932
+
+.popular_dishes
+	font-family: "AleoLight"
+	color: #555
+	
+	h2::after
+		left: 202px
+
+	.dish_img
+		margin: 0 0 20px
+
+	.dish_info
+		margin: 0 0 6px
+
+		span:first-child
+			float: left
+
+		span:last-child
+			float: right
+
+	.owl-carousel
+
+		.dish_rating
+
+			img
+				width: 12px
+				height: 13px 
+				display: inline-block
+
+.owl-nav
+	text-align: center
+
+	.owl-next, .owl-prev
+		display: inline-block
+		border: 1px solid #000
+	
+	.owl-next:hover, .owl-prev:hover
+		color: #fff
+		background: $main_color
+		border: 1px solid $main_color
+
+	.owl-prev
+		margin: 0 20px 0 0
+		padding: 2px 2px 2px 4px
+
+	.owl-next
+		margin: 0 0 0 20px
+		padding: 2px 4px 2px 2px
+
+.owl-dots
+	position: absolute
+	top: -110px
+	right: 0
+
+	.owl-dot
+		display: inline-block
+		width: 9px
+		height: 9px
+		margin: 0 0 0 12px
+		background: #dedede
+		border-radius: 100%
+
+	.active
+		background: #9b9b9b
+
+.gallery
+
+	.row
+		padding: 0
+		margin: 0
+
+	h2::after
+		left: 156px
+
+	.gallery_content
+		margin: 0
+		padding: 0
+
+	.gallery_item
+		position: relative
+
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		transform: rotateX(90deg)
+		transition: all 0.40s ease-out 0s
+		z-index: 2
+		
+		a
+			height: 100%
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center 
+			overflow: auto
+			font-size: 30px
+			color: #fff
+			text-decoration: none	
+
+	.gallery_item:hover
+
+		.overlay
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			transform: rotateX(0deg)
+			background: rgba(63,63,63, 0.6)
+
+#footer 
+	color: #fff
+	background: #3b3b3b
+	
+	a
+		color: #fff
+
+	a:hover
+		color: $main_color
+
+	.address
+		max-width: 180px
+
+	.second_menu
+		
+		li
+			margin: 0 0 5px
+		
+	.copy
+		float: right
+		font-family: "AleoLight"
+		font-size: 14px
+
+		.logo_footer
+			margin: 0 0 30px
+
+		span
+			display: block

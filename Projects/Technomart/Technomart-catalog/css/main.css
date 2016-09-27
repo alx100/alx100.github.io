@@ -1,0 +1,680 @@
+/*-------------------------------General-------------------------------------*/
+body{
+	font-family:'Cuprum';
+}
+.layout_center{
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h2{
+	font-size:30px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+h3{
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #000;
+}
+	
+.clearfix:after{																								
+	display: table;
+	content: '';
+	clear: both;
+}
+.btn{
+	background: #ee3643;
+	color: #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 12px 0;
+	font-size: 14px;
+	border:none;
+	text-align: center;
+}
+.btn:hover{														/*------------------------------кнопки темнеют при наведении*/	
+	background: #cc3643;
+}
+.btn:focus{
+	outline:None;
+}
+
+/*-------------------------------HEADER-------------------------------------*/
+header .user_menu{										/*------------------------------бэкграунд для пользовательского меню*/
+	background: #293449;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+header{
+	min-width:960px;														/*------------------------------общий бэкграунд для хэдера*/
+	background: #f2f6f8;
+	padding: 0 0 60px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.user_menu form{													/*-------------------------------флоатим заголовок вправо*/
+	float: right;
+	width: 720px;
+}
+.user_menu .title{	
+	float: left;											/*-------------------------------Красная надпись техномарт*/
+	background: #ee3643;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	width: 220px;
+	padding: 5px 0;
+	text-align: center;
+	border:none;
+	box-shadow: 0 4px 0 0 #b52933;
+	transition-duration:0.2s;
+}
+.user_menu .title:hover{									/*------------------------------увеличивается надпись пр инаведениит*/
+	transform:scale(1.05);
+}
+.action_point{
+	float: left;
+	width: 160px;
+	padding: 10px 0 10px 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.action_point:first-child{
+	width: 240px;
+}
+.action_point:last-child{
+	float: right;
+	padding: 0;
+}
+.user_menu label{													/*-------------------------------Надписи "Поиск", "Закладки" делаем белыми*/
+	color: #fff;
+	position: relative;
+}
+.user_menu label:before{												/*-------------------------------картинки перед лейблами*/
+	display: block;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left:-32px;
+	top: 2px;
+	background: url('../img/sprites.png') no-repeat -148px -6px;
+}
+.user_menu .bookmarks:before{											/*-------------------------------картинка закладки*/
+	background-position: -90px -4px;
+}
+.user_menu .trolley:before{												/*-------------------------------картинка корзина*/
+	background-position:-119px -7px;
+}
+.user_menu label input{												/*-------------------------------Оформляем поиск, закладки и корзину*/
+	background: #293449;
+	width: 20px;
+	border:none;
+	color: #fff;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.user_menu label input:focus{									/*-------------------------------пунктирная линия для активного состояния инпутов*/
+	outline:1px dotted #ccc;
+}
+.user_menu label:nth-child(3) input{							/*-------------------------------оступ от корзины до "Оформить заказ" меньше чем остальные*/
+}
+.user_menu .action_point:first-child input{								/*-------------------------------Оформляем инпут поиска*/
+	width: 90px;
+	color: #4b5566;
+	border-left: 2px solid #4b5566;
+		margin-left: 5px;
+}
+
+.user_menu input[type="submit"]{								/*-------------------------------Оформляем кнопку "оформить заказ"*/
+	background: #63a63e;
+	color: #fff;
+	width: 150px;
+	text-align: center;
+	padding: 11px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border:none;
+}
+.user_menu input[type="submit"]:hover{								
+background: #22a622;
+}
+						/*-------------------------------Header description-------------------------------------*/
+
+.header_description>div{										/*-------------------------------Оформляем элементов описания*/
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	text-align: center;
+	margin-top: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}	
+.header_description>.user{										/*-------------------------------Оформление Равшан Джамшутович*/					
+	margin-right: 0;
+	width: 300px;
+	float: right;
+}
+.header_description>.description{								/*-------------------------------Оформление описания*/	
+	margin-left: 60px;
+	font-size: 16px;
+	margin-right: 35px;
+	width: 220px;
+	color: #ef505b;
+	text-align: left;
+	font-style: italic;
+	line-height: 23px;
+		font-family:'Cuprum';
+}	
+.phone{	
+	font-family:'Cuprum';														/*-------------------------------Оформление телефона*/	
+	font-size: 18px;
+	-webkit-text-size-adjust: 50%;
+	border: 3px solid #fff;
+	color: #ef505b;
+	padding: 10px 10px 10px 40px;
+
+	position: relative;
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.phone:before{
+												/*-------------------------------картинка телефона*/
+	display: block;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left:15px;
+	top: 13px;
+	background: url('../img/icon_phone.png') no-repeat;	
+}
+
+															/*-------------------------------Оформление адреса*/		
+.header_description .address{
+	margin-top: 5px;
+	text-align: center;
+	color: #32425c;
+}
+.user_name{														/*-------------------------------Оформление имени*/		
+	background: #fff;
+	padding: 10px 20px 10px 5px;
+	position: relative;
+	color: #000;
+	font-size: 21px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.user_name:before, .user_name:after{							/*-------------------------------Оформление bиконок лица и входа*/	
+	display: block;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 13px;
+	background: url('../img/sprites.png') no-repeat -249px 0;	
+}
+.user_orders a, .user_cabinet a{													/*-------------------------------Цвет гиперссылок*/	
+	color: #32425c;
+	position: relative;
+}
+.user_cabinet a:before{																/*------------------------------синяя точка рядом с сылкой*/
+display: block;
+content: '';
+position: absolute;
+width: 4px;
+height: 4px;
+border-radius: 50%;
+background: #32425c;
+left: -17px;
+top: 8px;
+}
+.user_name:before{																	/*-------------------------------положение иноки юзера*/
+	left: 15px;
+}
+.user_name:after{																	/*-------------------------------положение иноки входа*/
+	right:15px;
+	background-position: -65px -3px;	
+}
+.user_orders, .user_cabinet{									/*-------------------------------Оформление моих заказов  и личного кабинета*/	
+	float: left;
+	padding: 8px 14px 8px 17px;
+}
+
+
+						/*-------------------------------Навигационное меню-------------------------------------*/
+nav{																	
+	padding: 20px 0px 20px 50px;
+	border-bottom: 5px solid #293449;
+	margin-top: 40px;
+	background: #32425c;
+}
+nav ul{																	
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	list-style: none;
+	display: inline-block;
+	font-size: 17px;
+	margin-right: 55px;
+}
+nav li:last-child{
+	margin-right: 5px;
+}
+nav li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav li a:hover{
+	border-bottom: 1px solid #fff;
+}
+/*-------------------------------MAIN-------------------------------------*/
+.breadcrumbs{										
+	padding:20px 0;
+}
+.breadcrumbs a{													/*-------------------------------оформляем элементы хлебных крошек*/
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	color: #000;
+	margin-right: 40px;
+	position: relative;
+	text-transform: uppercase;
+}
+.breadcrumbs a:not(:first-child):after{							/*хлебные крошки*/
+	display: block;
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border: 2px solid #ccc;
+	top: 6px;
+	left: -20px;
+	border-left:transparent;
+	border-bottom:transparent;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-ms-transform: rotate(45deg);
+}
+.gallery_title{													/*оформление блока с надписью "Перфоратор"*/
+	background: #f2f6f8;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #32425c;
+	padding: 25px;
+	margin-bottom: 15px;
+}
+
+.gallery_filter{												/*-------------------------------фильтр галлереи*/
+	width: 220px;
+	margin-right: 20px;
+	float: left;
+}
+.filter_title{
+	background: #f7f3ec;
+	padding: 10px 15px;
+}
+fieldset{														/*-----------оставляем только нижнюю границуу филдсета*/										
+	border:none;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0;
+}
+fieldset:first-child{											/*------------у первого филдсета делаем паддинг внизу*/									
+	padding-bottom: 25px;
+}
+fieldset:last-child{											/*------------у последнего филдеста убираем нижнюю границу*/		
+	border: none;	
+}
+legend{															/*------------оформляем подписи филдсетау*/
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	padding: 15px 0;
+	position: relative;
+}
+legend:after{													/*------------стрелочки*/
+	display: block;
+	content: '';
+	position: absolute;
+	border: 3px solid #d7dcde;
+	border-left: none;
+	border-bottom: none;
+	width: 10px;
+	height: 10px;
+	top: 22px;
+	left: 185px;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(45deg);
+	-ms-transform: rotate(45deg);
+}
+.price input{													/*------------оформляем инпуты с ценой*/
+	width: 95px;
+	border-radius: 5px;
+	text-align: center;
+	background: #f7f3ec;
+	border: none;
+	padding: 10px 0;
+	margin-top: 5px;
+	font-family: 'Open Sans'
+}
+.price span{													/*------------оформляем тире между инпутами, чтобы нормально позиционировалось*/
+	margin: 0 5px 0 6px;
+}
+form ul{														/*------------убираем стили и паддинги для списков*/
+	list-style: none;
+	padding: 0;
+	padding-left:30px;
+	margin: 0;
+}
+form li{
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+input[type=checkbox], input[type=radio] {						/*------------убираем стандартные чекбоксы и радиобаттоны*/
+	display: none;
+}
+input[type=checkbox]~label,input[type=radio]~label {
+	position: relative;
+}
+input[type=checkbox]~label:before, input[type=radio]~label:before{	/*------------стилизованные чекбоксы и радиобаттоны*/
+	display: block;
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background: url('../img/sprites2.png') no-repeat -86px -3px;
+	left: -30px;
+	top: 0;
+}
+input[type=checkbox]:checked~label:before{						/*------------стилизация чекнутого чекбокса*/
+background-position: 0 0;
+}
+input[type=radio]~label:before{									/*------------стилизация радиобаттона*/
+background-position: -26px 0;
+}
+input[type=radio]:checked~label:before{							/*------------стилизация чекнутого радиобаттона*/
+background-position: -55px -1px;		
+}
+.sort_title{
+		-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 700px;
+	background: #f7f3ec;
+	padding: 10px 0;
+
+}
+.sort_items{
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	text-transform: uppercase;
+		-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.sort_items_inner{
+	float:left;
+}
+.sort_items_inner:last-child{
+	float: right;
+	padding-right: 5px;
+}
+.sort_items:first-child{
+	padding-left: 15px;
+}
+.sort_items:last-child{
+	width: 218px;
+	margin-right: 0;
+	text-align: right;
+	padding-right: 25px;
+}
+.gallery_items{													/*------------ширина и позиционирование контейнера изображений*/
+	width: 700px;
+	float: left;
+}
+.gallery_item{													/*------------стилизация изображения*/
+	width: 220px;	
+	margin-right: 20px;
+	float: left;
+	padding: 180px 30px 0 30px;
+	text-align: center;
+	background: url('../img/instrument_1.jpg') no-repeat;
+	margin: 20px 20px 20px 0;
+	border: 1px solid #e5e5e5;
+	position: relative;
+	font-family: 'Open Sans';
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.gallery_item:nth-child(3n){									/*------------у средних другой инструмент на фоне*/
+ background: url('../img/instrument_2.jpg') no-repeat 30px 20px;
+}
+
+.gallery_item:nth-child(3n+1){									/*------------убираем маргин у последнего*/
+	margin-right: 0;
+}
+.gallery_item_title{											/*------------оформление названия перфоратора*/
+	font-weight: bold;
+}
+.gallery_item_prev_price{										/*------------оформление прошлой цены*/
+	text-decoration: line-through;
+	color: #999999;
+}
+.gallery_item_prev_price.null{									/*------------убираем отсутствующие цены*/
+	color: transparent;
+}
+.gallery_item_curr_price{
+	background: #ee3643;
+	color: #fff;
+	width: 120px;
+	margin: 10px auto 20px auto;
+	padding: 10px 0;
+	border-radius: 3px;
+	position: relative;
+	padding-left:20px;
+
+	transform:translatex(-10px);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.gallery_item_curr_price:after{								/*------------добавляем треугольник*/
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 21px solid transparent;
+	border-left-color: #ee3643;
+	right: -40px;
+	top: 0;
+
+}
+.gallery_item.new:after{									/*------------добавляем пометку new*/
+	content: '';
+	display: block;
+	width: 60px;
+	height: 59px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url('../img/label_new.png');
+}
+.paginator a{												/*------------оформляем переключатель страниц*/
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #e5e5e5;
+	padding: 10px 0;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.paginator a:hover{
+	background: #ee3643;
+	color: #fff;
+}
+.paginator a:last-child{									/*------------оформляем переключатель "следующая"!*/
+	width: 140px;
+	text-transform: uppercase;
+}
+
+
+main .description{
+	background: #f2f6f8;
+	padding: 40px 0;
+	margin-top: 50px;
+	min-width: 960px;
+}
+main .description h2{
+	color: #000;
+	font-weight: normal;
+}
+/*-------------------------------FOOTER-------------------------------------*/
+						/*-------------------------------Techomart-------------------------------------*/
+.technomart{
+	background: #32425c;
+	min-width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.technomart .layout_center{
+	padding-top: 0;
+}
+.technomart .logo:hover{
+		transform:scale(1.05);
+}
+.technomart .logo{													/*-------------------------------Красная надпись техномарт*/
+	background: #ee3643;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	width: 220px;
+	padding: 10px 0;
+	text-align: center;
+	border:none;
+	box-shadow: 0 4px 0 0 #b52933;
+	margin-bottom: 30px;
+		transition-duration:0.1s;
+}
+.technomart .address{
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+footer .company, footer .lower_nav{
+	float: left;
+	width: 320px;
+	margin-right: 60px;
+
+}
+footer .lower_nav{
+	float: right;
+	width: 540px;
+	margin-right: 0;
+}
+
+.lower_nav td{
+	padding: 30px 40px 0 0;
+}
+.lower_nav td a{										/*--------убираем стилизацию для ссылок-------*/
+	text-decoration: none;
+	color: #fff;
+}
+.lower_nav td a:hover{
+	border-bottom: 1px solid #fff;
+}
+.lower_nav td:last-child{								/*-------------------------------Выравниваем последнюю ячейку по краю----------------*/
+	padding-right:0;
+	text-align: right;
+}
+.lower_nav_2 td:nth-child(4){							/*-------------------------------Выравниваем спецпредложения по правому краю-----------------*/
+text-align: right;
+position: relative;
+padding-right:0;
+}
+.lower_nav_2 td:nth-child(4):before{					/*-------------------------------белая точка в таблице----------------*/
+	display: block;
+	content: '';
+	width: 4px;
+	height: 4px;
+	background: #fff;
+	position: absolute;
+	border-radius: 50%;
+	top: 37px;
+	left: 10px;
+}
+.lower_nav_2 td a{										/*-------------------------------цвет для нижних иконок социальных сетей----------------*/	
+ color: #ffd180;
+}
+						/*-------------------------------Techomart-------------------------------------*/
+.footer>div{											/*-------------------------------зафлоачиваем элементы внутри футера----------------*/
+	float: left;
+	width: 140px;
+}
+.footer .feedback, .footer .design{
+	float: right;
+	margin-left: 60px;
+	color: #fff;
+}
+.footer a{
+	color: #ffd180;
+}
+.footer .copyright{
+	width: 260px;
+	margin-right: 120px;
+}
+footer{
+	background: #293449;
+	min-width: 960px;
+
+}
+footer .layout_center{
+	width: 950px;
+	padding: 35px 10px 30px 10px;	
+}
+.social_icon{
+	width: 40px;
+	display: inline-block;
+	height: 40px;
+	border-radius: 50%;
+	background: #212a3a url('../img/sprites_sn.png') no-repeat -20px 10px;
+}
+.social_icon:hover{
+	cursor: pointer;
+	background-color:green;
+}
+.fb{
+	background-position: -68px 7px;
+}
+.inst{
+	background-position: -119px 9px;
+}

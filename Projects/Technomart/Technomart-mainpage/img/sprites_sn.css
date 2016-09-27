@@ -1,0 +1,22 @@
+.inst_glyph, .vk_glyph, .fb_glyph{
+	background: url(sprites.png) no-repeat;
+}
+
+.inst_glyph{
+	background-position: -129.96873474121094px -1px ;
+	width: 19px;
+	height: 18px;
+}
+
+.vk_glyph{
+	background-position: -33.98863220214844px 0;
+	width: 14px;
+	height: 16px;
+}
+
+.fb_glyph{
+	background-position: -80.98863220214844px 0;
+	width: 11px;
+	height: 23px;
+}
+

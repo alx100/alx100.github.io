@@ -1,0 +1,192 @@
+/*==========  Desktop First Method  ==========*/
+/*---max-width:1200px---*/
+$short_line_lg: 150px
+$long_line_lg: 160px
+/*---max-width:992px---*/
+$short_line_md: 80px
+$long_line_md: 100px
+/*---max-width:992px---*/
+$short_line_sm: 290px
+$long_line_sm: 300px
+$right_position: 30px
+$h2_line: 75px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.container
+		padding: 0 10px
+	
+	.menu_list
+
+		.left_part 
+			padding-right: 35px
+	
+		.right_part
+			padding-left: 20px
+
+		.description::after
+			width: $short_line_lg
+
+		.left_part
+
+			.menu_item:nth-child(2), .menu_item:last-child
+
+				.description::after
+					width: $long_line_lg
+
+		.right_part
+
+			.menu_item:first-child, .menu_item:nth-child(3)
+
+				.description::after
+					width: $long_line_lg
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.menu_list
+
+		.description::after
+			width: $short_line_md
+
+		.left_part
+
+			.menu_item:nth-child(2), .menu_item:last-child
+
+				.description::after
+					width: $long_line_md
+
+		.right_part
+
+			.menu_item:first-child, .menu_item:nth-child(3)
+
+				.description::after
+					width: $long_line_md
+	
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.container 
+		padding: 0 20px
+
+	.menu_list, .popular_dishes, .gallery
+		margin: 0 0 50px
+
+	.menu_wrapper, .popular_dishes, .gallery
+		padding: 50px 0
+	
+	#header
+		padding: 20px 0
+
+		.menu_hamburger
+			display: block
+
+		#main_menu
+			position: relative
+
+			ul
+				display: none
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 50px
+				right: 0
+				z-index: 2
+
+			li
+				display: block
+				text-align: left
+				margin: 0
+				padding: 10px 40px
+				background: #fff
+				border-bottom: 1px solid #f34949
+
+			li:first-child, li:last-child
+				padding: 10px 40px
+
+			li:last-child
+				border: none 
+
+			a:hover
+				color: #f34949
+				border: none 
+	
+	.billboard
+
+		h1
+			font-size: 60px
+
+		span::before, span::after 
+			display: none
+
+	.menu_list
+
+		.left_part, .right_part
+			padding: 0 40px
+
+		.menu_item
+
+			.row
+				border-bottom: 1px solid #e3e1e1
+
+		.description::after
+			display: none
+
+		.price
+			padding: 18px 10px 0 0
+			text-align: right
+
+	.gallery_content
+		text-align: center
+
+		.gallery_item
+			display: inline-block
+			margin: 0 0 20px
+
+	#footer
+		padding: 30px 0
+
+		.second_menu
+			float: left
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	h2::after
+		width: $h2_line
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px)
+	#header
+
+		.menu_button
+			display: none !important
+
+		#main_menu 
+		
+			ul
+				display: block !important
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)

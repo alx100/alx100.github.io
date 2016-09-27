@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alx100 Technomart</title>
+	<link rel="stylesheet" href="css/normalize.css" class="rel">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Cuprum&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="user_menu clearfix">
+			<div class="layout_center clearfix">																<!--Пользовательское меню-->				
+				<div class="title">Техномарт</div>
+				<form action="" class="clearfix">
+					<div class="action_point"><label for="id_search">Поиск:<input type="text" id="id_search" value = "Перфоратор"></label>
+					</div>
+					<div class="action_point" id = "id_action_point_bookmarks">
+						<label class="bookmarks"for="id_bookmarks">Закладки:<input type="text" id="id_bookmarks" value = "0" oninput="check_filled_bookmarks();"></label>
+					</div>
+				   <div class="action_point" id = "id_action_point_trolley">
+				   		<label class="trolley"for="id_trolley" id="label_trolley">Корзина:<input type="text" id="id_trolley" value = "0" oninput="check_filled_trolley();"></label>
+				   	</div>
+				   	<div class="action_point">
+						<input type="submit" value="Оформить заказ">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="layout_center">
+			<div class="header_description clearfix">														<!--Описание-->	
+				<div class="description">Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</div>
+				<div class="contacts">
+					<div class="phone">+7 (495) 555-05-55</div>
+					<div class="address">Москва, ул. Строителей, д.15</div>
+				</div>
+				<div class="user">																	
+					<div class="user_name">Равшан Джамшутович</div>
+					<div class="user_links clearfix">
+						<div class="user_orders"><a href="#">Мои заказы</a></div>
+						<div class="user_cabinet"><a href="#">Личный кабинет</a></div>
+					</div>
+				</div>
+			</div>
+			<nav class="clearfix">																					<!--Навигационное меню-->	
+				<ul>
+					<li><a href="..\Technomart-mainpage\index.html">Главная</a></li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="layout_center">
+			<div class="gallery clearfix">
+				<div class="breadcrumbs clearfix">														<!--Хлебные крошки-->				
+					<a href="#"><img src="img/icon_home.jpg" alt=""></a>
+					<a href="#">Каталог</a>
+					<a href="#">Инструмент</a>
+					<a href="#">Перфораторы</a>
+				</div>
+				<div class="gallery_title">Перфораторы</div>
+				<div class="gallery_filter">													<!--Фильтр галлереи-->
+					<div class="filter_title">ФИЛЬТР:</div>
+					<form action="on-echo" method = "post">
+							<fieldset class="price">											<!--Цена товара-->
+								<legend>Цена:</legend>
+								<div class="range"><img src="img/range2.jpg" alt=""></div>
+								<input type="text" value = "0">	<span>&mdash;</span>
+								<input type="text" value = "30 000">
+							</fieldset>
+							<fieldset class="manufacturers">
+								<legend>Производители:</legend>									<!--Выбрать производителя-->
+								<ul>
+									<li><input type="checkbox" name="name_chb_bosch" id="id_chb_bosch" checked><label for="id_chb_bosch">BOSCH</label></li>
+									<li><input type="checkbox" name="name_chb_interscol" id="id_chb_interscol"><label for="id_chb_interscol">Интерскол</label></li>
+									<li><input type="checkbox" name="name_chb_makita" id="id_chb_makita" checked><label for="id_chb_makita">Makita</label></li>
+									<li><input type="checkbox" name="name_chb_dewalt" id="id_chb_dewalt"><label for="id_chb_dewalt">Dewalt</label></li>
+									<li><input type="checkbox" name="name_chb_hitachi" id="id_chb_hitachi"><label for="id_chb_hitachi">Hitachi</label></li>
+								</ul>
+							</fieldset>
+							<fieldset class="power">
+								<legend>Питание:</legend>										<!--Выбрать питание-->
+								<ul>
+									<li><input type="radio" name="name_rd_power" id="id_rd_accumulator" checked><label for="id_rd_accumulator">Аккумуляторные</label></li>
+									<li><input type="radio" name="name_rd_power" id="id_rd_network"><label for="id_rd_network">Сетевые</label></li>
+								</ul>
+							</fieldset>
+						</form>	
+				</div>
+				<div class="gallery_items clearfix">														<!--Объекты галлереи-->
+					<div class="sort_title clearfix">
+							<div class="sort_items">Сортировка:</div>
+							<div class="sort_items">
+								<div class="sort_items_inner">По цене</div>
+								<div class="sort_items_inner">По типу</div>
+							</div>
+							
+							<div class="sort_items">По функционалу</div>
+					</div>
+					<div class="gallery_item">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 3000</div>
+							<div class="gallery_item_prev_price">22 500 Р.</div>
+							<div class="gallery_item_curr_price">15 500 Р.</div>
+						</div>
+						<div class="gallery_item">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 6000</div>
+							<div class="gallery_item_prev_price ">30 500 Р.</div>
+							<div class="gallery_item_curr_price">25 500 Р.</div>
+						</div>
+						<div class="gallery_item new">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 2000</div>
+							<div class="gallery_item_prev_price null">0</div>
+							<div class="gallery_item_curr_price">12 500 Р.</div>
+						</div>
+						<div class="gallery_item">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 3000</div>
+							<div class="gallery_item_prev_price ">22 500 Р.</div>
+							<div class="gallery_item_curr_price">15 500 Р.</div>
+						</div>
+						<div class="gallery_item new">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 6000</div>
+							<div class="gallery_item_prev_price">30 500 Р.</div>
+							<div class="gallery_item_curr_price">25 500 Р.</div>
+						</div>
+						<div class="gallery_item">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 2000</div>
+							<div class="gallery_item_prev_price null">0</div>
+							<div class="gallery_item_curr_price">12 500 Р.</div>
+						</div>
+						<div class="gallery_item new">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 3000</div>
+							<div class="gallery_item_prev_price">22 500 Р.</div>
+							<div class="gallery_item_curr_price">15 500 Р.</div>
+						</div>
+						<div class="gallery_item">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 6000</div>
+							<div class="gallery_item_prev_price">30 500 Р.</div>
+							<div class="gallery_item_curr_price">25 500 Р.</div>
+						</div>
+						<div class="gallery_item">
+							<div class="gallery_item_title">Перфоратор BOSCH BFG 2000</div>
+							<div class="gallery_item_prev_price null">0</div>
+							<div class="gallery_item_curr_price">12 500 Р.</div>
+						</div>	
+				<div class="paginator">															<!--Страницы галлереи-->
+					<a href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">Следующая</a>
+				</div>
+				</div>
+
+			</div>	
+		</div>
+		<div class="description">																<!--Описание перфораторов-->
+				<div class="layout_center">
+					<h2>Пара слов о перфораторах</h2>
+					<p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель</p>
+				</div>
+			</div>	
+	</main>
+
+	<footer>
+
+			<div class="technomart clearfix">
+				<div class="layout_center clearfix">
+					<div class="company">
+						<div class="logo">Техномарт</div>
+						<div class="address">г. Москва, ул. Строителей, 15<br/>
+							+7(495)555-05-55</div>
+					</div>
+							<table class="lower_nav">
+								<tr class="lower_nav_1">
+									<td><a href="">Компания</a></td>
+									<td><a href="">Новости</a></td>
+									<td><a href="">Каталог</a></td>
+									<td><a href="">Доставка</a></td>
+									<td><a href="">Контакты</a></td>
+								</tr>
+								<tr class="lower_nav_2">
+									<td><a href="">Материалы</a></td>
+									<td><a href="">Техника</a></td>
+									<td><a href="">Инструмент</a></td>
+									<td colspan="2"><a href="">Спецпредложения</a></td>
+									<td></td>
+								</tr>
+							</table>
+
+
+				</div>
+			</div>
+			<div class="layout_center">
+				<div class="footer clearfix">
+					<div class="copyright">&copy; 2010-2016 Компания "Техномарт" <br> Все права защищены</div>
+					<div class="social_icons">
+						<div class="social_icon vk"></div>
+						<div class="social_icon fb"></div>
+						<div class="social_icon inst"></div>
+					</div>
+						<div class="feedback">Обратная связь:<br/>
+							<a href="#">info@technomart.ru</a></div>
+						<div class="design">
+							Создание сайта -<br/>
+							<a href="#">Alexander Stotsky</a>
+						</div>
+
+				</div>
+			</div>
+	</footer>
+</body>
+</html>
