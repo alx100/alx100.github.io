@@ -1,0 +1,147 @@
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  #about .container {
+    padding: 30px 5px 60px; }
+    #about .container .info ul li {
+      padding-right: 2px; }
+
+  #experience .container, #education .container {
+    padding: 50px 20px 100px; }
+    #experience .container .work .items:nth-child(odd), #education .container .work .items:nth-child(odd) {
+      left: 53.2%; }
+    #experience .container .work .items:nth-child(even), #education .container .work .items:nth-child(even) {
+      right: 53.2%; }
+
+  #skills .container .level .circle {
+    height: 15px;
+    width: 15px;
+    top: 25px; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .icon {
+    top: 20px;
+    right: 25px; }
+
+  #about h3 {
+    display: block;
+    margin: 0 0 15px; }
+  #about .container {
+    padding: 30px 10px 60px; }
+    #about .container .photo,
+    #about .container .overview {
+      padding: 0;
+      margin: 0 0 30px; }
+    #about .container .info ul li {
+      padding: 5px 70px 5px 10px; }
+
+  #experience .container, #education .container {
+    padding: 50px 20px 100px; }
+    #experience .container .work .items:nth-child(odd), #education .container .work .items:nth-child(odd) {
+      left: 54.5%; }
+    #experience .container .work .items:nth-child(even), #education .container .work .items:nth-child(even) {
+      right: 54.5%; }
+
+  #skills .container, #message .container {
+    padding: 60px 20px; }
+    #skills .container .first_block, #message .container .first_block {
+      padding: 0; }
+    #skills .container .second_block, #message .container .second_block {
+      padding: 0 0 0 30px; }
+
+  /* Small Devices, Tablets */ }
+@media only screen and (max-width: 768px) {
+  #header {
+    background: url(../img/workplace-mobile.png) center center no-repeat fixed;
+    background-size: cover; }
+
+  #main_nav ul {
+    font-size: 20px;
+    line-height: 22px; }
+    #main_nav ul .points {
+      margin: 0 0 25px; }
+
+  #about .container {
+    padding: 30px 40px 60px; }
+
+  #experience .container .work, #education .container .work {
+    height: auto;
+    background: #fff; }
+    #experience .container .work .items:nth-child(odd), #experience .container .work .items:nth-child(even), #education .container .work .items:nth-child(odd), #education .container .work .items:nth-child(even) {
+      position: static; }
+    #experience .container .work .items, #education .container .work .items {
+      margin: 0 0 15px;
+      border-bottom: 2px solid #353541; }
+      #experience .container .work .items .arrow_box, #education .container .work .items .arrow_box {
+        display: block;
+        color: #353541;
+        background: none;
+        border-radius: 0; }
+      #experience .container .work .items .arrow_box:after, #education .container .work .items .arrow_box:after {
+        display: none; }
+
+  #skills .container, #message .container {
+    padding: 60px; }
+    #skills .container .level .line, #message .container .level .line {
+      width: 90%; }
+    #skills .container .first_block .level:first-child .circle, #message .container .first_block .level:first-child .circle {
+      right: 27%; }
+    #skills .container .first_block .level:nth-child(2) .circle, #message .container .first_block .level:nth-child(2) .circle {
+      right: 35%; }
+    #skills .container .first_block .level:last-child .circle, #message .container .first_block .level:last-child .circle {
+      right: 45%; }
+    #skills .container .second_block, #message .container .second_block {
+      padding: 0; }
+      #skills .container .second_block .level:first-child .circle, #skills .container .second_block .level:nth-child(2) .circle, #message .container .second_block .level:first-child .circle, #message .container .second_block .level:nth-child(2) .circle {
+        right: 62%; }
+      #skills .container .second_block .level:last-child .circle, #message .container .second_block .level:last-child .circle {
+        right: 44%; }
+    #skills .container .contacts, #message .container .contacts {
+      padding: 20px 0; }
+      #skills .container .contacts .details .par, #skills .container .contacts .details .text, #message .container .contacts .details .par, #message .container .contacts .details .text {
+        margin-left: 50px; }
+      #skills .container .contacts .details .par, #message .container .contacts .details .par {
+        font-size: 20px; }
+      #skills .container .contacts .details .text, #message .container .contacts .details .text {
+        font-size: inherit; }
+
+  #portfolio .container {
+    padding: 60px 20px 100px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  h2, #skills .container h2, #message .container h2 {
+    font-size: 28px;
+    line-height: 30px; }
+
+  #header .dark-bg .name h1 {
+    font-size: 38px;
+    line-height: 40px;
+    padding: 10px 15px; }
+
+  .icon {
+    right: 10px; }
+
+  #about {
+    font-size: inherit; }
+    #about .container {
+      padding: 30px 20px; }
+      #about .container .info ul li {
+        padding: 5px 10px 5px 10px; }
+
+  #skills .container, #message .container {
+    padding: 60px 40px; }
+    #skills .container .level .line, #message .container .level .line {
+      width: 85%; }
+    #skills .container .first_block .level:first-child .circle, #message .container .first_block .level:first-child .circle {
+      right: 29%; }
+    #skills .container .first_block .level:nth-child(2) .circle, #message .container .first_block .level:nth-child(2) .circle {
+      right: 38%; }
+    #skills .container .first_block .level:last-child .circle, #message .container .first_block .level:last-child .circle {
+      right: 46%; }
+    #skills .container .second_block, #message .container .second_block {
+      padding: 0; }
+      #skills .container .second_block .level:first-child .circle, #skills .container .second_block .level:nth-child(2) .circle, #message .container .second_block .level:first-child .circle, #message .container .second_block .level:nth-child(2) .circle {
+        right: 63%; }
+      #skills .container .second_block .level:last-child .circle, #message .container .second_block .level:last-child .circle {
+        right: 46%; } }
+/* Custom, iPhone Retina */

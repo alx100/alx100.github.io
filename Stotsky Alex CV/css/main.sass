@@ -1,0 +1,625 @@
+$font-stack: "RalewayMedium"
+$primary-color: #fb6470
+$center-circle: 23px
+$grey-border: 2px solid #e5e5e5
+
+@mixin hamburger_animate
+	top: 13px !important
+	background: $primary-color !important
+
+@mixin hamburger_icon
+	height: 3px
+	width: 35px
+	border-radius: 10px
+
+@mixin nav_box
+	position: fixed
+	background: rgba(53,53,65, 0.9)
+	z-index: 1
+
+@mixin gradient_eighty
+	background: $primary-color
+	background: -moz-linear-gradient(left, $primary-color 0%, $primary-color 80%, $primary-color 80%, #bcbcbe 100%)
+	background: -webkit-gradient(left top, right top, color-stop(0%, #fb6471), color-stop(80%, #fb6471), color-stop(80%, #bcbcbe), color-stop(100%, #bcbcbe))
+	background: -webkit-linear-gradient(left, $primary-color 0%, $primary-color 80%, #bcbcbe 80%, #bcbcbe 100%)
+	background: -o-linear-gradient(left, $primary-color 0%, $primary-color 80%, #bcbcbe 80%, #bcbcbe 100%)
+	background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 80%, #bcbcbe 80%, #bcbcbe 100%)
+	background: linear-gradient(to right, $primary-color 0%, $primary-color 80%, #bcbcbe 80%, #bcbcbe 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='#bcbcbe', GradientType=1 )
+
+@mixin gradient_seventy
+	background: $primary-color
+	background: -moz-linear-gradient(left, $primary-color 0%, $primary-color 70%, $primary-color 70%, #bcbcbe 100%)
+	background: -webkit-gradient(left top, right top, color-stop(0%, #fb6471), color-stop(80%, #fb6471), color-stop(70%, #bcbcbe), color-stop(100%, #bcbcbe))
+	background: -webkit-linear-gradient(left, $primary-color 0%, $primary-color 70%, #bcbcbe 700%, #bcbcbe 100%)
+	background: -o-linear-gradient(left, $primary-color 0%, $primary-color 70%, #bcbcbe 70%, #bcbcbe 100%)
+	background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 70%, #bcbcbe 70%, #bcbcbe 100%)
+	background: linear-gradient(to right, $primary-color 0%, $primary-color 70%, #bcbcbe 70%, #bcbcbe 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='#bcbcbe', GradientType=1 )
+
+@mixin gradient_sixty
+	background: $primary-color
+	background: -moz-linear-gradient(left, $primary-color 0%, $primary-color 60%, $primary-color 60%, #bcbcbe 100%)
+	background: -webkit-gradient(left top, right top, color-stop(0%, #fb6471), color-stop(80%, #fb6471), color-stop(60%, #bcbcbe), color-stop(100%, #bcbcbe))
+	background: -webkit-linear-gradient(left, $primary-color 0%, $primary-color 60%, #bcbcbe 60%, #bcbcbe 100%)
+	background: -o-linear-gradient(left, $primary-color 0%, $primary-color 60%, #bcbcbe 60%, #bcbcbe 100%)
+	background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 60%, #bcbcbe 60%, #bcbcbe 100%)
+	background: linear-gradient(to right, $primary-color 0%, $primary-color 60%, #bcbcbe 60%, #bcbcbe 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='#bcbcbe', GradientType=1 )
+
+@mixin gradient_forty
+	background: $primary-color
+	background: -moz-linear-gradient(left, $primary-color 0%, $primary-color 40%, $primary-color 40%, #bcbcbe 100%)
+	background: -webkit-gradient(left top, right top, color-stop(0%, #fb6471), color-stop(40%, #fb6471), color-stop(40%, #bcbcbe), color-stop(100%, #bcbcbe))
+	background: -webkit-linear-gradient(left, $primary-color 0%, $primary-color 40%, #bcbcbe 40%, #bcbcbe 100%)
+	background: -o-linear-gradient(left, $primary-color 0%, $primary-color 40%, #bcbcbe 40%, #bcbcbe 100%)
+	background: -ms-linear-gradient(left, $primary-color 0%, $primary-color 40%, #bcbcbe 40%, #bcbcbe 100%)
+	background: linear-gradient(to right, $primary-color 0%, $primary-color 40%, #bcbcbe 40%, #bcbcbe 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='#bcbcbe', GradientType=1 )
+	  
+body
+	font-family: $font-stack
+	background: #fff
+	overflow-x: hidden !important
+
+h2
+	font: 32px/34px "RalewaySemiBold"
+	text-align: center
+	margin: 0 0 40px
+			
+h2:after
+	display: block
+	content: url(../img/line.png)
+	margin: -15px 0 0
+
+img 
+	max-width: 100%
+
+textarea
+	resize: none
+	
+#header,
+#about,
+#experience
+	width: 100%
+
+.loader
+	background-attachment: scroll
+	background-clip: border-box
+	background-color: #fff
+	background-image: none
+	background-origin: padding-box
+	background-position: 0 0
+	background-repeat: repeat
+	background-size: auto auto
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader_inner
+	background-attachment: scroll
+	background-clip: border-box
+	background-color: #fff
+	background-image: url("../img/preloader.gif")
+	background-origin: padding-box
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: auto auto
+	height: 100%
+	width: 100%
+	position: absolute
+
+.wrapper 
+	margin: 0 auto
+	overflow-x: hidden !important
+
+#header
+	height: 100vh
+	text-align: center
+	color: #fff
+	background: url(../img/workplace.png) center center no-repeat fixed 
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+	.dark-bg
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,0.6)
+	
+		.container
+			display: table
+			width: 100%
+			height: 100%
+
+			.name
+				display: table-cell
+				vertical-align: middle
+				text-align: center
+
+			h1
+				display: inline-block
+				font-size: 48px
+				line-height: 50px
+				padding: 15px 50px
+				margin: 0
+				border-top: 2px solid $primary-color
+				border-bottom: 2px solid $primary-color
+
+			h1:after
+				content: none
+		
+			p
+				font-size: 18px
+				margin: 15px 0 0
+
+/*Start of Navigation*/
+.top-animate,
+.bottom-animate
+	@include hamburger_animate
+
+.top-animate
+	-webkit-transform: rotate(45deg)
+	/* Chrome, Safari, Opera */
+	transform: rotate(45deg)
+
+.mid-animate 
+	opacity: 0
+
+.bottom-animate
+	-webkit-transform: rotate(-225deg)
+	/* Chrome, Safari, Opera */
+	transform: rotate(-225deg)
+
+.top-menu,
+.mid-menu,
+.bottom-menu
+	@include hamburger_icon
+
+.top-menu
+	top: 5px
+	
+.mid-menu 
+	top: 13px
+
+.bottom-menu
+	top: 21px
+
+.menui
+	position: absolute
+	background: $primary-color
+	transition: 0.6s ease
+	transition-timing-function: cubic-bezier(.75, 0, .29, 1.01)
+
+.icon 
+	display: block
+	width: 35px
+	height: 30px
+	position: fixed
+	top: 40px
+	right: 50px
+	z-index: 3
+	
+#main_nav
+	display: none
+	@include nav_box
+	z-index: 2
+		
+	.flex-box
+		@include nav_box
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center 
+		overflow: auto
+		
+	ul
+		list-style: none
+		font-size: 24px
+		line-height: 26px
+		padding: 0
+		margin: 0	
+		
+		.points
+			display: block
+			margin: 0 0 40px
+
+		.points:last-child
+			margin: 0
+
+		a 
+			color: #fff
+			text-decoration: none
+
+		a:hover
+			color: $primary-color
+/*End of Navigation*/
+
+#about
+	font-size: 18px
+	background: #f9f9f9
+	text-align: center
+
+
+	h3
+		font-family: "RalewayLight"
+		font-size: 20px
+		display: inline-block
+		color: #fb6470
+		margin: 0 0 30px
+
+	.container
+		padding: 30px 0 60px
+			
+		.photo
+
+			img
+				display: block
+				margin: 0 auto
+				border-radius: 50%
+		
+		.overview
+			
+			p
+				text-align: left
+				font-size: 14px
+				line-height: 20px
+				margin: 0
+
+			a
+				color: $primary-color
+				text-decoration: underline
+
+		.info
+
+			ul
+				display: inline-block
+				list-style: none
+				background: #fff
+				padding: 0
+				margin: 0
+			
+				li
+					text-align: left
+					padding: 5px 70px 5px 2px
+					border-bottom: 2px solid #f9f9f9
+
+					span
+						font-family: "RalewaySemiBold"
+
+#experience, #education
+	
+	.container
+		padding: 50px 0 100px
+		border-bottom: $grey-border
+		
+		h3
+			font-size: 22px
+			line-height: 24px
+
+		h3,p
+			margin: 0
+
+		span
+			color: $primary-color
+
+		.work
+			height: 590px
+			background: url(../img/bg_items.png) no-repeat center
+		
+			.items
+				color: #fff
+				
+				.arrow_box
+					position: relative
+					display: inline-block
+					padding: 5px 10px
+					background: #353541
+					border-radius: 5px
+			
+			.items:nth-child(odd)
+				position: absolute
+				left: 53%
+
+				.arrow_box:after
+					position: absolute
+					right: 100%
+					top: 30%
+					content: " "
+					height: 0
+					width: 0
+					pointer-events: none
+					border: solid transparent
+					border-color: rgba(53, 53, 65, 0)
+					border-right-color: #353541
+					border-width: 10px
+					margin-top: -10px
+
+			.items:nth-child(even)
+				position: absolute
+				right: 53% 
+									
+				.arrow_box:after
+					position: absolute
+					left: 100%
+					top: 30%
+					content: " "
+					height: 0
+					width: 0
+					pointer-events: none
+					border: solid transparent
+					border-color: rgba(53, 53, 65, 0)
+					border-left-color: #353541
+					border-width: 10px
+					margin-top: -10px
+
+			.items:first-child
+				top: 2px
+
+			.items:nth-child(2)
+				top: 203px
+			
+			.items:nth-child(3)
+				top: 340px
+
+			.items:last-child
+				top: 540px
+
+#education
+
+	.container
+		border: none
+
+		.work
+			
+			.items:nth-child(3)
+				top: 334px
+
+			.items:last-child
+				top: 535px
+
+#skills
+	background: #1d1d24
+	color: #fff
+
+	.container
+		padding: 60px 0
+
+		.level
+			position: relative
+			margin: 0 0 15px
+		
+			.line, 
+			.circle,
+			.percent
+				display: inline-block
+
+			.line
+				height: 5px
+				width: 80%
+
+			.circle
+				top: $center-circle
+
+		.first_block
+			padding: 0 0 0 50px
+
+			.level:first-child
+
+				.line
+					@include gradient_eighty
+
+				.circle
+					right: 34%
+
+			.level:nth-child(2)
+
+				.line
+					@include gradient_seventy
+
+				.circle
+					right: 42%
+
+			.level:last-child
+
+				.line
+					@include gradient_sixty
+
+				.circle
+					right: 50%
+
+		.second_block
+			@extend .first_block
+
+			.level:first-child, .level:nth-child(2)
+
+				.line
+					@include gradient_forty
+				
+				.circle
+					right: 66%
+
+			.level:last-child			
+				
+				.line
+					@include gradient_sixty
+				
+				.circle
+					right: 50%
+
+		.circle
+			position: absolute
+			height: 18px
+			width: 18px
+			background: $primary-color
+			border-radius: 100% 
+
+#portfolio
+	background: #F9F9F9
+	
+	.container
+		padding: 100px 0
+	
+		.owl-prev,
+		.owl-next 
+			width: 30px
+			height: 30px
+			position: absolute
+			bottom: -40px 
+			font-size: 15px
+			line-height: 30px
+			text-align: center 
+			color: #fff
+			background: #353541
+					
+		.owl-prev:hover,
+		.owl-next:hover
+			color: $primary-color
+
+		.owl-prev 
+			left: 35%
+			padding: 0 3px 0 0
+
+		.owl-next 
+			right: 35%
+			padding: 0 0 0 3px
+
+	.project_box:hover 
+
+		.overlay
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			transform: rotateX(0deg)
+			background: rgba(53,53,65, 0.7)
+
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		transform: rotateX(90deg)
+		transition: all 0.40s ease-out 0s
+		z-index: 2
+		
+		a
+			height: 100%
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center 
+			overflow: auto
+			color: #fff
+			text-decoration: none
+								
+	.search_icon
+		font-size: 40px
+		color: $primary-color
+		margin: 0 0 20px
+
+	h3
+		font-size: 24px
+		margin: 0 0 10px
+
+	.project_category
+		font-size: 20px
+
+#message
+
+	.container
+		padding: 100px 0 50px
+		border-bottom: $grey-border 
+
+		h2
+			font: 32px/34px $font-stack
+			text-align: left
+			margin: 0 0 20px 15px
+		
+		h2:after
+			content: none
+
+		.form-group
+
+			textarea.form-control
+				height: 132px
+
+			.form-control:focus
+				border-color: #353541
+				box-shadow: 0 0 5px #353541
+			
+			.btn
+				color: #fff
+				background: $primary-color
+
+			.btn:hover
+				color: $primary-color
+				background: #fff
+				border-color: $primary-color
+
+		.contacts
+			padding: 20px 50px
+
+			.details
+				position: relative
+
+				.picture
+					position: absolute
+					top: 10px
+					color: $primary-color
+
+
+				.par,
+				.text
+					margin: 0 0 0 60px
+
+				.par
+					font-size: 22px
+					margin-bottom: 5px
+
+				.text
+					font-size: 16px
+					margin-bottom: 20px
+					color: #656565
+
+			.details:nth-child(2)
+
+				.picture
+					top: 14px
+
+#footer
+	text-align: center
+
+	.container
+		padding: 30px 0
+	
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		
+	
+		li
+			display: inline-block
+			margin: 0 2px
+
+			a
+				font-size: 30px
+				line-height: 60px
+				color: #353541
+
+			a:hover
+				color: $primary-color
+				
+
