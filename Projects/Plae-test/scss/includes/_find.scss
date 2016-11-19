@@ -1,0 +1,74 @@
+.find-intro,
+.find-descr,
+.stock-descr p,
+.stock-intro h2,
+.stock-info {
+    text-align: center;
+}
+
+.find-intro h2 {
+    font: 300 30px/1.5 $Nunito;
+    margin-bottom: 25px;
+    margin-top: 90px;
+}
+
+.find-descr p,
+{
+    font: 400 18px/1.5 $YantramanavThin;
+    margin-bottom: 80px;
+}
+
+.find-list {
+    max-width: 970px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.find-list-elem {
+    width: 20%;
+    margin-bottom: 60px;
+}
+
+.find-list-elem__link {
+    color: $themeColor;
+    display: block;
+    margin-top: 15px;
+    font: 400 15px/1.5 $YantramanavThin;
+}
+
+.find-list-elem__descr p:first-child {
+    font: 400 16px/1.5 $Yantramanav;
+}
+
+.find-list-elem__descr p {
+    font: 300 16px/1.5 $Yantramanav;
+}
+
+.stock-wrapper {
+    padding: 40px 0 80px;
+}
+
+.stock-intro h2 {
+    font: 300 24px/1.5 $Nunito;
+}
+
+.stock-descr p {
+    margin-bottom: 50px;
+}
+
+.stock-info--mail {
+    color: $themeColor;
+    margin-right: 110px;
+}
+
+.stock-info--tel,
+.stock-info--mail,
+.stock-descr p {
+    font: 400 18px/1.5 $YantramanavThin;
+}
+
+.footer-form {
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+.slider-wrapper{
+	text-align: center;
+	padding: 85px 0;
+}
+.slide-intro h2{
+	font: 300 30px/1.5 $Nunito;
+}
+.slide-descr{
+	margin-bottom: 30px;
+	p{
+		font: 400 18px/1.5 $YantramanavThin;
+	}
+}
+.slider-slide{
+	margin: 0 auto;
+}
+.slider-slide__img{
+	height: 450px;
+	display: flex;
+	align-items: center;
+}
+.slider-slide__img img{
+	max-height: 100%;
+	margin: 0 auto;
+}
+.slider-slide__descr{
+	margin-top: 15px;
+	p{
+		text-align: center;
+		font: 300 24px/1.5 $Nunito;
+		text-transform: uppercase;
+	}
+}
+.pagingInfo{
+	display: block;
+	font: 400 18px/1.5 $YantramanavThin;
+}

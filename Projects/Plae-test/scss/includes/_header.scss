@@ -1,0 +1,153 @@
+.header {
+    background: url('../img/blue-stool.jpg') no-repeat center;
+    height: 800px;
+    background-size: cover;
+}
+
+.logo-link {
+    display: inline-block;
+    padding-top: 35px;
+}
+
+.header-about {
+    text-align: center;
+    color: #fff;
+    margin-top: 160px;
+}
+
+.header-wrapper {
+    height: 100%;
+}
+
+.header-intro h1 {
+    font: 300 60px/1 $Nunito;
+}
+
+.heade-descr p {
+    font: 300 20px/1.5 $Yantramanav;
+    margin: 30px 0 60px;
+}
+
+.header-form,
+.footer-form {
+    display: flex;
+    justify-content: center;
+}
+
+.header-form input[type="email"],
+.header-form button,
+.ft-form input[type="email"],
+.ft-form button {
+    border: none;
+}
+
+.header-form input[type="email"],
+.ft-form input[type="email"] {
+    padding: 15px 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font: 300 18px/1.5 $Yantramanav;
+    width: 310px;
+    color: #8c8c8c;
+}
+
+.header-form button,
+.ft-form button {
+    background-color: $themeColor;
+    padding: 15px 40px;
+    padding-bottom: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font: 300 20px/1.1 $Nunito;
+    cursor: pointer;
+    width: 165px;
+    color: #fff;
+    margin-left: -4px;
+}
+
+.ft-form {
+    background-color: #f3f3f3;
+    padding: 130px 0 115px;
+}
+
+.ft-form-intro h2 {
+    text-align: center;
+    font: 300 30px/1.5 $Nunito;
+    margin-bottom: 20px;
+}
+
+.ft-form-descr {
+    text-align: center;
+    font: 300 22px/1.5 $Yantramanav;
+    margin-bottom: 45px;
+}
+
+.bullets-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    font-weight: 400;
+    transition-duration: .3s;
+    top: calc(50% - 93px);
+}
+
+.section-bullets {
+    transition-duration: .3s;
+    list-style: none;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.section-bullets li {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 2;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 1px;
+}
+
+.section-bullets li a {
+    color: #000;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    transition-duration: .3s;
+    margin-left: 5px;
+    padding: 5px 20px 5px 10px;
+    text-decoration: none;
+    min-height: 15px;
+}
+
+.section-bullets li:hover a span {
+    width: 17px;
+    height: 17px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.section-bullets li.active a span {
+    background-color: #ccc;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+}
+
+.section-bullets li a span {
+    display: block;
+    width: 13px;
+    height: 13px;
+    box-sizing: content-box;
+    margin: 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: .2s;
+}
