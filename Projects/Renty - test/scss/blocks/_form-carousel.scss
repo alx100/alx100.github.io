@@ -1,0 +1,235 @@
+// car-rotation 
+
+.booking-carousel {
+    background: url(../img/main-bg.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.car-slider {
+    padding-bottom: 100px;
+}
+
+ol.carousel-indicators {
+    margin-bottom: -40px;
+}
+
+.carousel-indicators li {
+    background-color: #c7c9cd;
+    border-color: #c7c9cd;
+}
+
+.carousel-indicators .active {
+    background-color: #378eef;
+    border-color: #378eef;
+}
+
+.header-caption {
+    color: #fff;
+    font-size: 36px;
+}
+
+.header-text {
+    color: #ecebeb;
+    font-size: 16px;
+}
+
+.fa-arrow-circle-o-right:before {
+    color: #d0d1d3;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #d0d1d3;
+    font-size: 13px;
+    margin-left: 4px;
+    font-weight: bold;
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: #d0d1d3;
+    }
+}
+
+// booking-form 
+
+.booking-main,
+.car-slider {
+    padding-top: 20px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.panel-booking {
+    padding-top: 0px;
+    padding-left: -10px;
+    border-top: none;
+}
+
+.tab-left {
+    border-top: 5px solid #EF7C37;
+    border-radius: 3px 0 0 0;
+}
+
+.tab-right {
+    background-color: #eeeeee;
+    border-top: 5px solid #eeeeee;
+    border-radius: 0 3px 0 0;
+    color: #b6b8bc;
+}
+
+.tab-text {
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    color: #434b56;
+}
+
+.tab-text_right {
+    color: #b6b8bc;
+}
+
+.air-codes {
+    color: #378EEF;
+    font-size: 11px;
+    position: absolute;
+    right: 103px;
+    border-bottom: 1px dotted #378EEF;
+    &:hover {
+        color: #378EEF;
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.location-label {
+    color: #7c8490;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.booking-main {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.location-form {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.loc-check {
+    margin-left: 25px;
+    font-size: 14px;
+    color: #434b56;
+}
+
+.loc {
+    margin-bottom: 26px;
+}
+
+.date-time {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pu-date {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.pu-time {
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.do-date {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.do-time {
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.date-time_label {
+    color: #7c8490;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.pu-time,
+.do-time {
+    padding-top: 23px;
+}
+
+.input-calendar {
+    color: #378EEF;
+    left: 0;
+}
+
+#pick-up {
+    padding-left: 35px;
+    padding-right: 5px;
+}
+
+#drop-off {
+    padding-left: 35px;
+    padding-right: 5px;
+}
+
+#pick-up-time {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+#drop-off-time {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.car-type {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.car-type_caption {
+    color: #7c8490;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 15px;
+    // padding-left: 2px;
+}
+
+.caret-cartype {
+    margin-right: 20px;
+    color: #a8abb0;
+}
+
+#car-type {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.caret-cartype_symbol {
+    color: #a8abb0;
+}
+
+.btn-continue {
+    border-color: #ec702f;
+    background-color: #f08340;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.btn-continue_caption {
+    margin-right: 5px;
+}
