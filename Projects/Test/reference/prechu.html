@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prechu (responsive)</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="prechu.css">
+</head>
+
+<body>
+    <input type="checkbox" class="switcher" id="switch">
+    <div class="page">
+        <div class="p-header">
+            <h1 class="ph-logo">
+          <a href="prechu.html" class="phl-link">
+            <span class="phll-icon"></span> Prechu
+          </a>
+        </h1>
+            <label for="switch" class="ph-button"></label>
+            <div class="ph-menu">
+                <a href="prechu.html" class="phm-link">Home</a>
+                <a href="prechu.html" class="phm-link">Products</a>
+                <a href="prechu.html" class="phm-link">Services</a>
+                <a href="prechu.html" class="phm-link">Contact</a>
+            </div>
+        </div>
+        <div class="p-main">
+            <div class="pm-slider">
+                <div class="pms-background">
+                    <div class="pmsb-swipe" id="mySwipe">
+                        <div class="pmsbs-wrap">
+                            <div class="pmsbsw-slide pmsbsw-slide-one">
+                                <div class="pmsbsws-block pmsbsws-block-one">
+                                    <h2 class="pmsbswsb-header">Lorem ipsum is symply</h2>
+                                    <p class="pmsbswsb-text">dummy text of the
+                                        <br>printing & typesetting</p>
+                                    <a href="prechu.html" class="pmsbswsb-button">
+                                        <span class="pmsbswsbb-text">Sign up now</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pmsbsw-slide pmsbsw-slide-one">
+                                <div class="pmsbsws-block pmsbsws-block-one">
+                                    <h2 class="pmsbswsb-header">Lorem ipsum is symply</h2>
+                                    <p class="pmsbswsb-text">dummy text of the
+                                        <br>printing & typesetting</p>
+                                    <a href="prechu.html" class="pmsbswsb-button">
+                                        <span class="pmsbswsbb-text">Sign up now</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="pmsbsw-slide">
+                  <div class="pmsbsws-block">
+                    <h2 class="pmsbswsb-header">Ut enim ad minim veniam</h2>
+                    <p class="pmsbswsb-text">quis nostrud exercitation<br>ullamco laboris nisi</p>
+                  </div>
+                </div>
+                <div class="pmsbsw-slide">
+                  <div class="pmsbsws-block">
+                    <h2 class="pmsbswsb-header">Duis aute irure dolor</h2>
+                    <p class="pmsbswsb-text">velit esse cillum dolore<br>sunt in culpa qui officia</p>
+                  </div>
+                </div> -->
+                        </div>
+                    </div>
+                    <div class="pmsbs-arrow pmsbs-arrow-left" onclick="mySwipe.prev()"></div>
+                    <div class="pmsbs-arrow pmsbs-arrow-right" onclick="mySwipe.next()"></div>
+                </div>
+            </div>
+            <div class="pm-features">
+                <div class="pmf-block">
+                    <div class="pmfb-image pmfb-image-pencil"></div>
+                    <div class="pmfb-text">
+                        <a href="#" class="pmfbt-link">Contrary to popular</a>
+                        <p class="pmfbt-paragraph">Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+                    </div>
+                </div>
+                <div class="pmf-block">
+                    <div class="pmfb-image pmfb-image-monitor"></div>
+                    <div class="pmfb-text">
+                        <a href="#" class="pmfbt-link">Contrary to popular</a>
+                        <p class="pmfbt-paragraph">Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+                    </div>
+                </div>
+                <div class="pmf-block">
+                    <div class="pmfb-image pmfb-image-cart"></div>
+                    <div class="pmfb-text">
+                        <a href="#" class="pmfbt-link">Contrary to popular</a>
+                        <p class="pmfbt-paragraph">Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pm-product">
+                <h2 class="pmp-header">The Shopping cart</h2>
+                <div class="pmp-block">
+                    <div class="pmpb-image"></div>
+                    <div class="pmpb-text">
+                        <div class="pmpbt-header">Some Bullet text here</div>
+                        <div class="pmpbt-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard dummy text ever. When an unknown printer took a galley of type and scrambled It to make a type specimen book. It has survived not only five centuries. But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised. The release of Letraset sheets containing Lorem Ipsum passages.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-footer">Copyright © 2012-2013 cssauthor.com</div>
+    </div>
+    <script src="swipe.js"></script>
+    <script>
+    var elem = document.getElementById('mySwipe');
+    window.mySwipe = Swipe(elem, {
+        speed: 1000,
+        auto: 5000
+    });
+    </script>
+</body>
+
+</html>
