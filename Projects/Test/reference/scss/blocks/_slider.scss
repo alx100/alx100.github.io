@@ -1,0 +1,121 @@
+.main-slider {
+    height: 489px;
+    background: url("../img/slider-bkg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.main-slider__background {
+    height: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaElEQVQY043LoQ3CUBRA0QcJCYIEi8NikEhWwdZ3isq%2FBBOAxzAAljWqKtqcKkLafGiPvjciA0ccYg7s8MID66l4i7uv6l%2B8wdVQi0suXiLJq3EeDyU6v72x%2F8QFGtNuWC3wjIhTzJN6Bzu6dgDAzNIAAAAASUVORK5CYII%3D) 0 481px repeat-x;
+    position: relative;
+}
+
+.main-slider__swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    height: 100%;
+    margin: 0 7%;
+}
+
+.main-slider__wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.main-slider__slide {
+    float: left;
+    width: 100%;
+    height: 100%;
+    line-height: 489px;
+    position: relative;
+    text-align: center;
+}
+
+.main-slider__slide:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 345px;
+    height: 436px;
+    background: url("../img/sprite-desktop.png") 0 -186px no-repeat;
+}
+
+.slide-block {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.slide-block-one {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.slide-block__header {
+    font: 42px $font-main;
+    color: white;
+}
+
+.slide-block__text {
+    font: 26px/1.6 $font-main;
+    color:  white;
+    margin-bottom: 30px;
+}
+
+.slider-button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    width: 172px;
+    height: 41px;
+    margin-left: 5%;
+    overflow: visible;
+    background: $main-blue;
+    border-radius: 2px;
+}
+
+.slider-button:hover {
+    background: $button_hover-blue;
+}
+
+.slider-button:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 23px;
+    height: 23px;
+    background: url("../img/sprite-desktop.png") -44px 0 no-repeat;
+}
+
+.slider-button__text {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font: 22px $font-main;
+    color:  white;
+}
+
+.slider-arrow {
+    position: absolute;
+    width: 25px;
+    height: 63px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.slider-arrow__left {
+    left: 4%;
+    background: url("../img/sprite-desktop.png") -1021px 0 no-repeat;
+}
+
+.slider-arrow__right {
+    right: 4%;
+    background: url("../img/sprite-desktop.png") -996px 0 no-repeat;
+}

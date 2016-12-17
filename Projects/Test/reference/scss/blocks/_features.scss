@@ -1,0 +1,52 @@
+.features {
+    text-align: center;
+    margin: 5% 0;
+}
+
+.features-block {
+    display: inline-block;
+    width: 20%;
+}
+
+.features-block+.features-block {
+    margin-left: 10%;
+}
+
+.features-block__image {
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+    background: url("../img/sprite-desktop.png") no-repeat;
+}
+
+.features-block__image--pencil {
+    background-position: -67px 0;
+}
+
+.features-block__image--monitor {
+    background-position: -253px 0;
+}
+
+.features-block__image--cart {
+    background-position: -439px 0;
+}
+
+.features-block__text {
+    margin-top: 20px;
+}
+
+.features-block__link {
+    text-decoration: none;
+    font: 20px $font-main;
+    color: $main-blue;
+}
+
+.features-block__link:hover {
+    color: $features_hover-blue;
+}
+
+.features-paragraph {
+    font: 14px $font-main;
+    color: $text-secondary;
+    margin-top: 5px;
+}

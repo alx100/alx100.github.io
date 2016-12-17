@@ -1,0 +1,32 @@
+.product {
+    margin: 10%;
+}
+
+.product-header {
+    font: 42px $font-main;
+    color: $text-main;
+    margin-bottom: 30px;
+}
+
+.product-image {
+    float: left;
+    width: 371px;
+    height: 279px;
+    margin-right: 8%;
+    background: url("../img/sprite-desktop.png") -625px 0 no-repeat;
+}
+
+.product-description {
+    overflow: hidden;
+}
+
+.product-description__header {
+    font: 26px $font-main;
+    color: $text-main;
+    margin-bottom: 5%;
+}
+
+.product-description__paragraph {
+    font: 15px/2.3 $font-main;
+    color: $text-secondary;
+}

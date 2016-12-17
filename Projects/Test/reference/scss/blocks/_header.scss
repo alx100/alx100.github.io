@@ -1,0 +1,86 @@
+.switcher {
+    display: none;
+}
+
+.switcher:checked+.page .page-header__menu {
+    display: block;
+}
+
+.switcher:checked+.page {
+    margin-left: -65%;
+}
+
+.page {
+    width: 100%;
+    position: relative;
+}
+
+
+.page-header {
+    overflow: hidden;
+    line-height: 89px;
+    text-align: right;
+}
+
+.page-header__logo {
+    float: left;
+    height: 89px;
+    margin-left: 5%;
+}
+
+.page-header__logo--link {
+    text-decoration: none;
+    font: 42px/89px $font-main; 
+    color: black;
+    position: relative;
+    padding-left: 56px;
+}
+
+.page-header__logo--icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 44px;
+    height: 44px;
+    background: url("../img/sprite-desktop.png") 0 0 no-repeat;
+}
+
+.page-header__menu {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: bottom;
+    margin-right: 5%;
+}
+
+.page-header__menu--link {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    padding: 0 3px 18px;
+    font: 20px $font-main;
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+}
+
+.page-header__menu--link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.page-header__menu--link:hover {
+    background: none;
+}
+
+.page-header__menu--link:hover:before {
+    background: $main-blue;
+}
+
+.page-header__button {
+    display: none;
+}
