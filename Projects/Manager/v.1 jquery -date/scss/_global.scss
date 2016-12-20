@@ -1,0 +1,17 @@
+body {
+    font-family: $font-main;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 360px;
+    max-width: 720px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}

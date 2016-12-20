@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test - Stotsky.A.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="manager container clearfix">
+        <div class="manager__section">
+            <div class="manager__photo">
+                <img src="img/veronika.png" alt="Veronika Rostova">
+            </div>
+            <div class="manager-info">
+                <h2 class="manager-info__name">Вероника Ростова</h2>
+                <p class="manager-info__position">Менеджер по продажам</p>
+                <div class="manager-info__help">
+                    <p>Подберу для вас самые лучшие предложения.</p>
+                    <p>Мои услуги абсолютно бесплатны</p>
+                </div>
+            </div>
+        </div>
+        <div class="manager__section">
+            <div class="manager__cellfix"></div>
+            <div class="manager-services">
+                <span class="manager-services__caption">Услуг</span>
+                <div class="manager-services__stats">
+                    <div class="manager-services__stats-row">
+                        <div class="manager-services__stats-indication">
+                            <span class="manager-services__stats-description">Ручное бронирование</span>
+                            <span class="manager-services__stats-progress manager-services_progress-booked"></span>
+                        </div>
+                        <span class="manager-services__stats-counter">11</span>
+                    </div>
+                    <div class="manager-services__stats-row">
+                        <div class="manager-services__stats-indication">
+                            <span class="manager-services__stats-description">Пакетные туры</span>
+                            <span class="manager-services__stats-progress manager-services_progress-tours"></span>
+                        </div>
+                        <span class="manager-services__stats-counter">3</span>
+                    </div>
+                    <div class="manager-services__stats-row">
+                        <div class="manager-services__stats-indication">
+                            <span class="manager-services__stats-description">Отели</span>
+                            <span class="manager-services__stats-progress manager-services_progress-hotels"></span>
+                        </div>
+                        <span class="manager-services__stats-counter">1</span>
+                    </div>
+                </div>
+                <div class="manager-services__sum">
+                    <span class="manager-services__sum-description">Всего</span>
+                    <span class="manager-services__sum-counter">15</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="testimonials container">
+        <div class="testimonials__list clearfix">
+            <ul class="testimonials-indicator">
+                <li class="testimonials-indicator__block">
+                    <span class="testimonials-indicator__img testimonials-indicator__img--like"></span>
+                    <span class="testimonials-indicator__text">131</span>
+                </li>
+                <li class="testimonials-indicator__block">
+                    <span class="testimonials-indicator__img testimonials-indicator__img--comment"></span>
+                    <span class="testimonials-indicator__text">14</span>
+                </li>
+            </ul>
+            <div class="testimonials__caption">
+                <p class="testimonials__last">Последние отзывы</p>
+                <a href="#" class="testimonials__all-comments">Все отзывы</a>
+            </div>
+        </div>
+        <ul class="testimonials-comments">
+            <li class="testimonials-comments__item ">
+                <span class="testimonials-comments__caption">Самуил</span>
+                <span class="testimonials-comments__date">13 октября 2011</span>
+                <p class="testimonials-comments__text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+            </li>
+            <li class="testimonials-comments__item">
+                <span class="testimonials-comments__caption">Лилия Семёновна</span>
+                <span class="testimonials-comments__date">14 октября 2011</span>
+                <p class="testimonials-comments__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+            </li>
+            <li class="testimonials-comments__item last-comment">
+                <span class="testimonials-comments__caption">Лилия Семёновна</span>
+                <span class="testimonials-comments__date">14 октября 2011</span>
+                <p class="testimonials-comments__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+            </li>
+        </ul>
+    </main>
+    <footer class="feedback">
+        <div class="feedback-wrapper container">
+            <form action="#">
+                <textarea name="feedback" class="feedback-wrapper__textarea" cols="30" rows="30"></textarea>
+                <button class="feedback-wrapper__button">Написать консультанту</button>
+            </form>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dotdotdot.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

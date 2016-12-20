@@ -1,0 +1,192 @@
+.manager {
+    width: 100%;
+    padding-top: 16px;
+    display: table;
+}
+
+.manager__cellfix {
+    display: table-cell;
+}
+
+.manager__section {
+    display: table-row;
+}
+
+.manager__photo {
+    min-width: 120px;
+    overflow: hidden;
+    display: table-cell;
+}
+
+.manager__photo img {
+    width: 100%;
+}
+
+.manager-info {
+    vertical-align: top;
+    display: table-cell;
+    padding: 9px 0 0 9px;
+}
+
+.manager-info__name {
+    font-weight: bold;
+    font-size: 16px;
+    color: $text-main;
+}
+
+.manager-info__position {
+    margin-top: 7px;
+    font-size: 12px;
+    color: $text-secondary;
+}
+
+.manager-info__help {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-main;
+    background: $sandy;
+    border-top: 1px solid $border;
+    border-right: 1px solid $border;
+    border-bottom: 1px solid $border;
+    padding: 7px 14px 7px 0;
+    position: relative;
+    border-radius: 0 5px 5px 0;
+    max-height: 67px;
+}
+
+.manager-info__help:before {
+    content: '';
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+    left: -80px;
+    background: $sandy;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    z-index: -10;
+}
+
+.manager-services {
+    display: table-cell;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.manager-services__caption {
+    padding-right: 31px;
+    font-size: 13px;
+}
+
+.manager-services__stats {
+    width: 100%;
+    margin-top: 6px;
+    display: table;
+    border-bottom: 1px solid $border;
+    border-top: 1px solid $border;
+    padding: 15px 0;
+}
+
+.manager-services__stats-row {
+    display: table-row;
+}
+
+.manager-services__stats-indication {
+    display: table-cell;
+    text-align: left;
+    padding-left: 7px;
+    position: relative;
+    border-bottom: 2px solid white;
+}
+
+.manager-services__stats-indication:after {
+    content: '';
+    height: 2px;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background: $border-dark;
+}
+
+.manager-services__stats-row:last-child .manager-services__stats-indication:after {
+    background: white;
+}
+
+.manager-services__stats-progress {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    border-radius: 0 4px 4px 0;
+}
+
+.manager-services__stats-progress:after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.manager-services_progress-booked {
+    width: 95%;
+    background: $light-green;
+}
+
+.manager-services_progress-booked:after {
+    background: $dark-green;
+}
+
+.manager-services_progress-tours {
+    width: 25%;
+    background: $light-blue;
+}
+
+.manager-services_progress-tours:after {
+    background: $dark-blue;
+}
+
+.manager-services_progress-hotels {
+    width: 10%;
+    background: $light-blue;
+}
+
+.manager-services_progress-hotels:after {
+    background: $dark-blue;
+}
+
+.manager-services__stats-description {
+    font: 12px/24px $font-main;
+}
+
+.manager-services__stats-counter {
+    font: bold 13px/24px $font-main;
+}
+
+.manager-services__stats-counter {
+    display: table-cell;
+    padding-right: 41px;
+    border-bottom: 2px solid white;
+}
+
+.manager-services__sum {
+    margin-top: 9px
+}
+
+.manager-services__sum-description,
+.manager-services__sum-counter {
+    font: bold 16px $font-main;
+}
+
+.manager-services__sum-description {
+    float: left;
+}
+
+.manager-services__sum-counter {
+    float: right;
+    margin-right: 43px;
+}
