@@ -1,2 +1,2 @@
 
-alx100.github.io/Projects/Prechu/index.html
+https://github.com/alx100.github.io/Projects/Prechu/index.html
