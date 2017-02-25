@@ -1,2 +1,2 @@
 
-sandbox for React project
+Sandbox for React project
