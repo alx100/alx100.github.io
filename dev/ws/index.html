@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280">
+    <title>Вебстиль</title>
+    <link href="sweetalert2.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="top-banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="logo-wrapper">
+                            <a href="index.html" class="mid-logo"><img src="images/webstyle_logo.svg" alt="Webstyle"></a>
+                        </div>
+                        <div class="elements-box">
+                            <div class="figure">
+                                <div class="element">
+                                    <img src="images/figure_03.png">
+                                </div>
+                            </div>
+                            <div class="top-title">
+                                <h1><span class="title_first-row">Обери <span class="bold-title">стиль</span></span>
+                                    <span class="title_second-row"><span class="bold-title">веб</span>-сайту</span>
+                                    <span class="title_third-row">правильно!</span></h1>
+                            </div>
+                            <div class="figure rg-figure">
+                                <div class="element">
+                                    <img src="images/figure_03.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="link-bar" id="choose_style">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <ul>
+                            <li><span class="first-link">ЯК ЦЕ ПРАЦЮЄ:</span></li>
+                            <li class="active"><span class="second-link">вкажи деталі свого проекту</span></li>
+                            <li class="pointer"><img src="images/pointer.png">
+                            </li>
+                            <li class="active"><span class="fourth-link">дізнайся який стиль підходить саме для нього</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="voting">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <!--  title  -->
+                        <div class="voting-top">
+                            <div class="voting-top-title">
+                                <h2>обери власний стиль</h2>
+                                <img class="vot-figure" src="images/figure_03.png" alt="img">
+                            </div>
+                            <div class="voting-top-desc">
+                                <p>Дай відповіді на питання анкети нижче та дізнайся який стиль веб-дизайну підходить тобі якнайкраще</p>
+                            </div>
+                        </div>
+                        <!--  radio buttons  -->
+                        <div class="voting-mid">
+                            <form id="voting_form">
+                                <!--1-->
+                                <div class="container">
+                                    <div class="first-card">
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-wrapper">
+                                            <div class="card-flex">
+                                                <div class="title">
+                                                    <h4 class="first-card_header">Тип сайту:</h4>
+                                                </div>
+                                                <!--  custom radio  -->
+                                                <div class="radio-item__row first-item">
+                                                    <input type="radio" id="radio01" name="type" value="representational" checked required />
+                                                    <label for="radio01"><span class="first-item_label">Інтернет-представництво</span></label>
+                                                </div>
+
+                                                <div class="divider">
+                                                    <img src="images/figure_small.png" alt="divider" width="30" height="33">
+                                                </div>
+
+                                                <div class="radio-item__row second-item">
+                                                    <input type="radio" id="radio02" name="type" value="informational" required/>
+                                                    <label for="radio02"><span class="second-item_label">Інформаційний ресурс</span></label>
+                                                </div>
+
+                                                <div class="divider">
+                                                    <img src="images/figure_small.png" alt="divider" width="30" height="33">
+                                                </div>
+
+                                                <div class="radio-item__row third-item">
+                                                    <input type="radio" id="radio03" name="type" value="webservice" required/>
+                                                    <label for="radio03"><span class="third-item_label">Веб-сервіс</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ol class="vot-list-wr">
+                                    <!--2-->
+                                    <li>
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <h4 class="title second-card_header">Яка інформація переважатиме на сайті?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio04" name="content-type" value="text" required/>
+                                                    <label for="radio04"><span></span>Текстова</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio05" name="content-type" value="graphic" required/>
+                                                    <label for="radio05"><span></span>Графічна</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--3-->
+                                    <li>
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>3</span>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <h4 class="title third-card_header">Чи багато контенту передбачається?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio06" name="content-amount" value="many" required/>
+                                                    <label for="radio06"><span></span>Так</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio07" name="content-amount" value="little" required/>
+                                                    <label for="radio07"><span></span>Ні</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--4-->
+                                    <li>
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <h4 class="title fourth-card_header">Наскільки якісним буде контент?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio08" name="content-quality" value="high" required/>
+                                                    <label for="radio08"><span></span>Якісний та унікальний</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio09" name="content-quality" value="little" required/>
+                                                    <label for="radio09"><span></span>Не дуже</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--5-->
+                                    <li class="vot-list-5">
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="card card_wide">
+                                            <h4 class="title fifth-card_header">До якогo покоління переважно належить цільова аудиторія?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio010" name="ta-age" value="baby-boomers" required/>
+                                                    <label for="radio010"><span></span>Бебі-бумери (1943 – 1963 рр.)</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio011" name="ta-age" value="x" required/>
+                                                    <label for="radio011"><span></span>Покоління X (1964 – 1983  рр.)</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio012" name="ta-age" value="y" required/>
+                                                    <label for="radio012"><span></span>Покоління Y (1983 – 2003  рр.)</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio013" name="ta-age" value="z" required/>
+                                                    <label for="radio013"><span></span>Покоління Z (2003 – …  рр.)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--6-->
+                                    <li class="vot-list-6">
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <h4 class="title six-card_header">На які країни буде орієнтований сайт?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio014" name="ta-country" value="europe" required/>
+                                                    <label for="radio014"><span></span>Європейські</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio015" name="ta-country" value="usa" required/>
+                                                    <label for="radio015"><span></span>Америка</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio016" name="ta-country" value="cis" required/>
+                                                    <label for="radio016"><span></span>Країни СНД</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--7-->
+                                    <li>
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>7</span>
+                                            </div>
+                                        </div>
+                                        <div class="card card_wide">
+                                            <h4 class="title seven-card_header">Які погляди цільової аудиторії на дизайн?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio017" name="ta-views" value="conservative" required>
+                                                    <label for="radio017"><span></span>Консервативні</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio018" name="ta-views" value="progressive" required>
+                                                    <label for="radio018"><span></span>Прогресивні</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--8-->
+                                    <li class="vot-list-8">
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>8</span>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <h4 class="title eight-card_header">Наскільки великий бюджет закладений на сайт?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio019" name="client-budget" value="big" required>
+                                                    <label for="radio019"><span></span>Великий</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio020" name="client-budget" value="small" required>
+                                                    <label for="radio020"><span></span>Малий</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--9-->
+                                    <li>
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>9</span>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <h4 class="nine-card_header title">Наскільки великі терміни закладені на розробку сайту?</h4>
+                                            <div class="radio-wrapper">
+                                                <!--  custom radio  -->
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio021" name="client-time" value="short" required>
+                                                    <label for="radio021"><span></span>Стислі</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="radio022" name="client-time" value="enough" required>
+                                                    <label for="radio022"><span></span>Комфортні</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <!--10-->
+
+                                <div class="container">
+                                    <div id="vot-list-block">
+                                        <div class="num">
+                                            <div class="circle-c">
+                                                <span>10</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-wrapper">
+                                            <h4 class="title ten-card_header">Які враження має справляти сайт?</h4>
+                                            <span class="title-description">(з пари антонімів оберіть найбільш підходящий)</span>
+                                        </div>
+                                        <!--  custom radio  -->
+                                        <ul class="vot-list_row">
+                                            <li class="list-row_item">
+                                                <div class="card-row">
+                                                    <div class="radio-item__row item_10-1-1">
+                                                        <input type="radio" id="radio023" name="impressions-1" value="complex" required />
+                                                        <label for="radio023"><span></span>Навантаженість</label>
+                                                    </div>
+
+                                                    <div class="divider item_10-1-2">
+                                                        <img src="images/figure_small.png" alt="divider" width="30" height="33" required>
+                                                    </div>
+
+                                                    <div class="radio-item__row item_10-1-3">
+                                                        <input type="radio" id="radio024" name="impressions-1" value="simple" required />
+                                                        <label for="radio024"><span></span>Простота</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-row_item">
+                                                <div class="card-row">
+                                                    <div class="radio-item__row  item_10-2-1">
+                                                        <input type="radio" id="radio029" name="impressions-4" value="accurate" required/>
+                                                        <label for="radio029"><span></span>Акуратність</label>
+                                                    </div>
+
+                                                    <div class="divider item_10-2-2">
+                                                        <img src="images/figure_small.png" alt="divider" width="30" height="33">
+                                                    </div>
+
+                                                    <div class="radio-item__row item_10-2-3">
+                                                        <input type="radio" id="radio030" name="impressions-4" value="chaos" required/>
+                                                        <label for="radio030"><span></span>Хаотичність</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-row_item">
+                                                <div class="card-row">
+                                                    <div class="radio-item__row item_10-3-1">
+                                                        <input type="radio" id="radio025" name="impressions-2" value="volume" required/>
+                                                        <label for="radio025"><span></span>Об’ємність</label>
+                                                    </div>
+
+                                                    <div class="divider item_10-3-2">
+                                                        <img src="images/figure_small.png" alt="divider" width="30" height="33">
+                                                    </div>
+
+                                                    <div class="radio-item__row item_10-3-3">
+                                                        <input type="radio" id="radio026" name="impressions-2" value="flat" required/>
+                                                        <label for="radio026"><span></span>Пласкість</label>
+                                                    </div>
+                                                </div>
+
+
+                                            </li>
+
+                                            <li class="list-row_item">
+                                                <div class="card-row">
+                                                    <div class="radio-item__row item_10-4-1">
+                                                        <input type="radio" id="radio031" name="impressions-5" value="artificial" required/>
+                                                        <label for="radio031"><span></span>Штучність</label>
+                                                    </div>
+
+                                                    <div class="divider item_10-4-2">
+                                                        <img src="images/figure_small.png" alt="divider" width="30" height="33">
+                                                    </div>
+
+                                                    <div class="radio-item__row item_10-4-3">
+                                                        <input type="radio" id="radio032" name="impressions-5" value="natural" required/>
+                                                        <label for="radio032"><span></span>Натуралістичність</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-row_item">
+                                                <div class="card-row">
+                                                    <div class="radio-item__row item_10-5-1">
+                                                        <input type="radio" id="radio027" name="impressions-3" value="old" required/>
+                                                        <label for="radio027"><span></span>Застарілість</label>
+                                                    </div>
+
+                                                    <div class="divider item_10-5-2">
+                                                        <img src="images/figure_small.png" alt="divider" width="30" height="33">
+                                                    </div>
+
+                                                    <div class="radio-item__row item_10-5-3">
+                                                        <input type="radio" id="radio028" name="impressions-3" value="modern" required/>
+                                                        <label for="radio028"><span></span>Сучасність</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <!--button-result -->
+                                        <div class="btn-list">
+                                            <button class="btn-result" type="submit">Дізнатися результат</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  hierarchy  -->
+        <div class="result-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="res-top">
+                            <div class="res-info">
+                                <div class="title">
+                                    <span id="results_style_title">Windows Metro</span>
+                                </div>
+                            </div>
+                            <div class="res-rating">
+                                <span class="rate">Оцінка:</span>
+                                <span class="denotation" id="results_style_value">5,6</span>
+                            </div>
+                        </div>
+                        <div class="res-mid">
+                            <div class="hierarchy">
+                                <!--level 1-->
+                                <div class="lvl-row lvl_01">
+                                    <div class="col-xs-12">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!--level 2-->
+                                <div class="lvl-row lvl_02">
+                                    <div class="col-xs-3">
+                                        <h5 class="title">Статика</h5>
+                                    </div>
+                                    <div class="col-xs-3"></div>
+                                    <div class="col-xs-3"></div>
+                                    <div class="col-xs-3 title-bord">
+                                        <h5 class="title abs-class">Динаміка</h5>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!--level 3-->
+                                <div class="lvl-row lvl_03">
+                                    <div class="col-xs-6">
+                                        <h5 class="title bord-bt">Елементи композиції</h5>
+                                        <p class="descpirtion">Декоративні:<br><span class="s-desc s-desc-static-elements-decorations">геометричні форми</span></p>
+                                        <div class="row composition-elements">
+                                            <div class="col-xs-6">
+                                                <p class="descpirtion">Іконки:<br><span class="s-desc s-desc-static-elements-icons">різкі, строгі, однокольорові, пласкі</span></p>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <p class="descpirtion">Шрифти:<br><span class="s-desc s-desc-static-elements-fonts">Segoe UI</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row composition-elements">
+                                            <div class="col-xs-6">
+                                                <p class="descpirtion">Об’єм та простір:<br><span class="s-desc s-desc-static-elements-volume">нема об’єму, двовимірний простір</span></p>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <p class="descpirtion">Текстура:<br><span class="s-desc s-desc-static-elements-texture">без текстурр</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row composition-elements">
+                                            <div class="col-xs-6">
+                                                <p class="descpirtion pd-40">Колір:<br><span class="s-desc s-desc-static-elements-color">яскравий, контрастний</span></p>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <p class="descpirtion pd-40">Лінія та світлотінь:<br><span class="s-desc s-desc-static-elements-line">прямі лінії, без тіней</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 title-bord">
+                                        <h5 class="title">Прийоми</h5>
+                                        <p class="descpirtion"><span class="s-desc s-desc-static-methods">модульна сітка, мінімалізм</span></p>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h5 class="title">Анімація</h5>
+                                        <p class="descpirtion"><span class="s-desc s-desc-dynamic-animation">штучна, цифрова</span></p>
+
+                                        <div class="result-links">
+                                            <h5 class="title-links">Корисні <br>посилання:</h5>
+                                            <!--<div id="results_link">-->
+                                            <p class="descpirtion description__link"><a class="s-link s-link-url" href="#" target="_blank"><span class="s-link s-link-title">111111</span></a></p>
+                                            <!--<p class="descpirtion"><span class="s-link s-link-url">222</span></p>-->
+
+                                            <!--</div>-->
+                                            <!--<p class="descpirtion description__link"><a href="#">1. Приклади</a></p>
+                                            <p class="descpirtion description__link"><a href="#">2. Ресурси</a></p>-->
+                                        </div>
+
+                                        <div class="result-variants">
+                                            <h5 class="title">Інші варіанти:</h5>
+                                            <div id="results_list">
+                                                <div class="description_row">
+                                                    <p class="descpirtion result-list-p">Flat Design <span class="total-result">4,9</span></p>
+                                                </div>
+                                                <div class="description_row">
+                                                    <p class="descpirtion result-list-p">Flat 2.0 <span class="total-result">4,5</span></p>
+                                                </div>
+                                                <div class="description_row">
+                                                    <p class="descpirtion result-list-p">Google Material <span class="total-result">4,0</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lvl-row lvl_background"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="container">
+                            <span class="copyright">© Вебстиль, 2017</span>
+                            <div class="mark-ft"><img src="images/mark.png" alt="logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.anchorScroll.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
