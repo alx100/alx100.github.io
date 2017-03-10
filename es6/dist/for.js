@@ -2,14 +2,13 @@
 
 var browsers = ['Chrome', 'Firefox', 'Edge', 'Safari', 'Opera'];
 
-// for (let browser in browsers) {
-//     console.log(browser);
-// }
+for (var browser in browsers) {
+    console.log(browser);
+}
 
-// for (let index in browsers) {
-//     console.log(browsers[index]);
-// }
-
+for (var index in browsers) {
+    console.log(browsers[index]);
+}
 
 var _iteratorNormalCompletion = true;
 var _didIteratorError = false;
@@ -17,9 +16,9 @@ var _iteratorError = undefined;
 
 try {
     for (var _iterator = browsers[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var browser = _step.value;
+        var _browser = _step.value;
 
-        console.log(browser);
+        console.log(_browser);
     }
 } catch (err) {
     _didIteratorError = true;
