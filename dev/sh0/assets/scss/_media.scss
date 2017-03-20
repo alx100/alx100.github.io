@@ -1,0 +1,148 @@
+@media ( max-width: 1760px) {
+    .face-right {
+        margin-left: -10%;
+        img {
+            width: 140%;
+        }
+    }
+}
+
+@media ( max-width: 1300px) {
+    .face-right {
+        margin-left: -5%;
+        img {
+            width: 120%;
+        }
+    }
+    .nav-logo {
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+    .main-title {
+        p {
+            font-size: 17px;
+        }
+    }
+}
+
+@media(max-width: 1180px) {
+    .principles-row {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1150px) {
+    .principles-item:last-child {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .slopy-content {
+        height: 1825px;
+    }
+    .principles-row {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .principles-button {
+        margin-left: 0;
+    }
+    .principles-item,
+    .principles-item:first-child,
+    .principles-item:last-child {
+        margin-bottom: 40px;
+        p {
+            width: 50%;
+        }
+    }
+    .principles-item:last-child {
+        margin-right: 0;
+    }
+    .slopy-content {
+        background-image: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .callback-content{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 775px) {
+    .item-left2 {
+        margin-top: 205px;
+    }
+    .item-right2 {
+        margin-top: 310px;
+    }
+    .team-members_item {
+        margin-bottom: 25px;
+    }
+    .nav-logo {
+        img {
+            width: 70%;
+        }
+    }
+    .nav-list {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .item-left2 {
+        margin-top: 190px;
+    }
+       .callback-row {
+        padding-right: 10px; 
+    }
+}
+
+@media (max-width: 630px) {
+    .item-left2 {
+        margin-top: 126px;
+    }
+}
+
+@media (max-width: 590px) {
+    .timeline-center {
+        width: 4%;
+        img {
+            display: none;
+        }
+    }
+    .timeline-left,
+    .timeline-right {
+        width: 40%;
+        .timeline-item {
+            text-align: center;
+        }
+        .item-left1 {
+            margin-top: 45px;
+        }
+        .item-left2 {
+            margin-top: 155px;
+        }
+        .item-right1 {
+            margin-top: 315px;
+        }
+        .item-right2 {
+            margin-top: 265px;
+            margin-bottom: 75px;
+        }
+    }
+    .team-members {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-logo {
+        img {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<svg id="вниз_эллипсы" data-name="вниз/эллипсы" xmlns="http://www.w3.org/2000/svg" width="10" height="54" viewBox="0 0 10 54">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #d0d0d0;
+      }
+
+      .cls-1 {
+        opacity: 0.33;
+      }
+
+      .cls-2 {
+        opacity: 0.66;
+      }
+    </style>
+  </defs>
+  <circle id="_1" data-name=" 1" class="cls-1" cx="5" cy="5" r="5"/>
+  <circle id="_2" data-name="2" class="cls-2" cx="5" cy="27" r="5"/>
+  <circle id="_3" data-name="3" class="cls-3" cx="5" cy="49" r="5"/>
+</svg>
