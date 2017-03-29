@@ -1,0 +1,215 @@
+@media screen and (max-width: 1200px) {
+    .contacts {
+        margin-left: 50px;
+        width: 310px;
+    }
+    .contacts__number {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .logo {
+        width: 225px
+    }
+    .contacts {
+        margin-top: -10px;
+    }
+    .header-row {
+        padding-bottom: 25px;
+    }
+    .header-nav {
+        padding-bottom: 19px;
+    }
+    .nav-list {
+        width: 100%;
+    }
+    .user-block {
+        position: absolute;
+        right: 16px;
+        top: -50px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .logo {
+        width: 180px;
+        margin-top: 0;
+    }
+    .logo__description {
+        font-size: 13px;
+        padding: 2px 0 0;
+    }
+    .search__input {
+        height: auto;
+        font-size: 10px;
+    }
+    .search__icon {
+        font-size: 30px;
+    }
+    .contacts {
+        margin-left: 26px;
+        width: 233px;
+    }
+    .contacts__phone {
+        margin: 8px 12px 0 0;
+    }
+    .contacts__number {
+        font-size: 15px;
+    }
+    .contacts__work-time,
+    .contacts__delivery {
+        font-size: 10px;
+    }
+    .header-row {
+        padding-bottom: 36px;
+    }
+    .user-block {
+        transform: scale(0.8) translateX(41px);
+    }
+    .basket-sum__value {
+        font-size: 16px;
+    }
+    .nav-list__item:last-child {
+        margin-right: -4px;
+    }
+    .dropdown-item__title {
+        font-size: 15px;
+    }
+    .slider__title,
+    .slider__button--prev,
+    .slider__button--next {
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .nav-list__item {
+        margin-right: 10px;
+    }
+    .nav-dropdown {
+        left: 14px;
+    }
+    .dropdown-inner {
+        left: 100%;
+    }
+    .nav-list__item--dropdown {
+        margin-top: -2px;
+    }
+    .list-item__description {
+        font-size: 13px;
+    }
+    .basket {
+        margin-right: 14px;
+    }
+    .slider-wrapper {
+        padding-top: 20px;
+    }
+    .slider__title {
+        transform: scale(0.5);
+        bottom: 15%;
+        left: -12%;
+    }
+    .slider__button--prev {
+        transform: scale(0.5);
+        bottom: 15%;
+        left: -9px;
+    }
+    .slider__button--next {
+        transform: scale(0.5);
+        bottom: 15%;
+        right: -9px;
+    }
+    .slick-dots {
+        transform: scale(0.7);
+        bottom: -40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo__image {
+        width: 110%;
+    }
+    .header-wrapper {
+        padding: 0;
+    }
+    .header-row {
+        padding: 13px 20px 17px 20px;
+    }
+    .search,
+    .contacts,
+    .header-nav {
+        display: none;
+    }
+    .header-mobile {
+        display: block;
+    }
+    .slider-wrapper {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .slider-wrapper {
+        margin: 0;
+    }
+    .slider__title,
+    .slider__button--prev,
+    .slider__button--next {
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider__title {
+        font-size: 30px;
+        line-height: 36px;
+        bottom: 18%;
+        left: -68px;
+    }
+    .slider__button--prev {
+        bottom: 18%;
+        height: 108px;
+    }
+    .shevron-left {
+        margin-top: 38px;
+    }
+    .slider__button--next {
+        bottom: 18%;
+        height: 108px;
+    }
+    .shevron-right {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .slider__title {
+        width: 380px;
+        bottom: 14%;
+        left: -68px;
+        padding: 5px 15px 10px 15px;
+    }
+    .slider__button--prev {
+        bottom: 28%;
+        height: 57px;
+        width: 40px;
+        left: -10px;
+    }
+    .shevron-left {
+        font-size: 30px;
+        margin-top: 14px;
+        margin-left: -10px;
+    }
+    .slider__button--next {
+        bottom: 28%;
+        height: 57px;
+        width: 40px;
+        right: -11px;
+    }
+    .shevron-right {
+        font-size: 30px;
+        margin-top: 8px;
+        margin-right: -10px;
+    }
+}
