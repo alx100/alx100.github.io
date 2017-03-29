@@ -1074,7 +1074,7 @@ footer {
     left: -10px; }
   .shevron-left {
     font-size: 30px;
-    margin-top: 14px;
+    margin-top: 12px;
     margin-left: -10px; }
   .slider__button--next {
     bottom: 28%;
@@ -1083,5 +1083,5 @@ footer {
     right: -11px; }
   .shevron-right {
     font-size: 30px;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-right: -10px; } }
