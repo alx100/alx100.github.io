@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Turum-burum</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-list__item">
+                        <a href="">Главная</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="">Ноутбуки и планшеты</a>
+                    </li>
+                    <li class="breadcrumbs-list__item">
+                        <a href="">Планшеты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="filter-header">
+                <h1 class="filter-title">ПРЕМИУМ ПЛАНШЕТЫ<span class="filter-title__counter">(249 товаров)</span></h1>
+                <div class="filter-title__border"></div>
+            </div>
+            <div class="filter-settings">
+                <div class="settings-left">
+                    <div class="filter-preset">
+                        <span class="filter-preset__option ">от <span>450</span> до <span>12 500</span></span>
+                    </div>
+                    <div class="filter-preset">
+                        <span class="filter-preset__option">Apple</span>
+                    </div>
+                    <div class="filter-preset">
+                        <span class="filter-preset__option">iOS</span>
+                    </div>
+                    <div class="filter-reset">
+                        <span>Сбросить все</span>
+                    </div>
+                </div>
+                <div class="settings-right">
+                    <div class="sorter">
+                        <span>Cортировать по:</span>
+                        <span class="arrow-icon"></span>
+                        <span class="sorter-order">увеличению цены</span>
+                        <span class="angle-icon"></span>
+                    </div>
+                    <div class="filter-icons">
+                        <span class="icon-filter"></span>
+                        <span class="icon-dots"></span>
+                        <span class="icon-hamb"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="content-inner">
+                <aside class="presets">
+                    <section class="price-range">
+                        <h3 class="price-range__title">ЦЕНА</h3>
+                        <div class="price-range__amount">
+                            <input type="text" id="j-amount1">
+                            <span class="amount-divider"></span>
+                            <input type="text" id="j-amount2">
+                        </div>
+                        <div class="price-range__slider">
+                            <div id="j-slider"></div>
+                        </div>
+                    </section>
+                    <section class="device">
+                        <div class="brand">
+                            <h3 class="device__title">БРЕНДЫ</h3>
+                            <ul class="input-list">
+                                <li class="input-list__item">
+                                    <input type="checkbox" class="j-input" checked>
+                                    <span class="list-item__description item-checked">Apple</span>
+                                    <span class="list-item__counter">(43)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox" class="j-input">
+                                    <span class="list-item__description">ASUS</span>
+                                    <span class="list-item__counter">(13)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox" class="j-input">
+                                    <span class="list-item__description">Lenovo</span>
+                                    <span class="list-item__counter">(5)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox" class="j-input">
+                                    <span class="list-item__description">Samsung</span>
+                                    <span class="list-item__counter">(4)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox" class="j-input">
+                                    <span class="list-item__description">Tesla</span>
+                                    <span class="list-item__counter">(1)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox" class="j-input">
+                                    <span class="list-item__description">Huawei</span>
+                                    <span class="list-item__counter">(2)</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="os">
+                            <h3 class="device__title">ОС</h3>
+                            <ul class="input-list">
+                                <li class="input-list__item">
+                                    <input type="checkbox" checked>
+                                    <span class="list-item__description item-checked">iOS</span>
+                                    <span class="list-item__counter">(43)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox">
+                                    <span class="list-item__description">Android</span>
+                                    <span class="list-item__counter">(13)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox">
+                                    <span class="list-item__description">Windows</span>
+                                    <span class="list-item__counter">(5)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="specials">
+                            <h3 class="device__title">СПЕЦПРЕДЛОЖЕНИЯ</h3>
+                            <ul class="input-list">
+                                <li class="input-list__item">
+                                    <input type="checkbox">
+                                    <span class="list-item__description">Акции</span>
+                                    <span class="list-item__counter">(11)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox">
+                                    <span class="list-item__description">Скидки</span>
+                                    <span class="list-item__counter">(15)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox">
+                                    <span class="list-item__description">Новинки</span>
+                                    <span class="list-item__counter">(12)</span>
+                                </li>
+                                <li class="input-list__item">
+                                    <input type="checkbox">
+                                    <span class="list-item__description">Доставка сегодня</span>
+                                    <span class="list-item__counter">(32)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="properties">
+                        <ul class="props-list">
+                            <li class="props-list__item">
+                                <span class="props-list__description">СРОК ГАРАНТИИ</span>
+                                <div class="list-inner__wrapper">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">14 дней</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">1 месяц</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">6 месяцев</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">12 месяцев</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">18 месяцев</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="props-list__item">
+                                <span class="props-list__description">РАЗМЕР ДИСПЛЕЯ</span>
+                                <div class="list-inner__wrapper">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">3 дюйма</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">5 дюймов</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">7 дюймов</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">10 дюймов</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">15 дюймов</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="props-list__item">
+                                <span class="props-list__description">РАЗРЕШЕНИЕ</span>
+                                <div class="list-inner__wrapper">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">540р</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">720р</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">1080р</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">2160р</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">4К</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="props-list__item">
+                                <span class="props-list__description">ПРОИЗВОДИТЕЛЬНОСТЬ</span>
+                                <div class="list-inner__wrapper">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">1 ядро</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">2 ядра</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">4 ядра</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">6 ядер</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">8 ядер</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="props-list__item">
+                                <span class="props-list__description">ВСТРОЕННАЯ ПАМЯТЬ</span>
+                                <div class="list-inner__wrapper">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">8 гигабайт</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">16 гигабайт</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">32 гигабайта</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">64 гигабайта</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">128 гигабайт</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="props-list__item">
+                                <span class="props-list__description--big">3G</span>
+                                <div class="list-inner__wrapper list-inner__small">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">Да</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">Нет</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">Опционально</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="props-list__item">
+                                <span class="props-list__description--big">GPS</span>
+                                <div class="list-inner__wrapper list-inner__small">
+                                    <ul class="list-inner">
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">Да</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">Нет</span>
+                                        </li>
+                                        <li class="list-inner__item">
+                                            <span class="props-list__description--inner">Опционально</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="news">
+                        <h3 class="news-title">Последние новости</h3>
+                        <ul class="news-list">
+                            <li class="news-list__item">
+                                <a href="">
+                                    <p class="news-description">
+                                        Новая кухонная вытяжка ELEYUS Tempo 1000 LED SMD 90 N BL
+                                    </p>
+                                    <div class="news-stats">
+                                        <span class="news-date">3 мая 2016</span>
+                                        <span class="news-views">101</span>
+                                        <span class="news-like">54</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li class="news-list__item">
+                                <a href="">
+                                    <p class="news-description">
+                                        Panasonic анонсировала беззеркалку Lumix GX80
+                                    </p>
+                                    <div class="news-stats">
+                                        <span class="news-date">3 мая 2016</span>
+                                        <span class="news-views">101</span>
+                                        <span class="news-like">54</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li class="news-list__item">
+                                <a href="">
+                                    <p class="news-description">
+                                        Вытяжка кухонная ELEYUSъ Tempo 1000
+                                    </p>
+                                    <div class="news-stats">
+                                        <span class="news-date">3 мая 2016</span>
+                                        <span class="news-views">101</span>
+                                        <span class="news-like">54</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="banner">
+                        <a href="">
+                            <img class="banner-image" src="img/items/item-banner.jpg" alt="Banner">
+                        </a>
+                    </section>
+                </aside>
+                <section class="goods">
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item1-1.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Планшет Apple iPad mini 4<br>Wi-Fi + Cellular 16GB Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">20 255</span>
+                            <span class="price-actual">17 869</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>200</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">9.0</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">97</span>
+                        </div>
+                        <div class="special">
+                            <span class="icon-present"></span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item1-2.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>LTE Black (SM-T715NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">13 999</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.5</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">66</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item1-3.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>Black (SM-T710NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">11 756</span>
+                            <span class="price-actual">10 900</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.3</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">51</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item1-4.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Apple A1652 iPad Pro 12.9-inch<br>Wi-Fi 4G 128Gb Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">34 899</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>500</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.1</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">49</span>
+                        </div>
+                        <div class="special">
+                            <span class="icon-discount"></span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item2-1.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            ASUS ZenPad 10" 3G 16GB Black<br>Doc-station (ZD300CG-1A013A)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">9 007</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>100</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.0</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">23</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item2-2.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>Black (SM-T710NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">11 609</span>
+                            <span class="price-actual">10 299</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">7.9</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">15</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item2-3.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Планшет Apple iPad mini 4<br>Wi-Fi + Cellular 16GB Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">13 450</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points points-xl">+<span>13450</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">7.6</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">11</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item2-4.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>Black (SM-T710NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">11 756</span>
+                            <span class="price-actual">10 900</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>200</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">7.5</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">23</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item3-1.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Планшет Apple iPad mini 4<br>Wi-Fi + Cellular 16GB Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">20 255</span>
+                            <span class="price-actual">17 869</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>200</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">9.0</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">97</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item3-2.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>LTE Black (SM-T715NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">13 999</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.5</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">66</span>
+                        </div>
+                        <div class="special">
+                            <span class="icon-new"></span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item3-3.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>Black (SM-T710NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">11 756</span>
+                            <span class="price-actual">10 900</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>200</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.3</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">51</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item3-4.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Apple A1652 iPad Pro 12.9-inch<br>Wi-Fi 4G 128Gb Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">34 800</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>500</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.1</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">49</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item4-1.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Планшет Apple iPad mini 4<br>Wi-Fi + Cellular 16GB Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">20 255</span>
+                            <span class="price-actual">17 869</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>200</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">9.0</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">97</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item4-2.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>LTE Black (SM-T715NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">13 999</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.5</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">66</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item4-3.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>Black (SM-T710NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">11 756</span>
+                            <span class="price-actual">10 900</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.3</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">51</span>
+                        </div>
+                        <div class="special">
+                            <span class="icon-present present-pos"></span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item4-4.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Apple A1652 iPad Pro 12.9-inch<br>Wi-Fi 4G 128Gb Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">34 899</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>500</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.1</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">49</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item5-1.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            ASUS ZenPad 10" 3G 16GB Black<br>Doc-station (ZD300CG-1A013A)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">9 007</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>100</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">8.0</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">23</span>
+                        </div>
+                        <div class="special">
+                            <span class="icon-discount discount-pos"></span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item5-2.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Samsung Galaxy Tab S2 8.0" 32GB<br>Black (SM-T710NZKESEK)
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                        <div class="goods__price">
+                            <span class="price-old">11 609</span>
+                            <span class="price-actual">10 299</span>
+                            <span class="price-currency">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>150</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">7.9</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">15</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__image">
+                            <img src="img/items/item5-3.jpg" alt="Product">
+                        </div>
+                        <p class="goods__description">
+                            Планшет Apple iPad mini 4<br>Wi-Fi + Cellular 16GB Silver
+                        </p>
+                        <div class="goods__availability">
+                            <span class="goods__code">код: 0568972</span>
+                            <span class="goods__presence">в наличии</span>
+                        </div>
+                         <div class="goods__price one-price">
+                            <span class="price-actual main-price">13 450</span>
+                            <span class="price-currency main-price">грн</span>
+                            <span class="icon-basket"></span>
+                            <span class="icon-heart"></span>
+                            <span class="icon-libra"></span>
+                        </div>
+                        <div class="goods__feedback">
+                            <span class="bonus-points">+<span>200</span> баллов</span>
+                            <span class="icon-star"></span>
+                            <span class="feedback-counter">7.6</span>
+                            <span class="icon-comment"></span>
+                            <span class="feedback-counter">11</span>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <a href="">
+                        <div class="load-more">
+                            <span class="icon-load"></span>
+                            <span class="load-text">Еще<span>20</span></span>
+                        </div>
+                       </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <script src="js/libs/icheck.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
