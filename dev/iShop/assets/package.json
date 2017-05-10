@@ -1,7 +1,7 @@
 {
   "name": "assets",
   "version": "1.0.0",
-  "description": "Turum-burum task",
+  "description": "iShop",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
