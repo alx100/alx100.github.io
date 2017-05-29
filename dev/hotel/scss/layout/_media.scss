@@ -1,0 +1,126 @@
+@media screen and (max-width: 1480px) {
+    .input-field {
+        width: 67.5%;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .input-field {
+        width: 66.5%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .booking-room {
+        padding: 12px 0 0 0;
+        transition: padding 0.5s;
+    }
+    .column-left {
+        width: 40%;
+        transition: width 0.5s;
+    }
+    .column-right {
+        width: 55%;
+    }
+    .input-field {
+        width: 68.5%;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .nav-lang {
+        position: absolute;
+        right: -9px;
+        top: 37px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        padding-right: 20px;
+        transition: padding-right 0.3s;
+    }
+    .nav-primary__item span {
+        font-size: 14px;
+        transition: font-size 0.3s;
+    }
+    .column-left {
+        width: 35%;
+        transition: width 0.5s;
+    }
+    .column-right {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1035px) {
+    .content-row {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .logo {
+        float: none;
+    }
+    .nav-row {
+        display: none;
+    }
+    .nav-lang {
+        position: initial;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 0;
+    }
+    .nav-primary {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav-primary__item {
+        padding-right: 0;
+    }
+    .nav-secondary {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .hamburger {
+        display: block;
+    }
+    .input-field {
+        width: 66.5%;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 991px) {
+    .content-row {
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .column-left {
+        width: 67%;
+        margin-bottom: 20px;
+    }
+    .column-right {
+        width: 67%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .column-left {
+        width: 80%;
+    }
+    .column-right {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+    .input-field {
+        width: 66%;
+    }
+}
