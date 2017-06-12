@@ -1,0 +1,142 @@
+.text-slider-wrapper .bx-wrapper .bx-prev {
+    left: 10px;
+}
+
+.text-slider-wrapper .bx-wrapper .bx-next {
+    right: 10px;
+}
+
+.text-slider-wrapper .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+}
+
+.text-slider-wrapper .bx-wrapper:hover .bx-controls-direction a {
+    opacity: 1;
+}
+
+.text-slider-wrapper .bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+
+.form-control {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.goup,
+.godown {
+    overflow: hidden;
+}
+
+.godown span,
+.goleft span,
+.goup span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.05, 0.06, 0.05, 0.95);
+    transition: all 0.6s cubic-bezier(0.05, 0.06, 0.05, 0.95);
+}
+
+.goup span span:nth-of-type(1) {
+    top: 0px;
+}
+
+.goup span span:nth-of-type(2) {
+    top: 60px;
+}
+
+.goup span span:nth-of-type(3) {
+    top: 120px;
+}
+
+.goup span span:nth-of-type(4) {
+    top: 180px;
+}
+
+.goup span span:nth-of-type(5) {
+    top: 240px;
+}
+
+.goup span span:nth-of-type(6) {
+    top: 320px;
+}
+
+.goup:hover>span {
+    top: -240px;
+}
+
+.godown span span:nth-of-type(1) {
+    top: 320px;
+}
+
+.godown span span:nth-of-type(2) {
+    top: 240px;
+}
+
+.godown span span:nth-of-type(3) {
+    top: 180px;
+}
+
+.godown span span:nth-of-type(4) {
+    top: 120px;
+}
+
+.godown span span:nth-of-type(5) {
+    top: 60px;
+}
+
+.godown span span:nth-of-type(6) {
+    top: 0px;
+}
+
+.godown>span {
+    top: -320px;
+}
+
+.godown:hover>span {
+    top: -60px;
+}
+
+.goleft {
+    left: -30px;
+}
+
+.goleft span span:nth-of-type(1) {
+    left: 0px;
+}
+
+.goleft span span:nth-of-type(2) {
+    left: 30px;
+}
+
+.goleft:hover>span {
+    left: -30px;
+}
+
+
+.client-slider {
+    margin-bottom: 70px;
+}

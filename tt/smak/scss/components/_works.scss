@@ -1,0 +1,74 @@
+.preview-title {
+    color: #515151;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+}
+
+.preview-descr {
+    margin-bottom: 12px;
+}
+
+.btn.btn-primary.btn-preview {
+    padding: 15px 47px;
+    margin-left: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mix {
+    opacity: 0;
+    display: none;
+}
+
+.navbar-nav>li>a:before,
+.nav-pills>li>a:before {
+    content: "\f0c8";
+    margin: 0 15px;
+    font-family: "FontAwesome";
+    font-size: 5px;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffe600;
+}
+
+.navbar-nav>li:first-child>a:before,
+.nav-pills>li:first-child>a:before {
+    content: " ";
+    padding: 0;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    color: #ffe600;
+    background: transparent;
+}
+
+.square-l {
+    background: #ffe600;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.square-l {
+    width: 60px;
+    height: 60px;
+    display: inline-block
+}
+
+.square-l .fa {
+    line-height: 60px;
+    color: #fff;
+}
+
+.process-item .fa {
+    color: #ffe600;
+}

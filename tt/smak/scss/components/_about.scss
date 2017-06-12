@@ -1,0 +1,121 @@
+.team {
+    list-style: none;
+}
+
+.team-extended .row {
+    margin-bottom: 0;
+}
+
+.team .col-md-3 {
+    position: static;
+    margin-bottom: 15px;
+}
+
+.team-member {
+    border-bottom: 2px solid #9b9b9b;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.team-member:hover {
+    text-decoration: none;
+}
+
+.og-expanded .team-member:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #131313;
+    border-image: none;
+    border-style: solid;
+    border-width: 15px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin: 0 0 0 -15px;
+    pointer-events: none;
+    position: absolute;
+    top: auto;
+    width: 0;
+}
+
+.team-extended {
+    background: none repeat scroll 0 0 #131313;
+    left: 0;
+    margin-top: 28px;
+    padding: 20px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    top: auto;
+    width: 100%;
+}
+
+.team-extended h3 {
+    color: #ffe600;
+}
+
+.team-extended p {
+    color: #fff;
+}
+
+.team-extended .social {
+    border: 1px solid #fff;
+    width: 25px;
+    margin-right: 7px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.og-close {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+}
+
+.og-close:before,
+.og-close:after {
+    background: none repeat scroll 0 0 #888;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%;
+}
+
+.og-close:after {
+    transform: rotate(-45deg);
+}
+
+.team-extended .social:hover {
+    color: #ffe600;
+    border-color: #ffe600;
+}
+
+.team-member .name {
+    display: block;
+    text-transform: uppercase;
+    color: #ffe600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-member .title {
+    display: block;
+    text-transform: uppercase;
+    color: #707070;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    margin-bottom: 10px;
+}

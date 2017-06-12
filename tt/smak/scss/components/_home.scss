@@ -1,0 +1,176 @@
+.nav>li>a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-smak {
+    background: rgba(19, 19, 22, 0.5);
+    transition: all 0.5s;
+}
+
+.navbar-smak .nav {
+    padding: 25px 0;
+}
+
+
+.navbar-brand {
+    margin-top: -10px;
+}
+
+
+.nav>li>a {
+    padding: 0;
+}
+
+.navbar-brand>img {
+    height: 60px;
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    transition: color 0.6s;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus,
+.navbar-nav>li.active>a {
+    color: #ffe600;
+    background: transparent;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: -5px;
+    ;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.outline-outward {
+    font-weight: 700;
+    color: rgb(19, 19, 22);
+    font-size: 20px;
+}
+
+.home {
+    background: url(../img/bg-header.jpg) no-repeat top fixed;
+    position: relative;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 50%;
+    margin-top: -135px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(19, 19, 22, .5);
+    display: inline-block;
+    padding: 40px;
+}
+
+.lead {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 65px;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services-title {
+    color: #ffe600;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 10px 35px;
+    font-size: 15px;
+}
+
+.btn-primary {
+    color: #000;
+    background: #ffe600;
+    border: 1px solid #ffe600;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ffe600;
+    color: #000;
+    border: none;
+}
+
+.btn-primary:before {
+    content: '';
+    position: absolute;
+    border: #ffe600 solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+}
+
+.btn-primary:hover:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+}
+
+.btn.btn-primary.btn-preview.btn-contact {
+    font-size: 15px;
+    padding: 18px 47px;
+}
+
+.btn.btn-primary.btn-preview.btn-contact.btn-send {
+    color: #161f32;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: white;
+}
+
+.go-to {
+    background: #ffe600;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 0;
+    line-height: 60px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    color: #fff;
+}
+
+.go-to:hover {
+    color: #fff;
+}
+
+.go-to .fa {
+    line-height: 60px;
+}
+
+.navbar-nav>li>a:hover {
+    background-color: transparent;
+    color: #ffe600;
+}
+
+.gray {
+    background: #FBFBFB;
+}

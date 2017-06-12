@@ -1,0 +1,30 @@
+
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form .form-control {
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #fff;
+    border-width: 2px;
+}
+
+.contact-form .form-control:focus {
+    border: 2px solid #FEE600;
+}
+
+.contact-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-form .heading {
+    color: #fff;
+}
+
+.commands {
+    text-align: center;
+}
+

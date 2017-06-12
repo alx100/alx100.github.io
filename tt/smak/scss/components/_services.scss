@@ -1,0 +1,66 @@
+.service-item {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-item {
+    margin-bottom: 50px;
+}
+
+.about-item i {
+    font-size: 35px;
+    line-height: 70px;
+    color: #fff;
+}
+
+.about-item h4,
+.about-item p {
+    margin-left: 100px;
+}
+
+.about-item h4 {
+    font-weight: normal;
+}
+
+.process-item {
+    text-align: center
+}
+
+.align-center {
+    text-align: center
+}
+
+.centered-pills {
+    text-align: center;
+}
+
+.centered-pills ul.nav-pills {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.centered-pills li {
+    display: inline;
+}
+
+.centered-pills a {
+    float: left;
+}
+
+.nav-pills {
+    list-style: square;
+}
+
+.nav-pills>li>a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #707070;
+    padding: 10px 0;
+}
+
+.nav-pills>li.filter>a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #515151;
+    transition: color 0.3s;
+}
