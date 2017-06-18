@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--<meta name="viewport" content="width=720">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__left">
+                        <button class="nav__hamburger hamburger" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                        <div class="nav__logo">
+                            <span class="nav__logo-image icon-logo"></span>
+                        </div>
+                    </div>
+                    <div class="nav__right">
+                        <form class="sum" action="#">
+                            <input class="sum__input" type="text" dir="rtl" placeholder="$1,345">
+                            <button class="sum__submit" type="submit"><span class="sum__icon">+</span></button>
+                        </form>
+                        <div class="case">
+                            <span class="case__icon icon-case"></span>
+                            <span class="case__counter">345</span>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="header__title">
+            <div class="container">
+                <h1 class="header__title-text">Withdrawal</h1>
+            </div>
+        </div>
+        <div class="header__pager">
+            <div class="container">
+                <ul class="pager__list">
+                    <li class="pager__list-item">Step 1</li>
+                    <li class="pager__list-item">Step 2</li>
+                    <li class="pager__list-item">Step 3</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <div class="container">
+                <form action="#" class="withdrawal">
+                    <input class="withdrawal__amount" type="text" placeholder="$100">
+                    <div class="withdrawal__inner">
+                        <h2 class="widthrawal__subtitle">Wire Information</h2>
+                        <input type="text" placeholder="Beneficiary Name">
+                        <input type="text" placeholder="Beneficiary City">
+                        <div class="styled-select">
+                            <select>
+                                <option selected disabled>Beneficiary Country</option>
+                                <option>Ukraine</option>
+                                <option>Unated States</option>
+                                <option>Japan</option>
+                                <option>Narnia</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="Bank Name">
+                        <input type="text" placeholder="Swift">
+                        <button type="submit" class="widthrawal__submit hvr-outline-out">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
