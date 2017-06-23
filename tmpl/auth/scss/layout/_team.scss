@@ -1,0 +1,107 @@
+.team {
+    color: #4e525d;
+}
+
+.team__container {
+    padding: 100px 20px;
+    max-width: 1240px;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    @include media ("<=md") {
+        width: 100%;
+		padding: 50px 20px;
+    }
+}
+
+.team__title {
+    font-size: 42px;
+    margin-bottom: 132px;
+    @include media ("<=sm") {
+        margin-bottom: 60px;
+    }
+}
+
+.team__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @include media ("<=lg") {
+        justify-content: space-around;
+    }
+}
+
+.team__member {
+    width: 255px;
+    
+    @include media("<=lg") {
+        width: calc(50% - 25px);
+		margin-bottom: 70px;
+    }
+
+    @include media("<=sm") {
+        width: 85%;
+
+		&:last-of-type {
+			margin-bottom: 70px;
+		}
+    }
+
+
+    .member__photo {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 70px;
+        border-radius: 50%;
+        background-color: #eeeef0;
+        cursor: pointer;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 10px;
+            margin: -5px 0 0 0;
+            background: #f46d6d;
+            z-index: 10;
+            transition: all .3s ease;
+            opacity: 0;
+        }
+        &:after {
+            width: 10px;
+            height: 0;
+            margin: 0 0 0 -5px;
+        }
+        &:hover {
+            &:before {
+                width: 42px;
+                margin-left: -21px;
+                opacity: 1;
+            }
+            &:after {
+                height: 42px;
+                margin-top: -21px;
+                opacity: 1;
+            }
+        }
+        @include media("<=sm") {
+            margin-bottom: 30px;
+        } 
+    }
+    .member__title {
+        font-size: 22px;
+    }
+    .member__subtitle {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .member__description {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+

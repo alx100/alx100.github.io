@@ -1,0 +1,111 @@
+.banner {
+    max-width: 1920px;
+    margin: 95px auto 0;
+    @include media("<=md") {
+        height: 535px; 
+    }
+    @include media("<=sm") {
+        height: 675px;
+    }
+}
+
+.slider {
+    @include media("<=md") {
+        height: 450px; 
+    }
+
+     @include media("<=sm") {
+         height: 600px;
+    }
+}
+
+.slider__item {
+    position: relative;
+    img {
+        width: 100%;
+    
+
+    @include media("<=md") {
+        width: auto;
+        height: 450px;
+    }
+
+    @include media("<=sm") {
+        height: 600px;
+    }
+    }
+}
+
+.slider__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    .slider__title {
+        font-size: 63px;
+        font-family: $osb;
+        margin-bottom: 20px;
+    }
+    .slider__description {
+        max-width: 380px;
+        margin: 0 auto 65px;
+        font-size: 23px;
+    }
+    .slider__button {
+        padding: 22px 42px;
+        background-color: transparent;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        font-family: $osb;
+        font-size: 26px;
+        line-height: 24px;
+        color: #fff;
+        outline: none;
+        cursor: pointer; 
+    }
+}
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 5px;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: #44c0c2;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

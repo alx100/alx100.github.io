@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header__container {
+    margin: 0 auto;
+    max-width: 1240px;
+    min-width: 320px;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    @include media("<=lg") {
+        max-width: 960px;
+    }
+    @include media("<=md") {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+.header__logo {
+    font-family: $lobster;
+    color: $blue;
+    font-size: 43px;
+    font-weight: 400;
+}
+
+.hamburger {
+    margin-top: 10px;
+    display: none;
+    @include media("<=md") {
+        display: block;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    @include media("<=md") {
+        	position: absolute;
+			top: 80px;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			transition: all 0.3s;
+    }
+}
+
+.hidden {
+    @include media("<=md") {
+        left: -3000px;
+    }
+}
+
+.hover-underline {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 97%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #49cbcd;
+    width: 0%;
+}
+
+.nav-list__item {
+    display: inline-block;
+    @include media("<=md") {
+        display: block;
+		width: 100%;
+		background-color: #fff;
+		border-bottom: 1px solid #ecf0f1;
+    }
+    a {
+        display: inline-block;
+        position: relative;
+        padding: 37px 25px;
+        transition: all 0.2s ease-out;
+        &:hover {
+            background-color: #f8f9fb;
+            color: #49cbcd;
+        }
+        &:hover>.hover-underline {
+            width: 100%;
+            transition: width .7s;
+        }
+
+         @include media("<=md") {
+             width: 100%;
+             padding: 20px;
+         }
+    }
+}
+
+.scroll-section::before {
+    content: '';
+    display: block;
+    height: 95px;
+    margin-top: -95px;
+}
