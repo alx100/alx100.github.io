@@ -1,0 +1,139 @@
+.team{
+	padding: 97px 0 82px;
+	position: relative;
+	z-index: 1;
+	@include media("<desktop"){
+		padding-top: $tablet-section-padding-top;
+		padding-bottom: $tablet-section-padding-bottom;
+	}
+	@include media("<tablet"){
+		padding-top: $mobile-section-padding-top;
+		padding-bottom: $mobile-section-padding-bottom;
+	}
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	&:before{
+		content:'';
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		bottom: 0;
+		height: 1px;
+		background: $turquoise-color;
+		z-index: -1;
+	}
+	h2{
+		text-align: center;
+		margin: 0 0 130px;
+		@include media("<desktop"){
+			margin: 0 0 0.5em;
+		}
+	}
+	.team-list{
+		margin: 0 -20px;
+		padding: 0;
+		font-size: 0;
+		line-height: 0;
+		letter-spacing: -5px;
+		text-align: center;
+		li{
+			width: 25%;
+			display: inline-block;
+			vertical-align: top;
+			letter-spacing: 0;
+			font-size: 14px;
+			line-height: 26px;
+			padding: 0 20px 20px;
+			@include media("<desktop"){
+				width: 50%;
+			}
+			@include media("<tablet"){
+				width: 100%;
+				padding-bottom: 40px;
+			}
+		}
+		.img-holder{
+			margin: 0 auto 68px;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background: #eeeef0;
+			@include media("<tablet"){
+				margin-bottom: 10px;
+			}
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 1;
+				border-radius: 50%;
+				&:before,
+				&:after{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 0;
+					height: 10px;
+					margin: -5px 0 0 0;
+					background: #f46d6d;
+					z-index: 2;
+					transition: all .25s ease;
+					opacity: 0;
+				}
+				&:after{
+					width: 10px;
+					height: 0;
+					margin: 0 0 0 -5px;
+				}
+				&:hover{
+					&:before{
+						width: 42px;
+						margin-left: -21px;
+						opacity: 1;
+					}
+					&:after{
+						height: 42px;
+						margin-top: -21px;
+						opacity: 1;
+					}
+				}
+			}
+			img{
+				display: block;
+				border-radius: 50%;
+			}
+		}
+		.headings-row{
+			padding: 0 0 17px;
+			@include media("<tablet"){
+				padding-bottom: 0;
+			}
+		}
+		h3{
+			font-weight: normal;
+			font-size: 22px;
+			line-height: 24px;
+			margin: 0 0 4px;
+			a{
+				color: $base-text-color;
+				text-decoration: none;
+				transition: all .25s ease;
+				&:hover{
+					color: #f46d6d;
+				}
+			}
+		}
+		h4{
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			margin: 0 0 4px;
+		}
+		p{margin: 0;}
+	}
+}

@@ -1,0 +1,39 @@
+#header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255,255,255,1);
+	z-index: 100;
+	box-shadow: 0 0 1px 0 $turquoise-color;
+	min-height: 100px;
+	@include media("<tablet"){
+		min-height: 1px;
+	}
+	.header-main{
+		max-width: 1190px;
+		margin: 0 auto;
+		padding: 0 10px;
+		@include media("<tablet"){
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+	.logo{
+		float: left;
+		margin: 31px 0 0;
+		a{
+			float: left;
+		}
+		img{vertical-align: top;}
+		@include media("<tablet"){
+			float: none;
+			margin: 0;
+			&:after{
+				content:'';
+				display:block;
+				clear:both;
+			}
+		}
+	}
+}

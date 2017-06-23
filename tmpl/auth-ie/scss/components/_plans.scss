@@ -1,0 +1,103 @@
+.plans{
+	overflow: hidden;
+	background: #f1f1f1;
+	padding: 118px 9999px 70px;
+	margin: 0 -9999px;
+	@include media("<desktop"){
+		padding-top: $tablet-section-padding-top;
+		padding-bottom: $tablet-section-padding-bottom;
+	}
+	@include media("<tablet"){
+		padding-top: $mobile-section-padding-top;
+		padding-bottom: $mobile-section-padding-bottom;
+	}
+	.btn-buy{
+		position: absolute;
+		bottom: 29px;
+		left: 50%;
+		width: 170px;
+		margin: 0 0 0 -85px;
+		background: #788492;
+		border-radius: 3px;
+		color: $white;
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 21px;
+		text-decoration: none;
+		transition: all .3s ease;
+		padding: 9px 10px 10px;
+		&:hover{
+			background: $turquoise-color;
+			+ .title{
+				background: $turquoise-color;
+			}
+		}
+	}
+	.plans-list{
+		margin: 0 0 0 -30px;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		font-size: 0;
+		line-height: 0;
+		letter-spacing: -5px;
+		text-align: center;
+		@include media("<desktop"){
+			margin-left: -10px;
+		}
+		> li{
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 0;
+			display: inline-block;
+			vertical-align: top;
+			width: 33.3%;
+			padding: 0 0 30px 30px;
+			@include media("<desktop"){
+				padding: 0 0 10px 10px;
+			}
+			@include media("<tablet"){
+				width: 100%;
+			}
+		}
+		.item{
+			position: relative;
+			overflow: hidden;
+			background: #f8f9fb;
+			border: 1px solid #ecf0f1;
+			border-radius: 2px;
+			padding: 0 0 98px;
+		}
+		.title{
+			display: block;
+			color: $white;
+			background: #485460;
+			font-weight: normal;
+			font-size: 26px;
+			line-height: 29px;
+			padding: 23px 10px;
+			border-radius: 2px 2px 0 0;
+			transition: all .3s ease;
+		}
+		.price{
+			display: block;
+			padding: 22px 10px 21px;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 25px;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background: $white;
+			color: $gray;
+			border-bottom: 1px solid #ecf0f1;
+			li{
+				border-top: 1px solid #ecf0f1;
+				overflow: hidden;
+				padding: 14px 10px;
+			}
+		}
+	}
+}

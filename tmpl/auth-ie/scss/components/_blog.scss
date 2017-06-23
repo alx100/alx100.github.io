@@ -1,0 +1,12 @@
+.blog{
+	text-align: center;
+	padding: 100px 0;
+	@include media("<desktop"){
+		padding-top: $tablet-section-padding-top;
+		padding-bottom: $tablet-section-padding-bottom;
+	}
+	@include media("<tablet"){
+		padding-top: $mobile-section-padding-top;
+		padding-bottom: $mobile-section-padding-bottom;
+	}
+}

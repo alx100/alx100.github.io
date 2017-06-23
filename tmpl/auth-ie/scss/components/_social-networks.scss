@@ -1,0 +1,76 @@
+.social-networks{
+	overflow: hidden;
+	ul{
+		margin: 0 0 9px -15px;
+		padding: 0;
+		list-style: none;
+		font-size: 0;
+		line-height: 0;
+		letter-spacing: -5px;
+		li{
+			letter-spacing: 0;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 0 10px 15px;
+		}
+		a{
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			transition: all .25s ease;
+			text-decoration: none;
+			&:hover{
+				background: $white !important;
+			}
+			&.icon-facebook{
+				background: $icon-facebook-bgcolor;
+				&:hover{
+					color: $icon-facebook-bgcolor;
+					i{
+						&:before{
+							color: $icon-facebook-bgcolor;
+						}
+					}
+				}
+			}
+			&.icon-twitter{
+				background: $icon-twitter-bgcolor;
+				&:hover{
+					color: $icon-twitter-bgcolor;
+					i{
+						&:before{
+							color: $icon-twitter-bgcolor;
+						}
+					}
+				}
+			}
+			&.icon-google-plus{
+				background: $icon-google-plus-bgcolor;
+				&:hover{
+					color: $icon-google-plus-bgcolor;
+					i{
+						&:before{
+							color: $icon-google-plus-bgcolor;
+						}
+					}
+				}
+			}
+			i{
+				display: block;
+				text-indent: -9999px;
+				overflow: hidden;
+				color: $white;
+				&:before{
+					text-indent: 0;
+					display: block;
+					font-size: 23px;
+					transition: all .25s ease;
+				}
+			}
+		}
+	}
+}

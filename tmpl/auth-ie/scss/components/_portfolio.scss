@@ -1,0 +1,29 @@
+.portfolio{
+	text-align: center;
+	padding: 100px 0;
+	position: relative;
+	z-index: 1;
+	@include media("<desktop"){
+		padding-top: $tablet-section-padding-top;
+		padding-bottom: $tablet-section-padding-bottom;
+	}
+	@include media("<tablet"){
+		padding-top: $mobile-section-padding-top;
+		padding-bottom: $mobile-section-padding-bottom;
+	}
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	&:before{
+		content:'';
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		bottom: 0;
+		height: 1px;
+		background: $turquoise-color;
+		z-index: -1;
+	}
+}

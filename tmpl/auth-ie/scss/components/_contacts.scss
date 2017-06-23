@@ -1,0 +1,104 @@
+.contacts{
+	margin: 0 -9999px;
+	font-size: 14px;
+	line-height: 21px;
+	color: $white;
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.contacts-holder{
+		width: 100vw;
+		margin: 0 auto;
+		background: #181818;
+		position: relative;
+		z-index: 1;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background: url(../images/bg-contacts.jpg) no-repeat 50% 50%;
+			background-size: cover;
+			opacity: .28;
+		}
+	}
+	.contacts-frame{
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 93px 0 36px;
+		@include media("<desktop"){
+			padding-top: $tablet-section-padding-top;
+			padding-bottom: $tablet-section-padding-bottom;
+		}
+		@include media("<tablet"){
+			padding-top: $mobile-section-padding-top;
+			padding-bottom: $mobile-section-padding-bottom;
+		}
+		&:after{
+			content:'';
+			display:block;
+			clear:both;
+		}
+	}
+	h2{
+		text-align: center;
+		text-transform: capitalize;
+		line-height: 50px;
+		margin: 0 0 107px;
+		@include media("<desktop"){
+			margin-bottom: 15px;
+		}
+	}
+	.columns-frame{
+		&:after{
+			content:'';
+			display:block;
+			clear:both;
+		}
+		margin: 0 0 0 -30px;
+		padding: 0 20px;
+		.column{
+			width: 50%;
+			float: left;
+			padding: 0 0 30px 30px;
+			@include media("<tablet"){
+				width: 100%;
+			}
+		}
+	}
+	.contacts-intro{
+		color: rgba(255,255,255,0.5);
+		max-width: 440px;
+		margin: 0 0 38px;
+		h3{
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 29px;
+			color: $white;
+			margin: 0 0 6px;
+		}
+		p{margin: 0;}
+	}
+	.contacts-info{
+		font-size: 13px;
+		line-height: 17px;
+		color: #bface2;
+		overflow: hidden;
+		margin: 0 0 20px;
+		p{margin: 0 0 7px;}
+		a{
+			color: #bface2;
+			text-decoration: none;
+			transition: all .25s ease;
+			&:hover{
+				color: $white;
+			}
+			&.tel-link{font-size: 14px;}
+		}
+	}
+}
