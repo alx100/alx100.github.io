@@ -1,0 +1,126 @@
+.header {
+    background-color: #24282f;
+    &__container {
+        position: relative;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1440px;
+        min-width: 360px;
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    &__image {
+        height: 23px;
+        margin: 2px 30px 0 8px;
+    }
+    &__text {
+        font-family: $nex;
+        color: #fff;
+        font-size: 26px;
+    }
+}
+
+.hamburger {
+    display: none;
+    padding-top: 17px;
+    &:focus {
+        outline: none;
+    }
+    @include media("<=910px") {
+        display: block;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    @include media("<=910px") {
+        background-color: #24282f;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        transition: all .3s;
+        z-index: 10;
+    }
+    &__item {
+        display: inline-block;
+        @include media("<=910px") {
+            display: block;
+            border-bottom: 1px solid darkgray;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    &__link {
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        font-family: $ral;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 42px 14px;
+        margin: 0 15px;
+        &:hover>.hover-underline {
+            width: 100%;
+        }
+        @include media("<=910px") {
+            display: block;
+            margin: 0;
+            padding: 25px;
+        }
+    }
+}
+
+.hover-underline {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 98%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #b5a263;
+    width: 0%;
+    transition: width .4s ease-out;
+}
+
+.link-active>.hover-underline {
+    width: 100%;
+}
+
+.hidden {
+    @include media("<=910px") {
+        left: -3000px;
+    }
+}
+
+.banner {
+    width: 100%;
+    background: url(../images/banner.jpg) center no-repeat;
+    background-size: cover;
+    &__container {
+        position: relative;
+        margin: 0 auto;
+        padding: 76px 20px 0 20px;
+        max-width: 1440px;
+        min-width: 360px;
+        min-height: 284px;
+    }
+    &__title {
+        color: #fff;
+        font-family: $ral;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
