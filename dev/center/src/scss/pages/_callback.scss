@@ -1,0 +1,186 @@
+.callback {
+    padding: 42px 0 58px;
+    background: url('../images/callback-bg.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    &::before { 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.82);
+    }
+    .container {
+        max-width: 970px;
+    }
+}
+
+.callback__title {
+    @include font-rem (23px);
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.callback__decription {
+    @include font-rem (21px);
+    font-weight: 100;
+    margin-bottom: 43px;
+}
+
+.callback__form {
+    display: flex;
+    justify-content: space-between;
+    @include media("<=960px") {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.callback__form-item {
+    width: 30%;
+    min-width: 280px;
+    @include media("<=960px") {
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.input__field,
+.input__label {
+    float: right;
+    font-weight: 700
+}
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    max-width: 280px;
+    width: 100%;
+    vertical-align: top;
+    margin-right: 37px;
+}
+
+.input__field {
+    position: relative;
+    display: block;
+    padding: .8em;
+    width: 60%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #aaa;
+    font-family: $fontMain;
+    @include font-rem(15px);
+}
+
+.input__field:focus {
+    outline: none;
+}
+
+.input__label {
+    display: inline-block;
+    padding: 0 1em;
+    width: 40%;
+    color: #6a7989;
+    font-size: 70.25%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.input__label-content {
+    position: relative;
+    display: block;
+    padding: 17px 26px;
+    width: 100%;
+}
+
+.input__field--akira,
+.input__label--akira::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 0 0
+}
+
+.input__field--akira {
+    z-index: 10;
+    display: block;
+    padding: 0 1em;
+    text-align: center;
+    font-weight: 300;
+    color: #d4d1d1
+}
+
+.input__label--akira {
+    padding: 0;
+    width: 100%;
+    display: block;
+    background: 0 0;
+    border: 1px solid #fff;
+    color: #d4d1d1;
+    cursor: text;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.input__label--akira::before {
+    content: '';
+    -webkit-transform: scale3d(.97, .85, 1);
+    transform: scale3d(.97, .85, 1);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s
+}
+
+.input__label-content--akira {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s
+}
+
+.input--filled {
+    background: transparent;
+}
+
+.input--filled .input__label--akira::before,
+.input__field--akira:focus+.input__label--akira::before {
+    -webkit-transform: scale3d(.99, .95, 1);
+    transform: scale3d(.99, .95, 1)
+}
+
+.input--filled .input__label--akira,
+.input__field--akira:focus+.input__label--akira {
+    cursor: default;
+    pointer-events: none
+}
+
+.input--filled .input__label-content--akira,
+.input__field--akira:focus+.input__label--akira .input__label-content--akira {
+    -webkit-transform: translate3d(0, -2.8em, 0);
+    transform: translate3d(0, -2.8em, 0)
+}
+
+.callback__button {
+  text-transform: uppercase;
+  @include font-rem(18px);
+  background-color: transparent;
+      padding: 15px 22px;
+}

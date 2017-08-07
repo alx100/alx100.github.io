@@ -1,0 +1,37 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(110px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+
+@keyframes incr {
+    from {
+        opacity: 0;
+        transform: scale(2)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+
+@keyframes scrollbtn {
+    0%,100%,20%,50%,80% {
+        transform: translateY(0)
+    }
+
+    40% {
+        transform: translateY(-6px)
+    }
+
+    60% {
+        transform: translateY(-3px)
+    }
+}

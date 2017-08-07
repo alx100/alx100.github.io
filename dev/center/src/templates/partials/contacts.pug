@@ -1,0 +1,18 @@
+mixin listItem(title)
+  li.contacts__list-item
+    a(href="#").contacts__link= title
+
+section.contacts
+  .container
+    .contacts__row
+      ul.contacts__list
+        +listItem("Главная")
+        +listItem("Вступление в СРО")
+        +listItem("Новости")
+      ul.contacts__list
+        +listItem("Учебный центр")
+        +listItem("Сертификаты")
+        +listItem("Контакты")
+      ul.contacts__list
+        +listItem("Т. +38 097-192-7878")
+        +listItem("Т. +38 097-193-7118")

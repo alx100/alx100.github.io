@@ -1,0 +1,16 @@
+mixin inviteItem(img, title)
+  li(data-wow-duration="1s", data-wow-offset="150").invite__list-item.wow.fadeInUp
+    a(href="#").invite__list-link
+      img(src= img, alt="Invite").invite__list-image
+      h3.invite__list-title= title
+      p.invite__list-descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+      p.invite__list-more подробнее
+
+
+section.invite
+  .container
+    h2.invite__title.section-title вступление в сро
+    ul.invite__list
+      +inviteItem("assets/images/invite-card-1.jpg", "вступление в строительные сро")
+      +inviteItem("assets/images/invite-card-2.jpg", "вступление в проектное сро")
+      +inviteItem("assets/images/invite-card-3.jpg", "вступление в изыскательное сро")

@@ -1,0 +1,83 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-analytics {
+    width: 79px;
+    height: 47px;
+    background-position: -18px -18px;
+}
+
+.sprite-arrow-right {
+    width: 10px;
+    height: 19px;
+    background-position: -133px -18px;
+}
+
+.sprite-arrow-slider-next {
+    width: 39px;
+    height: 40px;
+    background-position: -179px -18px;
+}
+
+.sprite-arrow-slider-prev {
+    width: 39px;
+    height: 40px;
+    background-position: -254px -18px;
+}
+
+.sprite-bank {
+    width: 71px;
+    height: 68px;
+    background-position: -329px -18px;
+}
+
+.sprite-clock {
+    width: 38px;
+    height: 39px;
+    background-position: -436px -18px;
+}
+
+.sprite-connection {
+    width: 72px;
+    height: 70px;
+    background-position: -510px -18px;
+}
+
+.sprite-graph {
+    width: 76px;
+    height: 68px;
+    background-position: -618px -18px;
+}
+
+.sprite-photo-slide-1 {
+    width: 104px;
+    height: 104px;
+    background-position: -730px -18px;
+}
+
+.sprite-sales {
+    width: 71px;
+    height: 71px;
+    background-position: -870px -18px;
+}
+
+.sprite-scroll {
+    width: 25px;
+    height: 56px;
+    background-position: -977px -18px;
+}
+
+.sprite-slide-icon {
+    width: 75px;
+    height: 62px;
+    background-position: -1038px -18px;
+}
+
+.sprite-time {
+    width: 69px;
+    height: 67px;
+    background-position: -1149px -18px;
+}

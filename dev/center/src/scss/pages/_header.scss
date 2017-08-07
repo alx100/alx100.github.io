@@ -1,0 +1,250 @@
+.header {
+    min-height: 636px;
+    padding-top: 32px;
+    background: url('../images/header-bg.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    @include media("<=750px") {
+        padding-top: 12px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.59);
+    }
+    .container {
+        overflow: hidden;
+    }
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo__link {
+    @include font-rem(37px);
+    font-weight: 400;
+    line-height: 55px;
+    text-transform: uppercase;
+    margin-right: 10%;
+    flex-shrink: 0;
+    color: #fff;
+    @include media("<=750px") {
+        margin-right: 0;
+    }
+}
+
+.header-nav__list {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    transition: all .1s;
+    @include media("<=1160px") {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: $colorMain;
+        z-index: 100;
+        width: 100vw;
+        text-align: center;
+        opacity: 1;
+    }
+}
+
+.hidden {
+    @include media("<=1160px") {
+        left: -3000px;
+        opacity: 0;
+    }
+}
+
+.header-nav__item {
+    margin-right: 15px;
+    flex-shrink: 0;
+    padding: 9px 0;
+    position: relative;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include media("<=1160px") {
+        padding: 20px;
+        margin-right: 0;
+    }
+}
+
+.header-nav__link {
+    @include font-rem(18px);
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    transition: all .3s ease;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background: #fff;
+        transition: all .3s ease;
+        opacity: 0;
+        transform: translateY(-3px);
+        @include media("<=1160px") {
+            content: none;
+        }
+    }
+    &:hover {
+        text-shadow: 0 0 0 #fff;
+        @include media("<=1160px") {
+            letter-spacing: 1px;
+        }
+        &::after {
+            height: 2px;
+            opacity: 1;
+            transform: translateY(0)
+        }
+    }
+}
+
+.header-nav__phone {
+    display: inline-block;
+    margin-left: 8%;
+    padding: 10px 20px;
+    color: #fff;
+    @include font-rem(21px);
+    font-weight: 700;
+    text-transform: uppercase;
+    min-width: 247px;
+    border: 3px solid $colorMain;
+    flex-shrink: 0;
+    @include media("<=750px") {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+    }
+}
+
+.hamburger {
+    display: none;
+    padding-top: 20px;
+    margin-left: 35px;
+    &:focus {
+        outline: none;
+    }
+    @include media("<=1160px") {
+        display: block;
+    }
+}
+
+.banner {
+    margin-top: 145px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    @include media("<=750px") {
+        margin-top: 95px;
+    }
+}
+
+.banner__title {
+    @include font-rem(37px);
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    animation: incr 2s;
+}
+
+.banner__description {
+    position: relative;
+    animation: fadeInUp 2s;
+}
+
+.banner__text {
+    @include font-rem(31px);
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.banner__icon {
+    padding-left: 60px;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        @include size(39px);
+        position: absolute;
+        background: url('../images/sprite.png') no-repeat;
+        background-position: -436px -18px;
+        top: -5%;
+        left: 10%;
+    }
+}
+
+.banner__btn {
+    margin-top: 50px;
+    margin-bottom: 34px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    @include font-rem(19px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 14px 22px;
+    line-height: 1;
+    border: 3px solid $colorMain;
+    z-index: 998;
+    overflow: hidden;
+    min-width: 280px;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 120%;
+        height: 532%;
+        transition: all 1s;
+        transform: translateY(-50%) rotate(45deg);
+        background: #2ac4ea;
+        opacity: 1
+    }
+    &::before {
+        top: 50%;
+        left: 50%;
+    }
+    &::after {
+        top: 50%;
+        right: 50%;
+    }
+    &:hover {
+        background: 0 0;
+    }
+    &:hover::after,
+    &:hover::before {
+        height: 75%
+    }
+}
+
+.scroll-btn {
+    margin: 0 auto;
+    width: 25px;
+    height: 56px;
+    cursor: pointer;
+    background: url('../images/sprite.png') no-repeat;
+    background-position: -977px -18px;
+    position: relative;
+    animation: scrollbtn 2s 2s infinite;
+}

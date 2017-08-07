@@ -1,0 +1,20 @@
+mixin sliderItem 
+  .reviews__slider-item
+        .slider-item__inner
+          .slider-item__content
+            img(src="assets/images/client.png", alt="Pavel Vasilyev").slider-item__image
+            h3.slider-item__client Павел Васильев
+            p.slider-item__text 
+              |Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              |Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+              |amet lacus accumsan et viverra justo commodo. Proin sodales 
+              |pulvinar tempor.
+
+section.reviews
+  .container
+    h2.reviews__title.section-title озывы наших клиентов
+    .reviews__slider
+      +sliderItem
+      +sliderItem
+      +sliderItem
+      +sliderItem

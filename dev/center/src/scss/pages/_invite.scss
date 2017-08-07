@@ -1,0 +1,86 @@
+.invite {
+    background-color: $colorBgMain;
+    padding: 65px 0 85px;
+    .container {
+        max-width: 1010px;
+    }
+}
+
+.invite__title {
+    margin-bottom: 88px;
+}
+
+.invite__list {
+    display: flex;
+    justify-content: space-between;
+    @include media("<=960px") {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.invite__list-item {
+    max-width: 270px;
+    box-shadow: 0 0 51px 0 rgba(#000, .19);
+    transition: all .5s ease;
+    position: relative;
+    &:hover {
+        box-shadow: 0 5px 20px 0 rgba(125, 125, 125, .2);
+        transform: translateY(5px);
+    }
+    @include media("<=960px") {
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.invite__list-link {
+    display: block;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.invite__list-image {
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.invite__list-title {
+    @include font-rem(17px);
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: 19px;
+}
+
+.invite__list-descr {
+    @include font-rem(17px);
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    margin: 0 10px 50px;
+    word-spacing: 4px;
+}
+
+.invite__list-more {
+    @include font-rem(17px);
+    text-transform: uppercase;
+    color: $colorMain;
+    font-weight: 300;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        @include size(10px, 19px);
+        background: url(../images/sprite.png) no-repeat;
+        background-position: -133px -18px;
+        position: absolute;
+        right: 50px;
+        top: 0px;
+    }
+}
