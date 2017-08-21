@@ -1,1 +1,1 @@
-quick start templates
+starters
