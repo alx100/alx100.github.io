@@ -34,6 +34,28 @@ var calculator2 = {
     this.b = +prompt('b?', 0);
   }
 }
+
+// with constructor
+function Calculator() {
+  this.sum = function() {
+    return this.a + this.b;
+  };
+
+  this.mul = function() {
+    return this.a * this.b;
+  }
+
+  this.read = function() {
+    this.a = +prompt('a?', 0);
+    this.b = + prompt('b?', 0);
+  };
+
+}
+
+var calc = new Calculator();
+calc.read();
+alert(calc.mul());
+
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // 2.CLOSURE COUNTER
@@ -180,3 +202,23 @@ sayHi.count = 0; //start value
 sayHi2(); //Hi 1
 sayHi2(); //Hi 2 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// 5.SUM WITH RECURSION
+function sum(a) {
+  let currentSum = a;
+
+  function f(b) {
+    currentSum += b;
+    return f;
+  }
+
+  f.toString = function() {
+    return currentSum;
+  };
+
+  return f;
+}
+
+alert( sum(1)(2)(3)); //6
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
