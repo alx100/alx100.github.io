@@ -222,3 +222,51 @@ function sum(a) {
 alert( sum(1)(2)(3)); //6
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//6.Func BUFFER WITH METHOD CLEAR
+function makeBuffer() {
+  let text = '';
+
+  function buffer(piece) {
+    if (arguments.length == 0) { //call without arguments
+      return text;
+    }
+    text += piece;
+  };
+
+  buffer.clear = function() {
+    text = "";
+  };
+
+  return buffer;
+};
+
+let buffer = makeBuffer();
+buffer('blablabla')
+buffer('blablabla2')
+buffer('blablabla3')
+
+alert(buffer())
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//7. Decorator - BIND this
+function bind(func, context) {
+  return function(...args) {
+    return func.apply(context, args);
+  }
+}
+
+let user = {
+  login: 'Vasya',
+  sayHi() {
+    alert(this.login);
+  }
+};
+
+setTimeout(bind(user.sayHi, user), 1000);
+
+// or
+// setTimeout(user.sayHi.bind(user), 1000);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
