@@ -270,3 +270,55 @@ setTimeout(bind(user.sayHi, user), 1000);
 // setTimeout(user.sayHi.bind(user), 1000);
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//8. Check type with [[Class]], access with {}.toString
+
+function getClass(obj) {
+  return {}.toString.call(obj).slice(8, -1);
+}
+
+// getClass([1, 2, 3]) - 'Array'
+// getClass(123) - 'Number'
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//9 Constructor with define properties
+function User(fullName) {
+  this.fullName = fullName;
+
+  Object.defineProperties(this, {
+    firstName: {
+      get() {
+        return this.fullName.split(' ')[0];
+      },
+      set(newFirstName) {
+        let lastName = this.fullName.split(' ')[1];
+        return this.fullName = `${newFirstName} ${lastName}`; 
+      }
+    },
+    lastName: {
+      get() {
+        return this.fullName.split(' ')[1];
+      },
+      set(newLastName) {
+        let firstName = this.fullName.split(' ')[0];
+        return this.fullName = `${firstName} ${newLastName}`; 
+      }
+    }
+  });
+}
+
+let vasya = new User('Vasya Pupkun');
+
+//read first,lastNames
+alert(vasya.firstName);
+alert(vasya.lastName);
+
+// write to lastName
+vasya.lastName = 'Sidorov';
+
+alert(vasya.fullName);// Vasya Sidorov
+
+
+
+
