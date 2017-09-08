@@ -1,0 +1,34 @@
+.app-basket{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #fff;
+    border: 0px solid #fff;
+    width: 100px;
+    height: 50px;
+    display: flex;
+}
+
+.app-basket:hover{
+    cursor: pointer;
+}
+.app-basket-count{
+    display: inline-block;
+    font-size: 30px;
+    margin:0 0 0 10px;
+}
+.baskets-list{
+   
+}
+.closed{
+    display: none;
+}
+.baskets-list::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5)
+}

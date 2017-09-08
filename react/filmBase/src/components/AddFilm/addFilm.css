@@ -1,0 +1,17 @@
+.movie{
+    width: 300px;
+    margin: 0 auto;
+}
+.movie .title{
+    color: lightseagreen;
+    font-size: 26px;
+}
+
+.movie input{
+    margin: 10px 0 ;
+}
+.add-result{
+    margin: 0 25px;
+    color: lightseagreen;
+    font-size: 26px;
+}

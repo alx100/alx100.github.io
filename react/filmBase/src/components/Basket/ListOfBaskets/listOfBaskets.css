@@ -1,0 +1,44 @@
+.app-listBaskets{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 90%;
+    margin: 5% 10%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 20px;
+    z-index: 500;
+}
+.app-listBaskets i{
+    cursor: pointer;
+}
+.listBaskets-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.listBaskets-head h1{
+    margin: 0;
+    padding: 0;
+}
+.listBasketsClose:hover{
+    color: red;
+}
+.row-item>div{
+    text-align: center;
+}
+.count-item{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.item-delete i{
+    float: right;
+    margin: 0 20px 0  0;
+}
+.fa-plus, .fa-minus{
+    cursor: pointer;
+}
