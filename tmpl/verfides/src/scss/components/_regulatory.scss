@@ -1,0 +1,33 @@
+.regulatory {
+    @include media('<=tablet') {
+        border-bottom: 2px solid $colorSectionBg;
+    }
+    .container {
+        max-width: 1010px;
+        padding-top: 65px;
+        min-height: 460px;
+    }
+    .title {
+        margin-bottom: 67px;
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        @include media('<=tablet') {
+            flex-direction: column;
+        }
+        &__item {
+            width: 31.5%;
+            font-size: 14px;
+            line-height: 20px;
+            color: $colorFontMain;
+            @include media('<=tablet') {
+                width: 100%;
+            }
+            &:last-child {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+

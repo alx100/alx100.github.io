@@ -1,0 +1,84 @@
+.register {
+    background-color: $colorSectionBg;
+    .container {
+        padding-top: 77px;
+        padding-bottom: 80px;
+    }
+    &__title {
+        margin: 0 auto;
+        max-width: 755px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        padding-bottom: 39px;
+    }
+    &-form__row {
+        margin: 0 auto;
+        max-width: 735px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 39px;
+        @include media('<=tablet') {
+            flex-direction: column;
+        }
+    }
+
+    &-form__input {
+        width: 100%;
+        max-width: 48%;
+        @include media('<=tablet') {
+            max-width: 100%;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-form__btn {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        border: 1px solid white;
+        background: $colorSectionBg;
+        padding: 16px 63px 16px 54px;
+        font-family: $fontMainBold;
+        font-size: 14px;
+        font-weight: 700;
+        position: relative;
+        &:hover {
+            opacity: 0.8;
+        }
+        .icon-arrow-r {
+            left: 62%;
+            font-size: 13px;
+        }
+    }
+}
+
+.section-form {
+    margin: o auto;
+    text-align: center;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        @include placeholder {
+            color: #abb1bb;
+            font-weight: 700;
+        }
+        padding: 18px 16px;
+        border: none;
+        color: #abb1bb;
+        background-color: #2a4061;
+        font-family: $fontMainBold;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 700;
+    }
+}
+
+
+
+
+

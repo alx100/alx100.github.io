@@ -1,0 +1,38 @@
+header.header
+	.home-video__section
+		video(loop,autoplay,muted)#j-video.home-video
+			source(type="video/mp4", src="assets/video/video.mp4")
+	.header__nav-block
+		.header__nav-inner
+			.container
+				nav.main-nav
+					.main-nav__logo.logo
+						a.logo__link(href="#")
+							img.logo__image(src="assets/images/logo.svg", alt="verFides")
+					ul.main-nav__list.nav-hidden
+						li.main-nav__item.item-active
+							a(href="#home").main-nav__link Home
+						li.main-nav__item
+							a(href="#service").main-nav__link Services
+						li.main-nav__item
+							a(href="#management").main-nav__link Management
+						li.main-nav__item
+							a(href="#resource").main-nav__link Resources
+						li.main-nav__item
+							a(href="#contact").main-nav__link ContactUs
+						li.main-nav__item
+							a(href="#client").main-nav__link ClientArea
+					.hamburger-block
+						button(type="button").hamburger.hamburger--slider
+							span.hamburger-box
+								span.hamburger-inner
+		h1.title.header__title.title-underline Wealth structuring, preservation and protection.
+		.scroll-btn
+			span.scroll-btn__icon.icon-scroll-btn
+		.video-btn__block
+			button.video-btn.btn-pause 
+				span Pause
+					span.icon-pause-button.btn-icon
+			button.video-btn.btn-play.btn-hidden 
+				span Play
+					span.icon-play-button.btn-icon

@@ -1,0 +1,41 @@
+.tax {
+    background: url(../images/bg-tax.jpg) center no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid transparent;
+    .container {
+        padding-top: 131px;
+        padding-bottom: 136px;
+        color: #fff;
+    }
+    .title {
+        margin-bottom: 60px;
+    }
+    &__description {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    &__btn {
+        border-color: #fff;
+        &:hover {
+            opacity: 0.8;
+        }
+        .btn-text {
+            color: #fff;
+            white-space: nowrap;
+            left: 5%;
+            font-weight: 700;
+        }
+      
+    }
+    &__arrow {
+        @include absolute-center-height;
+          color: #fff;
+          padding-left: 5px;
+          font-size: 13px;
+          left: 85%;
+      }  
+
+    
+}
+

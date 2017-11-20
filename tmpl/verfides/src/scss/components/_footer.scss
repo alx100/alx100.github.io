@@ -1,0 +1,107 @@
+.footer {
+    border-bottom: 1px solid transparent;
+    .container {
+        max-width: 1010px;
+        padding-top: 43px;
+        @include media('<=tablet') {
+            padding: 50px 50px 0;
+        }
+    }
+    .title-underline::after {
+        background-color: #769eca;
+        bottom: -13px;
+    }
+    &-divider {
+        height: 1px;
+        background-color: #dddddd;
+    }
+}
+
+.footer-nav {
+    position: relative;
+    max-width: 630px;
+    margin: auto;
+    margin-bottom: 26px;
+    @include media('<=990px') {
+        &::after {
+            content: none;
+        }
+    }
+    @include media('<=tablet') {
+        justify-content: space-around;
+        display: flex;
+    }
+    &__row {
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        @include media('<=tablet') {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    &__item {
+        margin: 0 15px;
+    }
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: $colorFontMain;
+        font-size: 16px;
+        line-height: 27px;
+        &:hover {
+            opacity: 0.8;
+        }
+        .icon-linkedin {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 13px;
+        }
+        span:last-child {
+            margin-left: 15px;
+        }
+    }
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    &:last-child {
+        margin-bottom: 32px;
+    }
+    @include media('<=990px') {
+        display: none;
+    }
+    &__item {
+        margin: 0 12px;
+        flex-shrink: 0;
+        a {
+            text-decoration: none;
+            color: $colorFontLink;
+            font-size: 14px;
+            line-height: 27px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.footer-logo {
+    margin: auto;
+    a:hover {
+        opacity: 0.8;
+    }
+    &__wrapper {
+        min-height: 90px;
+        text-align: center;
+        display: flex;
+    }
+    &__image {
+        @include size(192px, 22px);
+    }
+    &__text {
+        font-size: 12px;
+    }
+}

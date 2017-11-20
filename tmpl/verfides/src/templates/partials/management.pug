@@ -1,0 +1,44 @@
+mixin listItem(link, name, title)
+  li.management-list__item.list-item
+        .list-item__photo
+          a(href="#")
+            img(src=link, alt= name)
+        h4.list-item__title= name
+        p.list-item__desc= title
+        .list-item__social
+          a(href="#", class="social-link")
+            span.social-icon.icon-linkedin
+          a(href="#", class="social-link")
+            span.social-icon.icon-letter
+          a(href="#", class="social-link social-link__card")
+            span.social-icon vCard
+
+section#management.management
+  .container
+    h2.title.about__title.title-underline Management
+    ul.management-list
+      +listItem('assets/images/mng-marano.jpg','Marco Marano','Managing Director')
+      +listItem('assets/images/mng-borea.jpg','Carlo Borea','Director')
+      +listItem('assets/images/mng-soave.jpg','Angela Soave','Operations & Family Office')
+      +listItem('assets/images/mng-pay.jpg','Terence Pay','International Tax Advisory')
+    .btn
+      a(href="#") 
+        span.btn-text See All 
+        span.icon-arrow-r.management__arrow
+
+
+
+
+    
+    
+
+
+
+
+        
+
+
+        
+
+
+        

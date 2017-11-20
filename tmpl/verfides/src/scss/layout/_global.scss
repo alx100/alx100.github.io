@@ -1,0 +1,17 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $fontMain;
+    color: $colorFontMain;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1320px;
+    min-width: 280px;
+    position: relative;
+}

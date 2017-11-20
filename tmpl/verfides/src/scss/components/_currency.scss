@@ -1,0 +1,7 @@
+.currency {
+  min-height: 70px;
+  background-color: $colorSectionBg;
+  @include media('<=tablet') {
+    display: none;
+  }
+}

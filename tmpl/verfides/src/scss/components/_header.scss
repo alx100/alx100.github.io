@@ -1,0 +1,224 @@
+.header {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    @include media('<=desktop') {
+        background: center no-repeat;
+        background-size: cover;
+    }
+    &__nav-block {
+        position: relative;
+        min-height: 100vh;
+    }
+    &__nav-inner {
+        position: relative;
+        z-index: 10;
+        @include media("<=desktop") {
+            @include animate(background-color, .2s);
+            background-color: $colorNavBg;
+        }
+    }
+    &__title.title {
+        @include absolute-center;
+        max-width: 550px;
+        color: #fff;
+        &::after {
+            background-color: #fff;
+            @include media('<=tablet') {
+                width: 125px;
+            }
+        }
+        @include media('<=tablet') {
+            min-width: 262px;
+            font-size: 28px;
+        }
+    }
+    .container {
+        padding: 24px 17px 0;
+        @include media('<=desktop') {
+            padding: 0;
+        }
+    }
+}
+
+.home-video__section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    @include media('<=desktop') {
+        display: none;
+    }
+}
+
+.home-video {
+    width: 150%;
+    height: auto;
+}
+
+.video-btn__block {
+    z-index: 10;
+    position: absolute;
+    bottom: 45px;
+    right: 85px;
+    @include media('<=desktop') {
+        display: none;
+    }
+    .video-btn {
+        @include absolute-center;
+        @include size(120px, 30px);
+        color: #fff;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:focus {
+            outline: none;
+        }
+        .btn-icon {
+            @include absolute-center-height;
+            right: 5px;
+            font-size: 20px;
+        }
+        .icon-play-button.btn-icon {
+            right: 15px;
+        }
+    }
+    .btn-hidden {
+        display: none;
+    }
+}
+
+.hamburger-block {
+    display: none;
+    @include media('<=desktop') {
+        display: block;
+        background-color: #fff;
+    }
+}
+
+.hamburger {
+    &:focus {
+        outline: none;
+    }
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+    background-color: $colorNavBg;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__list {
+        margin-right: 26px;
+        @include media("<=desktop") {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s;
+            background-color: $colorNavBg;
+            z-index: 10;
+        }
+        
+    }
+    &__item {
+        display: inline-block;
+        padding: 15px 0;
+        margin: 0 23px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+        @include media("<=desktop") {
+            margin: 0;
+            display: block;
+            padding: 10px 0;
+            &:hover {
+                border-bottom: none;
+                opacity: 0.8;
+            }
+        }
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        height: 100%;
+    }
+}
+
+.logo {
+    @include size(174px, 38px);
+    @include animate(transform, .2s, linear);
+    @include media('<=desktop') {
+        margin: 0 50px;
+        transform: scale(0.7);
+    }
+    @include media("<=500px") {
+        margin: 0 36px;
+    }
+}
+
+.nav-hidden {
+    @include media("<=desktop") {
+        left: -3000px;
+    }
+}
+
+.item-active {
+    border-bottom: 1px solid #fff;
+    @include media('<=desktop') {
+        border: none;
+        opacity: 0.8;
+    }
+}
+
+.title {
+    text-align: center;
+    font-family: $fontMainItalic;
+    font-weight: 200;
+    font-size: 36px;
+    position: relative;
+    font-style: italic;
+    @include media('<=tablet') {
+        font-size: 28px;
+    }
+    &-underline::after {
+        content: '';
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        height: 1px;
+        width: 250px;
+        transform: translateX(-50%);
+    }
+}
+
+.scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    animation: scrollbtn 2s 2s infinite;
+    &__icon {
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+@keyframes scrollbtn {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+      transform: translate(-50%, 0)
+  }
+  40% {
+      transform: translate(-50%, -6px)
+  }
+  60% {
+      transform: translate(-50%, -3px)
+  }
+}

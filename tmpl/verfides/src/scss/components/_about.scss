@@ -1,0 +1,41 @@
+.about {
+    border-bottom: 1px solid #a5a5a5;
+    .container {
+        max-width: 1010px;
+        padding-top: 68px;
+        @include media('<=tablet') {
+            padding: 55px 20px 0;
+        }
+    }
+    &__title {
+        margin-bottom: 68px;
+        &::after {
+            background-color: $colorHeadingUnderline;
+            bottom: -32px;
+        }
+    }
+    &__subtitle {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 200;
+        max-width: 675px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    &__descr {
+        column-count: 2;
+        column-gap: 25px;
+        column-fill: balance;
+        margin-bottom: 75px;
+        @include media('<=tablet') {
+            column-count: 1;
+            column-gap: 25px;
+            margin-bottom: 40px;
+        }
+    }
+    &__descr-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+}

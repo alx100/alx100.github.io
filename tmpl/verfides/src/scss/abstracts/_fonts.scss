@@ -1,0 +1,98 @@
+// Custom icons
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff?69hwji') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pause-button:before {
+    content: "\e90d";
+    color: #fff;
+}
+
+.icon-play-button:before {
+    content: "\e90e";
+    color: #fff;
+}
+
+.icon-linkedin:before {
+    content: "\e90c";
+}
+
+.icon-chevron-l:before {
+    content: "\e910";
+}
+
+.icon-chevron-r:before {
+    content: "\e911";
+}
+
+.icon-arrow-d:before {
+    content: "\e900";
+}
+
+.icon-arrow-r:before {
+    content: "\e901";
+}
+
+.icon-arrow:before {
+    content: "\e902";
+}
+
+.icon-icon-1:before {
+    content: "\e903";
+}
+
+.icon-icon-2:before {
+    content: "\e904";
+}
+
+.icon-icon-3:before {
+    content: "\e905";
+}
+
+.icon-icon-4:before {
+    content: "\e906";
+}
+
+.icon-icon-5:before {
+    content: "\e907";
+}
+
+.icon-icon-6:before {
+    content: "\e908";
+}
+
+.icon-icon-7:before {
+    content: "\e909";
+}
+
+.icon-icon-8:before {
+    content: "\e90a";
+}
+
+.icon-letter:before {
+    content: "\e90b";
+}
+
+.icon-scroll-btn:before {
+    content: "\e90f";
+    color: #fff;
+}

@@ -1,0 +1,36 @@
+.btn {
+    @include size(170px, 50px);
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid $colorSectionBg;
+    &:hover {
+        opacity: 0.8;
+    }
+    a {
+        @include size(100%);
+        @include absolute-center;
+        display: block;
+        text-decoration: none;
+        color: $colorSectionBg;
+        font-family: $fontMainBold;
+        font-size: 14px;
+        position: relative;
+    }
+    .management__arrow {
+        vertical-align: middle;
+        margin-left: 2px;
+        font-size: 13px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 60%;
+    }
+}
+
+.btn-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30%;
+    font-weight: 700;
+}

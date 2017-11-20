@@ -1,0 +1,45 @@
+mixin navLink(title)
+  .footer-nav__item
+    a(href="#").footer-nav__link= title
+
+mixin footerLink(title)
+  li.footer-links__item
+    a(href="#")= title
+
+footer.footer
+  .container
+    .footer-nav.title-underline
+      .footer-nav__row
+        +navLink('Home')
+        +navLink('Services')
+        +navLink('Management')
+        +navLink('Resources')
+        +navLink('Contact Us')
+      .footer-nav__row
+        +navLink('Client Area')
+        +navLink('Careers')
+        .footer-nav__item
+          a(href="#").footer-nav__link 
+            span.social-icon.icon-linkedin
+            span LinkedIn
+        +navLink('T&Cs')
+    ul.footer-links
+      +footerLink('Trust & Estate Planning')
+      +footerLink('Tax Advisory Services')
+      +footerLink('Employment Solutions: UK Businesses')
+      +footerLink('UK Real Estate Structuring')
+    ul.footer-links
+      +footerLink('Coming to the UK: Businesses & Individuals')
+      +footerLink('Wealth Structure & Family Office ')
+      +footerLink('Corporate & Fiduciary Services')
+      +footerLink('Accountancy & Tax Compliance') 
+  .footer-divider
+  .footer-logo__wrapper
+    .footer-logo
+      a(href="#")
+        img(src="assets/images/logo-color.svg", alt="verFides").footer-logo__image
+      p.footer-logo__text © Copyright 2015
+  
+   
+        
+

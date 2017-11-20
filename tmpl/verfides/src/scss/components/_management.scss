@@ -1,0 +1,90 @@
+.management {
+    .container {
+        max-width: 960px;
+        padding-top: 71px;
+        .title {
+            margin-bottom: 92px;
+            @include media('<=tablet') {
+                margin-bottom: 75px;
+            }
+        }
+        .btn {
+            margin-bottom: 79px;
+            margin-bottom: 22px;
+        }
+    }
+}
+
+.management-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+    .list-item__title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+        &::after {
+            content: none;
+        }
+    }
+    @include media('<=910px') {
+        justify-content: center;
+        &__item {
+            margin: 30px;
+        }
+    }
+}
+
+.list-item {
+    text-align: center;
+    min-width: 185px;
+    @include media('<=910px') {
+        min-width: 30%;
+    }
+    &__photo {
+        margin-bottom: 17px;
+        border-radius: 50%;
+    }
+    &__desc {
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 4px;
+    }
+    &__social {
+        margin: 0 auto;
+        width: 54%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.social-link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: $colorSectionBg;
+}
+
+.social-icon {
+    font-family: $fontMainBold;
+    font-size: 14px;
+    position: relative;
+    vertical-align: top;
+}
+
+.icon-linkedin {
+    color: #1d8cb5;
+    font-size: 18px;
+}
+
+.icon-letter {
+    font-size: 21px;
+}
+
+.icon-card {
+    font-family: $fontMainBold;
+    font-size: 14px;
+}

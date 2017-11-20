@@ -1,0 +1,31 @@
+//- mixin navItem(title)
+//- 	li&attributes(attributes)
+//- 		a(href="#").main-nav__link= title
+
+header.home
+	.container
+		nav.main-nav
+			.main-nav__logo.logo
+				a.logo__link(href="#")
+					img.logo__image(src="assets/images/logo.svg", alt="verFides logo")
+			ul.main-nav__list
+				li.main-nav__item.item-active
+					a(href="#home").main-nav__link Home
+				li.main-nav__item
+					a(href="#service").main-nav__link Services
+				li.main-nav__item
+					a(href="#management").main-nav__link Management
+				li.main-nav__item
+					a(href="#resource").main-nav__link Resources
+				li.main-nav__item
+					a(href="#contact").main-nav__link ContactUs
+				li.main-nav__item
+					a(href="#client").main-nav__link ClientArea
+
+				
+			button(type="button").hamburger.hamburger--slider
+				span.hamburger-box
+					span.hamburger-inner
+			h1.title.home__title.title-underline Wealth structuring, preservation and protection.
+			.scroll-btn
+				span.scroll-btn__icon.icon-scroll-btn

@@ -1,0 +1,122 @@
+.resource {
+    .container {
+        max-width: 1010px;
+        padding-top: 14px;
+    }
+    &__descr {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        width: 84%;
+        margin-bottom: 54px;
+    }
+}
+
+.resource-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media('<=tablet') {
+        flex-direction: column;
+    }
+}
+
+.news-item {
+    width: 48.5%;
+    @include media('<=tablet') {
+        width: 100%;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $colorBorder;
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+    }
+    &__title {
+        color: $colorSectionBg;
+        font-size: 18px;
+        font-weight: 200;
+        margin-bottom: 7px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        color: $colorFontMain;
+    }
+    &__link {
+        color: $colorSectionBg;
+        font-family: $fontMainBold;
+        font-size: 14px;
+        text-decoration: none;
+        margin-bottom: 35px;
+        display: inline-block;
+        position: relative;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.news-arrow {
+    position: absolute;
+    top: 12%;
+    left: 108%;
+}
+
+.resource__btn {
+    margin-bottom: 53px;
+}
+
+.resource__descr--share {
+    display: block;
+    margin-bottom: 38px;
+}
+
+.resource-downloads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+    @include media('<=tablet') {
+        flex-direction: column;
+    }
+    &__item {
+        text-align: center;
+        min-width: 290px;
+        @include media('<=tablet') {
+            margin-bottom: 40px;
+        }
+        &:first-child {
+            margin-right: 2%;
+            @include media('<=tablet') {
+                margin-right: 0;
+            }
+        }
+        &:last-child {
+            margin-left: 2%;
+            @include media('<=tablet') {
+                margin-left: 0;
+            }
+        }
+    }
+    .news-item__link {
+        margin-bottom: 0;
+    }
+    a:hover {
+        opacity: 0.8;
+    }
+    .icon-arrow-d {
+        vertical-align: middle;
+    }
+}
+
+.downloads__descr {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
