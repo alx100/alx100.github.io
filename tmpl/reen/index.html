@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reen</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7cSource+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+  <style>
+    .slider .slider-item-1 {
+      background-image: url('assets/images/slide-bg1@1534.jpg');
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@828.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 415px) and (min-resolution: 144dpi) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@980.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 768px) and (min-resolution: 144dpi) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@1960.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@1280.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 981px) and (min-resolution: 144dpi) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@2560.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 1281px) and (min-resolution: 144dpi) {
+      .slider .slider-item-1 {
+        background-image: url('assets/images/slide-bg1@3840.jpg');
+      }
+    }
+    
+    .slider .slider-item-2 {
+      background-image: url('assets/images/slide-bg2@1534.jpg');
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@828.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 415px) and (min-resolution: 144dpi) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@980.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 768px) and (min-resolution: 144dpi) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@1960.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@1280.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 981px) and (min-resolution: 144dpi) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@2560.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 1281px) and (min-resolution: 144dpi) {
+      .slider .slider-item-2 {
+        background-image: url('assets/images/slide-bg2@3840.jpg');
+      }
+    }
+    
+    .slider .slider-item-3 {
+      background-image: url('assets/images/slide-bg3@1534.jpg');
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@828.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 415px) and (min-resolution: 144dpi) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@980.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 768px) and (min-resolution: 144dpi) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@1960.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@1280.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 981px) and (min-resolution: 144dpi) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@2560.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 1281px) and (min-resolution: 144dpi) {
+      .slider .slider-item-3 {
+        background-image: url('assets/images/slide-bg3@3840.jpg');
+      }
+    }
+    
+    .slider .slider-item-4 {
+      background-image: url('assets/images/slide-bg4@1534.jpg');
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@828.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 415px) and (min-resolution: 144dpi) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@980.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 768px) and (min-resolution: 144dpi) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@1960.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@1280.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 981px) and (min-resolution: 144dpi) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@2560.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 1281px) and (min-resolution: 144dpi) {
+      .slider .slider-item-4 {
+        background-image: url('assets/images/slide-bg4@3840.jpg');
+      }
+    }
+    
+    .slider .slider-item-5 {
+      background-image: url('assets/images/slide-bg5@1534.jpg');
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@828.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 415px) and (min-resolution: 144dpi) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@1534.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@980.jpg');
+      }
+    }
+    
+    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 768px) and (min-resolution: 144dpi) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@1960.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@1280.jpg');
+      }
+    }
+    
+    @media (min-width: 981px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 981px) and (min-resolution: 144dpi) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@2560.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5.jpg');
+      }
+    }
+    
+    @media (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: 1281px) and (min-resolution: 144dpi) {
+      .slider .slider-item-5 {
+        background-image: url('assets/images/slide-bg5@3840.jpg');
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="navbar-top">
+      <div class="container">
+        <ul class="info pull-left">
+          <li class="info-item">
+            <a href="mailto:info@reen.com" class="info-item-link"><i class="icon-mail contact"></i>
+              info@reen.com
+            </a>
+          </li>
+          <li class="info-item">
+            <a href="tel:+0(123)4567890" class="info-item-link"><i class="icon-mobile contact"></i>
+              +00 (123) 456 78 90
+            </a>
+          </li>
+        </ul>
+        <ul class="social hidden-print pull-right">
+          <li class="social-item">
+            <a href="#" class="social-item-link link-darkblue">
+              <i class="icon-facebook">
+                <span class="sr-only">Facebook</span>
+              </i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-item-link link-lightred">
+              <i class="icon-gplus">
+                <span class="sr-only">GooglePlus</span>
+              </i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-item-link link-lightblue">
+              <i class="icon-twitter">
+                <span class="sr-only">Twitter</span>
+              </i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-item-link link-red">
+              <i class="icon-pinterest">
+                <span class="sr-only">Pinterest</span>
+              </i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-item-link link-blue">
+              <i class="icon-behance">
+                <span class="sr-only">Behance</span>
+              </i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-item-link link-pink">
+              <i class="icon-dribbble">
+                <span class="sr-only">Dribble</span>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-main">
+      <nav class="navbar navbar-default" data-spy="affix-top" data-offset-top="7">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle hidden-print collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand nav-logo" href="#">
+              <img src="assets/images/logo.svg" alt="Reen">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse nav-list" id="mobile-nav">
+            <ul class="nav navbar-nav hidden-print">
+              <li class="nav-list-item">
+                <a class="nav-list-link dropdown-toggle  dropdown-toggle__home"  data-toggle="dropdown" href="#">HOME
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu  menu-home">
+                  <li class="menu-home__item">
+                    <a class="menu-home__link" href="#">Agency Style</a>
+                  </li>
+                  <li  class="menu-home__item">
+                    <a class="menu-home__link" href="#">Product Style</a>
+                  </li>
+                  <li class="menu-home__item">
+                    <a class="menu-home__link" href="#">Service Style</a>
+                  </li>
+                  <li class="menu-home__item">
+                    <a class="menu-home__link" href="#">Portfolio Style</a>
+                  </li>
+                  <li class="menu-home__item">
+                    <a class="menu-home__link" href="#">Showcase Style</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-list-item"><a class="nav-list-link" href="#">PORTFOLIO</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="#">BLOG</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="#">PAGES</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="#">FEATURES</a></li>
+              <li class="nav-list-item mega-menu">
+                <a class="dropdown-toggle nav-list-link" data-toggle="dropdown" href="#">MEGA MENU
+                  <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="row mega-menu-block">
+                      <div class="col-sm-3 mega-menu-inner">
+                        <h4 class="mega-menu-header project-header">Focus on</h4>
+                        <div class="menu-project">
+                          <a class="menu-project-link overlay" href="#">
+                            <i class="icon-plus"></i>
+                            <img class="menu-project-img img-responsive" src="assets/images/menu-project.jpg" alt="image description">
+                          </a>
+                        </div>
+                        <p class="mega-menu-text">
+                          Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.
+                        </p>
+                        <a href="#" class="btn btn-default">view project</a>
+                      </div>
+                      <div class="col-sm-3 mega-menu-inner">
+                        <h4 class="mega-menu-header">special pages</h4>
+                        <ul class="mega-menu-list">
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              3 Columns Details Grid Portfolio
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Fullscreen Grid Portfolio
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Portfolio Post with Video
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              2 Columns Grid Blog with Left Sidebar
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              3 Columns Grid Blog without Sidebar
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Blog Post with Right Sidebar
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Side Navigation Page
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              About Page II
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Service Page I
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Pricing Page I
+                            </a>
+                          </li>
+                          <li class="mega-menu-list__item">
+                            <a href="#" class="mega-menu-link mega-menu-text">
+                              Contact Page I
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3 mega-menu-inner">
+                        <h4 class="mega-menu-header">latest works</h4>
+                        <div class="row mega-menu-works">
+                          <div class="col-xs-6 mega-menu-works__item">
+                            <a href="#" class="mega-menu-works__link overlay">
+                              <i class="icon-plus"></i>
+                              <img class="img-responsive" src="assets/images/menu-works1.jpg" alt="image description">
+                            </a>
+                          </div>
+                          <div class="col-xs-6 mega-menu-works__item">
+                            <a href="#" class="mega-menu-works__link overlay">
+                              <i class="icon-plus"></i>
+                              <img class="img-responsive" src="assets/images/menu-works4.jpg" alt="image description">
+                            </a>
+                          </div>
+                          <div class="col-xs-6 mega-menu-works__item">
+                            <a href="#" class="mega-menu-works__link overlay">
+                              <i class="icon-plus"></i>
+                              <img class="img-responsive" src="assets/images/menu-works2.jpg" alt="image description">
+                            </a>
+                          </div>
+                          <div class="col-xs-6 mega-menu-works__item">
+                            <a href="#" class="mega-menu-works__link overlay">
+                              <i class="icon-plus"></i>
+                              <img class="img-responsive" src="assets/images/menu-works5.jpg" alt="image description">
+                            </a>
+                          </div>
+                          <div class="col-xs-6 mega-menu-works__item">
+                            <a href="#" class="mega-menu-works__link overlay">
+                              <i class="icon-plus"></i>
+                              <img class="img-responsive" src="assets/images/menu-works3.jpg" alt="image description">
+                            </a>
+                          </div>
+                          <div class="col-xs-6 mega-menu-works__item">
+                            <a href="#" class="mega-menu-works__link overlay">
+                              <i class="icon-plus"></i>
+                              <img class="img-responsive" src="assets/images/menu-works6.jpg" alt="image description">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 mega-menu-inner">
+                        <h4 class="mega-menu-header">about us</h4>
+                        <p class="mega-menu-text">
+                          Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.
+                        </p>
+                        <p class="mega-menu-text">
+                          Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.
+                        </p>
+                        <a href="#" class="btn btn-default">read more</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-list-item"><a class="nav-list-link" href="#">CONTACT</a></li>
+              <li class=" nav-list-item nav-list-search"><a class="nav-list-link" href="#"><i class="icon-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="slider">
+      <div class="slider-item slider-item-1">
+        <div class="slider-item-content">
+          <h2 class="slider-item-header">Made for Designers</h2>
+          <p class="slider-item-text">Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
+          <a href="#" class="btn btn-lg btn-default">get started now</a>
+        </div>
+      </div>
+      <div class="slider-item slider-item-2">
+        <div class="slider-item-content">
+          <h2 class="slider-item-header">Fresh and beautiful design</h2>
+          <p class="slider-item-text">REEN is designed to showcase your talent and put your work in the forefront. Professionally use of typography and layout that fits your content.</p>
+          <a href="#" class="btn btn-lg btn-default">get started now</a>
+        </div>
+      </div>
+      <div class="slider-item slider-item-3">
+        <div class="slider-item-content">
+          <h2 class="slider-item-header"> 
+            <span class="header-double">Clean and</span>
+            <span class="header-double">reusable code</span>
+          </h2>
+          <p class="slider-item-text">The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
+          <a href="#" class="btn btn-lg btn-default">get started now</a>
+        </div>
+      </div>
+      <div class="slider-item slider-item-4">
+        <div class="slider-item-content">
+          <h2 class="slider-item-header">
+              <span class="header-double">Just focus on</span>
+              <span class="header-double">your creativity</span>
+         </h2>
+          <p class="slider-item-text">Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.</p>
+          <a href="#" class="btn btn-lg btn-default">get started now</a>
+        </div>
+      </div>
+      <div class="slider-item slider-item-5">
+        <div class="slider-item-content">
+          <h2 class="slider-item-header">Showcase your content</h2>
+          <p class="slider-item-text">With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
+          <a href="#" class="btn btn-lg btn-default">get started now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h2 class="about-title">Beautiful. Clean. Responsive.</h2>
+          <p class="about-text">
+            REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute best.
+          </p>
+        </div>
+      </div>
+      <div class="row about-descr">
+        <div class="col-md-1">
+          <div class="about-descr__image ">
+            <i class="icon-heart-empty"></i>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="about-descr__block">
+            <h2 class="about-descr__title">
+              Passion
+            </h2>
+            <p class="about-descr__text">
+              Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="about-descr__image">
+            <i class="icon-lamp"></i>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="about-descr__block">
+            <h2 class="about-descr__title">
+              Creativity
+            </h2>
+            <p class="about-descr__text">
+              Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="about-descr__image">
+            <i class="icon-star-empty"></i>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="about-descr__block">
+            <h2 class="about-descr__title">
+              Quality
+            </h2>
+            <p class="about-descr__text">
+              Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h2 class="works-title">Check out our latest works</h2>
+          <p class="works-text">
+            Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+          </p>
+        </div>
+      </div>
+      <div class="row works-gallery">
+        <div class="col-sm-6">
+          <div class="thumbnail works-gallery__item text-center">
+            <a href="#" class="overlay works-gallery__link">
+              <i class="icon-plus"></i>
+              <img class="img-responsive" srcset="assets/images/works1.jpg 1x, assets/images/works1@2x.jpg 2x" src="assets/images/works2.jpg" alt="image description">
+            </a>
+            <div class="caption">
+              <h3 class="works-gallery__title">
+                <a href="#">Grand Motel gets an identity brushup</a></h3>
+              <p class="works-gallery__text">Identity</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="thumbnail works-gallery__item text-center">
+            <a href="#" class="overlay works-gallery__link">
+              <i class="icon-plus"></i>
+              <img class="img-responsive" srcset="assets/images/works2.jpg 1x, assets/images/works2@2x.jpg 2x" src="assets/images/works2.jpg" alt="image description">
+            </a>
+            <div class="caption">
+              <h3 class="works-gallery__title">
+                <a href="#">Fresh branding for a creative startup</a></h3>
+              <p class="works-gallery__text">Identity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="works-slider hidden-print">
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works1.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works2.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works3.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works4.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works1.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works2.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works3.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works4.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works1.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works2.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works3.jpg" alt="image description">
+          </a>
+        </div>
+        <div class="works-slider__item">
+          <a href="#" class="overlay works-slider__link">
+            <i class="icon-plus"></i>
+            <img class="img-responsive works-slider__image" src="assets/images/slide-works4.jpg" alt="image description">
+          </a>
+        </div>
+      </div>
+      <div class="slider-nav-wrap">
+        <div class="works-slider-nav">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h2 class="feedback__title">Want to work with us?</h2>
+          <p class="feedback__text">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+          <a href="#" class="btn btn-default feedback__btn">get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 footer-top__column">
+            <h4 class="footer-top__title">Who we are</h4>
+            <a href="#" class="footer-logo hidden-print">
+              <img src="assets/images/logo-white.svg" alt="Reen" class="image description">
+            </a>
+            <p class="footer-top__text">
+              Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.
+            </p>
+            <a href="#" class="btn-more hidden-print">More about us</a>
+          </div>
+
+          <div class="col-md-3 col-sm-6 footer-top__column hidden-print">
+            <h4 class="footer-top__title">Latest works</h4>
+            <div class="row footer-works">
+              <div class="col-xs-6 footer-works__item">
+                <a href="#" class="footer-works__link overlay">
+                  <i class="icon-plus"></i>
+                  <img class="img-responsive" src="assets/images/footer-works1.jpg" alt="image description">
+                </a>
+              </div>
+              <div class="col-xs-6 footer-works__item">
+                <a href="#" class="footer-works__link overlay">
+                  <i class="icon-plus"></i>
+                  <img class="img-responsive" src="assets/images/footer-works3.jpg" alt="image description">
+                </a>
+              </div>
+              <div class="col-xs-6 footer-works__item">
+                <a href="#" class="footer-works__link overlay">
+                  <i class="icon-plus"></i>
+                  <img class="img-responsive" src="assets/images/footer-works2.jpg" alt="image description">
+                </a>
+              </div>
+              <div class="col-xs-6 footer-works__item">
+                <a href="#" class="footer-works__link overlay">
+                  <i class="icon-plus"></i>
+                  <img class="img-responsive" src="assets/images/footer-works4.jpg" alt="image description">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 footer-top__column">
+            <h4 class="footer-top__title column-title">Get in touch</h4>
+            <p class="footer-top__text">
+              Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.
+            </p>
+            <ul class="footer-top__contacts-list">
+              <li class="footer-top__contacts-item">
+                <i class="icon-location footer-top__contacts-icon"></i><address>84 Street, City, State 24813</address>
+              </li>
+              <li class="footer-top__contacts-item">
+                <a href="tel:+00(123)4567890" class="footer-top__contacts-link">
+                  <i class="icon-mobile footer-top__contacts-icon"></i> +00 (123) 456 78 90
+                </a>
+              </li>
+              <li class="footer-top__contacts-item">
+                <a href="mailto:info@reen.com" class="footer-top__contacts-link">
+                  <i class="icon-mail footer-top__contacts-icon"></i> info@reen.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6 footer-top__column hidden-print">
+            <h4 class="footer-top__title column-title">Free updates</h4>
+            <p class="footer-top__text">
+              Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.
+            </p>
+            <form action="#" class="form-inline footer-form">
+              <input type="email" class="form-control footer-form__input" placeholder="Enter your email address">
+              <button type="submit" class="btn btn-default footer-form__btn ">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <div class="container">
+        <p class="footer-bottom__text pull-left">
+          © 2014 REEN. All rights reserved.
+        </p>
+        <ul class="footer-bottom__menu pull-right hidden-print">
+          <li class="footer-bottom__menu-item">
+            <a href="#" class="footer-bottom__menu-link">
+                Home
+            </a>
+          </li>
+          <li class="footer-bottom__menu-item">
+            <a href="#" class="footer-bottom__menu-link">
+                  Portfolio   
+              </a>
+          </li>
+          <li class="footer-bottom__menu-item">
+            <a href="#" class="footer-bottom__menu-link">
+                  Blog   
+              </a>
+          </li>
+          <li class="footer-bottom__menu-item">
+            <a href="#" class="footer-bottom__menu-link">
+                  About   
+              </a>
+          </li>
+          <li class="footer-bottom__menu-item">
+            <a href="#" class="footer-bottom__menu-link">
+                  Services   
+              </a>
+          </li>
+          <li class="footer-bottom__menu-item">
+            <a href="#" class="footer-bottom__menu-link">
+                  Contact
+              </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </footer>
+
+  <div id="back-top" class="btn-top hidden-print">
+    <span class="btn-top__link">
+      <i class="icon-right-open scroll-icon"></i>
+    </span>
+  </div>
+
+  <script src="assets/js/vendor.min.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+@include media('print') {
+    h2,
+    h4,
+    p,
+    address {
+        text-align: left !important;
+        line-height: 1.2 !important;
+    }
+    h2 {
+        font-size: 25px !important;
+        line-height: 1.3 !important;
+    }
+    p {
+        font-size: 19px !important;
+        font-weight: 300 !important;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+    .banner {
+        width: 100%;
+    }
+    .social {
+        display: none !important;
+    }
+    .navbar {
+        display: block !important;
+        &-header {
+            margin-left: 8% !important;
+        }
+    }
+    .navbar-main .container {
+        padding-top: 25px !important;
+        min-height: 50px !important;
+        padding-bottom: 20px;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    .slick-dots {
+        display: none !important;
+    }
+    .slick-list.draggable {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: visible !important;
+    }
+    .slick-track {
+        transform: none !important;
+        width: 100% !important;
+    }
+    .slick-cloned {
+        display: none !important;
+    }
+    .slider-item {
+        min-height: 80px !important;
+        &-3,
+        &-4 {
+            margin-bottom: 5px;
+        }
+    }
+    .slider-item-content {
+        height: auto !important;
+        position: static !important;
+        transform: none !important;
+        width: 100% !important;
+    }
+    .slider-item-header {
+        text-align: left !important;
+        line-height: 1 !important;
+        letter-spacing: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .header-double {
+        padding: 0 !important;
+        display: inline !important;
+    }
+    .slider-item-text {
+        text-align: left !important;
+        letter-spacing: 0 !important;
+        word-spacing: 0 !important;
+        font-size: 24px !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .btn,
+    .slider-nav-wrap {
+        display: none !important;
+    }
+    .navbar-top ul {
+        padding-left: 8%;
+    }
+    .about {
+        .container {
+            padding: 0;
+            padding-bottom: 10px;
+            width: 80%;
+        }
+        &-title {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        &-text {
+            text-align: left;
+            line-height: 1.2;
+        }
+    }
+    .about-descr {
+        padding-top: 10px;
+        &__image {
+            display: none;
+        }
+        &__title {
+            margin: 10px auto;
+        }
+        &__text {
+            margin: 0 auto;
+        }
+    }
+    .works {
+        .container {
+            padding-top: 10px;
+            padding-bottom: 0 !important;
+            width: 80%;
+            padding: 0;
+        }
+        &-title {
+            margin: 0 auto;
+        }
+    }
+    .works-gallery {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding-top: 5px;
+        .col-sm-6 {
+            width: 49.5%;
+            padding: 0;
+        }
+        &__text {
+            display: none;
+        }
+    }
+    .feedback {
+        .container {
+            padding: 0;
+            width: 80%;
+        }
+        &__title {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+    .footer-top {
+        .container {
+            padding: 0;
+            width: 80%;
+        }
+        &__column {
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &__title {
+            margin-bottom: 5px;
+        }
+        .footer-top__contacts-item {
+            text-align: left;
+        }
+        .column-title {
+            margin-bottom: 5px;
+        }
+    }
+    .footer-bottom {
+        .container {
+            padding: 0;
+            width: 80%;
+        }
+        &__text {
+          font-size: 16px !important;
+        }
+    }
+}

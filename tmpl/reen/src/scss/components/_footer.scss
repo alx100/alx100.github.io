@@ -1,0 +1,188 @@
+.footer-top {
+    background-color: $colorBgFooter;
+    .container {
+        min-height: 365px;
+        padding-top: 47px;
+        padding-bottom: 35px;
+    }
+    &__column {
+        padding: 14px;
+        @include media('<=tablet') {
+            text-align: center;
+        }
+    }
+    &__title {
+        color: #fff;
+        font: 500 16px/22px $fontSecondary; 
+        margin-bottom: 21px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .footer-logo {
+        @include size(100%);
+        @include animate(opacity, .2s, linear);
+        display: block;
+        margin-bottom: 20px;
+        &:hover {
+            opacity: 0.7;
+        }
+        &__image {
+            width: 126px;
+        }
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 22px;
+        color: $colorFontLight;
+        margin-bottom: 14px;
+        word-spacing: 3px;
+    }
+    .btn-more {
+        @include animate(color, .2s, linear);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 22px;
+        position: relative;
+        color: $colorFontLight;
+        word-spacing: 3px;
+        &::after {
+            @include absolute-center-height;
+            content: '\e806';
+            top: 10px;
+            right: -18px;
+            font-family: 'reen-icons';
+            position: absolute;
+            font-size: 14px;
+            @include animate(right, .2s, linear);
+        }
+        &:hover {
+            color: $colorMain;
+            &::after {
+                right: -23px;
+            }
+        }
+    }
+    &__contacts-item {
+        font-size: 14px;
+        line-height: 22px;
+        color: $colorFontLight;
+        word-spacing: 2px;
+        address {
+            display: inline;
+        }
+    }
+    &__contacts-icon::before {
+        margin-left: 0;
+        margin-right: 7px;
+    }
+    .column-title {
+        margin-bottom: 16px;
+    }
+}
+
+.footer-works {
+    margin-left: -2px;
+    margin-right: 0;
+    width: 95%;
+    &__item {
+        padding: 0 0 5px 5px;
+    }
+    &__link {
+        @include size(100%);
+        display: block;
+        &:hover>.icon-plus,
+        &:hover::after {
+            opacity: 1;
+        }
+        @include media('<=tablet') {
+            max-width: 250px;
+        }
+    }
+}
+
+.footer-top__contacts-link {
+    font-size: 14px;
+    line-height: 22px;
+    color: $colorFontLight;
+    &:hover {
+        @include animate(color, .2s, linear);
+        color: $colorMain;
+    }
+}
+
+.footer-form {
+    position: relative;
+    .footer-form__input {
+        @include animate(background-color, 0.3s, linear);
+        @include placeholder {
+            color: #828e99;
+        }
+        width: 100%;
+        color: #fff;
+        border: none;
+        background-color: $colorInputBg;
+        padding:9px 100px 9px 12px;
+        border-radius: 3px;
+        min-height: 42px;
+        font-size: 14px;
+        line-height: 22px;
+        &:focus {
+            background-color: $colorInputBgFocus;
+        }
+    }
+    .footer-form__btn {
+        padding: 7px 6px 4px;
+        font-size: 13px;
+        position: absolute;
+        right: 4px;
+        top: -6px;
+        border-radius: 3px;
+    }
+}
+
+.footer-bottom {
+    background-color: $colorBgFooterBottom;
+    .container {
+        min-height: 83px;
+        padding-top: 29px;
+        padding-bottom: 31px;
+    }
+    &__menu {
+        @include media('<=tablet') {
+            float: none !important;
+            text-align: center;
+        }
+    }
+    &__text,
+    &__menu-link {
+        @include animate(color, 0.3s, linear);
+        color: $colorFontFooter;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+    &__menu-item {
+        display: inline-block;
+        padding-left: 10px;
+        &::before {
+            display: inline-block;
+            content: "·";
+            padding-right: 5px;
+        }
+        &:first-child::before {
+            content: none;
+        }
+    }
+    &__text {
+        word-spacing: 2px;
+        @include media('<=tablet') {
+            float: none !important;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    &__menu-link:hover {
+        @include animate(color, 0.3s, linear);
+        color: $colorMain;
+    }
+}

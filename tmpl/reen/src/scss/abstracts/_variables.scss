@@ -1,0 +1,10 @@
+// Global variables
+
+// Breakpoints for include media mixin
+$breakpoints: (
+  'phone': $screen-xs,
+  'tablet': $screen-md,
+  'sm-desktop': 1000px,
+  'desktop': $screen-lg,
+  'widescreen': 1280px
+);

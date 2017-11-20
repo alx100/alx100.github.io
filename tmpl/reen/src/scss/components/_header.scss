@@ -1,0 +1,63 @@
+.navbar-top {
+    height: 40px;
+    background-color: $colorBgHeader;
+    border-bottom: 1px solid $colorBorder;
+    ul {
+        list-style: none;
+        line-height: 40px;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+            display: inline-block;
+            a {
+                @include size(100%);
+                display: block;
+                color: $colorFontMain;
+                font-size: 12px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.info {
+    &-item {
+        padding-right: 18px;
+    }
+    &-item-link {
+        &:hover {
+            color: $colorMain;
+        }
+    }
+    .contact {
+        margin-right: 5px;
+    }
+    @include media('<=phone') {
+        display: none;
+    }
+}
+
+.social {
+    &-item {
+        cursor: pointer;
+    }
+    &-item-link {
+        padding: 0 5px;
+        &:hover {
+            @include animate(all, 0.3s, linear);
+            color: #fff;
+        }
+    }
+    @include media('<=phone') {
+        float: none!important;
+        text-align: center;
+    }
+}
+
+$hover-colors: ( darkblue: #4668b3, lightred:#de5745, lightblue:#2fbbed, red:#d94348, blue:#3079ff, pink: #eb6397);
+@each $hover-color,
+$color in $hover-colors {
+    .link-#{$hover-color}:hover {
+        background-color: $color;
+    }
+}

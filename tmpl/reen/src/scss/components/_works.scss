@@ -1,0 +1,146 @@
+.works {
+    background-color: $colorBgSection;
+    .container {
+        padding-top: 100px;
+        padding-bottom: 138px;
+        @include media('<=tablet') {
+            padding-top: 65px;
+            padding-bottom: 85px;
+        }
+    }
+    &-title {
+        font: 700 44px/54px  $fontSecondary;
+        word-spacing: 2px;
+        margin-bottom: 24px;
+        @include media('<=tablet') {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+    &-text {
+        font: 300 22px/34px $fontMain;
+        color: $colorFontSecondary;
+        word-spacing: 3px;
+        @include media('<=tablet') {
+            font-size: 19px;
+            line-height: 27px;
+        }
+    }
+    &-gallery {
+        padding-top: 63px;
+        @include media('<=tablet') {
+            padding-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.works-gallery {
+    margin-bottom: 60px;
+    &__item {
+        padding: 0;
+        border: 1px solid $colorBorder;
+        border-bottom-width: 2px;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 570px;
+    }
+    &__link {
+        @include size(100%);
+        padding: 0;
+        display: block;
+        &:hover>.icon-plus,
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        font-family: $fontSecondary;
+        margin-top: 23px;
+        word-spacing: 3px;
+        a:hover {
+            @include animate(color, .2s, linear);
+            color: $colorMain;
+        }
+        @include media('<=tablet') {
+            width: 97%;
+        }
+    }
+    &__text {
+        margin-bottom: 19px;
+    }
+}
+
+.works-slider {
+  margin-bottom: 40px!important;
+  margin-left: -15px;
+  margin-right: -15px;
+    &__item {
+        margin: 0 15px;
+        max-width: 300px;
+    }
+    &__link {
+        @include size(100%);
+        padding: 0;
+        display: block;
+        &:hover>.icon-plus,
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+    &__left,
+    &__right {
+        @include absolute-center;
+    }
+}
+
+.slider-nav-wrap {
+    text-align: center;
+    .works-slider-nav {
+        display: inline;
+        position: relative;
+        .works-slider-arrow {
+            @include size(30px);
+            @include animate(all, 0.2s, linear);
+            border-radius: 3px;
+            position: absolute;
+            background-color: #c9d2da;
+            font-size: 16px;
+            display: inline-block!important;
+            color: #fff;
+            top: -4px;
+            cursor: pointer;
+            &:hover {
+                background-color: $colorFontMain;
+                color: $colorMain;
+            }
+            &__1 {
+                right: -40px;
+            }
+            &__2 {
+                left: -40px;
+            }
+        }
+        .slick-dots {
+            position: static;
+            bottom: 0px;
+            display: inline;
+            li {
+                @include size(15px);
+                @include animate(background-color, .2s, linear);
+                border-radius: 50%;
+                position: relative;
+                background-color: $colorFontMain;
+                button::before {
+                    content: none;
+                }
+                &.slick-active,
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+        }
+    }
+}

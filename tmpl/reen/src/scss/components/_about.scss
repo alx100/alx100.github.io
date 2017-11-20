@@ -1,0 +1,97 @@
+.about {
+    .container {
+        padding: 70px 15px 115px;
+        @include media('<=tablet') {
+            padding: 45px 15px 65px;
+        }
+    }
+    &-title {
+        font: 700 44px/54px $fontSecondary;
+        margin-bottom: 23px;
+        word-spacing: 4px;
+        @include media('<=tablet') {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+    &-text {
+        font: 300 22px/34px $fontMain;
+        color: $colorFontSecondary;
+        @include media('<=tablet') {
+            font-size: 19px;
+            line-height: 27px;
+        }
+    }
+}
+
+.about-descr {
+    padding-top: 59px;
+    @include media('<=tablet') {
+        text-align: center;
+    }
+    &__image {
+        @include size(65px);
+        position: relative;
+        @include media('<=tablet') {
+            margin: auto;
+        }
+        i {
+            position: absolute;
+            font-size: 63px;
+            color: $colorMain;
+        }
+        .icon-heart-empty {
+            top: -14px;
+            left: -4px;
+            @include media('<=desktop') {
+                top: -12px;
+                left: -7px;
+            }
+            @include media('<=tablet') {
+                left: -11px;
+            }
+        }
+        .icon-lamp {
+            top: -7px;
+            left: 5px;
+            @include media('<=desktop') {
+                top: -9px;
+                left: -2px;
+            }
+            @include media('<=tablet') {
+                top: -14px;
+                left: -12px;
+            }
+        }
+        .icon-star-empty {
+            top: -11px;
+            left: 0px;
+            @include media('<=desktop') {
+                top: -12px;
+                left: -7px;
+            }
+            @include media('<=tablet') {
+                top: -11px;
+                left: -12px;
+            }
+        }
+    }
+    &__title {
+        font: 700 26px/34px $fontSecondary;
+        margin-bottom: 20px;
+        margin-top: 0;
+        @include media('<=tablet') {
+            margin-top: 10px;
+        }
+    }
+    &__text {
+        font: 300 16px/25px;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 300;
+        color: $colorFontSecondary;
+        @include media('<=tablet') {
+            margin-bottom: 35px;
+        }
+    }
+}
