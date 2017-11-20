@@ -1,0 +1,17 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $fontMain;
+  background-color: $colorBgMain;
+}
+
+.container {
+  max-width: rem(1500);
+  min-width: rem(280);
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}

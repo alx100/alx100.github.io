@@ -1,0 +1,172 @@
+.popup {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10% 15.5%;
+    text-align: left;
+    background: #fff;
+    @include media('<=desktop') {
+        padding: 10% 5%;
+    }
+    @include media('<=smart') {
+        padding-bottom: 40%;
+    }
+}
+
+.product-info {
+    display: inline-block;
+    max-width: 50%;
+    padding: rem(50) 0;
+    margin-right: rem(20);
+    vertical-align: middle;
+    font-size: rem(14);
+    color: $colorFontMain;
+    @include media('<smart') {
+        max-width: 100%;
+        width: 100%;
+        padding-bottom: rem(20);
+    }
+    &__link {
+        @include animate(opacity);
+        color: $colorFontMain;
+        display: inline-block;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__heading {
+        font: 300 30px/14px $fontMain;
+        text-transform: uppercase;
+        margin-bottom: rem(15);
+    }
+    &__list {
+        text-transform: uppercase;
+        margin-bottom: rem(43);
+    }
+    &__text--bold {
+        font-weight: 600;
+    }
+    &__descr {
+        font-weight: 300;
+    }
+}
+
+.popup__social {
+    display: block;
+    margin-top: rem(80);
+    text-align: center;
+    color: $colorFontMain;
+    @include media('<smart') {
+        margin-top: 0;
+        position: absolute;
+        bottom: 5%;
+        left: 48%;
+        transform: translateX(-50%);
+    }
+    &-icon {
+        @include animate(opacity);
+        @include size(26px);
+        display: inline-block;
+        margin: 0 rem(7);
+        position: relative;
+        color: $colorFontMain;
+        font-size: rem(26);
+        &:before {
+            @include abs-center;
+        }
+        &.icon-facebook {
+            font-size: rem(23);
+        }
+        &.icon-twitter {
+            font-size: rem(28);
+        }
+        &.icon-gplus {
+            font-size: rem(23);
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.popup__slider-nav {
+    max-width: rem(260);
+    margin-top: rem(50);
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    @include media('<smart') {
+        display: none;
+    }
+    .slider-nav__slide {
+        cursor: pointer;
+        padding: 0 rem(15);
+    }
+    .slider-nav__arrow {
+        position: absolute;
+        top: 12%;
+        cursor: pointer;
+        font-size: rem(60);
+        color: $colorFontMain;
+        z-index: 10;
+        &.icon-slide-left {
+            left: -60px;
+        }
+        &.icon-slide-right {
+            right: -60px;
+        }
+    }
+}
+
+.popup__slider-block {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    @include media('<smart') {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        .slick-dots {
+            bottom: -50px;
+            li button:before {
+                content: "";
+                @include size(15px);
+                border-radius: 50%;
+                background-color: $colorBrandSecondary;
+            }
+        }
+    }
+    @include media('<phone') {
+        bottom: -40px;
+    }
+}
+
+.popup__slider-item {
+    cursor: pointer;
+}
+
+button.mfp-close {
+    top: 5vw;
+    right: 11%;
+    width: rem(100);
+    height: rem(100);
+    border: 1px solid #131313;
+    background-image: url("../images/mfp-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 0;
+    @include media('<=desktop') {
+        width: rem(50);
+        height: rem(50);
+        top: 7vw;
+        right: 4%;
+    }
+    &:active {
+        top: 5vw;
+        @include media('<=desktop')  {
+            top: 7vw;  
+        }
+    }
+  }
+  

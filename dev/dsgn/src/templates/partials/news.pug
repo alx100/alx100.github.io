@@ -1,0 +1,34 @@
+section.news
+  .news__row
+    
+    .news__item.news__header
+      svg
+        line(x1="100%" y1="0%" x2="0%" y2="100%")
+      h2.news__title news
+
+    .news__item
+      a(href="#", class="title-link")
+        h3.news__item-title Mauris et dui sed justo placerat tristique.
+        time(class="news__item-time", datetime="2014-07-11 20:00") 11.07.2014
+        .news__item-image
+          img(srcset="assets/images/news.jpg 1x, assets/images/news@2x.jpg 2x", src="assets/images/news.jpg", alt="image description")
+      p.news__item-text
+        |Maecenas imperdiet nisi lorem, sed fermentum tortor pretium eget. 
+        |Sed mollis lacus quis nunc cursus cursus. Quisque et magna sit amet 
+        |sapien fermentum scelerisque eu id massa. Mauris ornare massa vel mauris 
+        |tempus, vitae tempus urna tincidunt.
+      .news__item-link
+        a(href="#", class="news-link") read more
+
+    .news__item
+      a(href="#", class="title-link")
+        h3.news__item-title Proin vehicula nibh massa 
+        time(class="news__item-time", datetime="2014-06-11 20:00") 11.06.2014
+        .news__item-image
+          img(srcset="assets/images/news2.jpg 1x, assets/images/news2@2x.jpg 2x", src="assets/images/news2.jpg", alt="image description")
+      p.news__item-text
+        |Praesent non mauris nec orci scelerisque faucibus. Nulla ac varius est. 
+        |Aenean auctor nisl elit, nec sollicitudin lectus iaculis sed. Maecenas 
+        |aliquam ligula vitae pharetra scelerisque.
+      .news__item-link
+        a(href="#", class="news-link") read more

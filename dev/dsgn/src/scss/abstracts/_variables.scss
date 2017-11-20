@@ -1,0 +1,82 @@
+// Global variables
+//
+// Base font styles for headings and links.
+
+// Fonts      
+$fontMain: 'Roboto Condensed', sans-serif;
+$fontSecondary: 'Roboto', sans-serif;
+$colorFontMain: #333333;
+$colorFontLogo: #393d3c;
+$colorFontAccent: #fd5000;
+$colorFontNews: #6a6969;
+
+//Colors 
+$colorBrandMain: #7acec3;
+$colorBrandSecondary: #ebb240;
+$colorBgMain:#e9eae2;
+$colorBgNav: #f8c255;
+$colorBgItem1: #dfe0d9;
+$colorBgItem2: #f7f7f3; 
+$colorBgItem3: #eaeaea;
+$colorBgItem4: #cecece;
+$colorBgStudio:#ff9b6d;
+$colorBgNews:#d4edbf;
+
+// For headers
+$headings: (
+  'sizes': (
+    'h1-font-size': 30px,
+    'h2-font-size': 27px,
+    'h3-font-size': 24px,
+    'h4-font-size': 21px,
+    'h5-font-size': 17px,
+    'h6-font-size': 15px
+  ),
+  'fonts': (
+    'headings-font-family': inherit,
+    'headings-color': inherit
+  )
+);
+
+// Global vars for body typography
+$base: (
+  'base-font-sans-serif': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  'base-font-serif': unquote("'Times New Roman', Times, Baskerville, Georgia, serif"),
+  'base-text-color': #000,
+  'base-background-color': #fff,
+  'base-link-color':#39f,
+  'base-font-size': 16px,
+  'base-line-height': 1.2,
+  'base-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  'vertical-rhythm': '(map-get($base, base-line-height) * 1em)',
+  'base-min-width': 320px
+);
+
+// Vars for forms
+$forms: (
+  'form-element-padding': unquote("0.4em 0.7em"),
+  'form-element-border-color': #999,
+  'form-element-focus-border-color': #000,
+  'placeholder-color': #999
+);
+
+// Breakpoints for include media mixin
+$breakpoints: (
+  'phone': 480px,
+  'smart': 650px,
+  'tablet': 768px,
+  'desktop': 980px,
+  'mid-desktop': 1023px,
+  'widescreen': 1200px
+);
+
+// Keywords for include media mixin
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);

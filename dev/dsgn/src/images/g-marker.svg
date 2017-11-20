@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="60" viewBox="0 0 45 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7acec3;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="PIN_1" data-name="PIN 1" class="cls-1" d="M305.5,3481s-22.5-25.08-22.5-37.5a22.5,22.5,0,0,1,45,0C328,3455.92,305.5,3481,305.5,3481Zm0-52.5a15,15,0,1,0,15,15A15,15,0,0,0,305.5,3428.5Z" transform="translate(-283 -3421)"/>
+</svg>

@@ -1,0 +1,130 @@
+.news {
+    &__row {
+        padding-right: rem(165);
+        display: flex;
+        justify-content: space-between;
+        @include media('<1400px') {
+            padding-right: rem(65);
+        }
+        @include media('<widescreen') {
+            flex-wrap: wrap;
+            padding-right: 0;
+            justify-content: center;
+        }
+    }
+    &__item {
+        width: 31%;
+        max-width: rem(370);
+        margin-top: rem(70);
+        @include media('<widescreen') {
+            width: 45%;
+            margin-bottom: rem(40);
+          
+        }
+        @include media('<smart')  {
+            width: 100%;
+            margin-right: 0;
+            margin-top: rem(40);
+        }
+        @include media('<phone') {
+            width: 85%;
+        }
+        &:nth-child(2) {
+            @include media('<widescreen') {
+                margin-right: 3%;
+            }
+            @include media('<smart')  {
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 0;
+                margin-top: rem(60);
+            }
+        }
+        .title-link {
+            @include animate(opacity);
+            display: block;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__header {
+        min-width: rem(465);
+        min-height: rem(500);
+        margin-top: 0;
+        margin-right: 5%;
+        background-color: $colorBgNews;
+        position: relative;
+        @include media('<widescreen') {
+            min-width: 100%;
+            min-height: rem(70);
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        svg {
+            display: block;
+            width: 100%;
+            min-height: rem(500);
+            @include media('<widescreen') {
+                display: none;
+            }
+            line {
+                stroke: #fff;
+                stroke-width: rem(1);
+            }
+        }
+        .news__title {
+            position: absolute;
+            top: 60%;
+            left: 47%;
+            color: #fff;
+            text-transform: uppercase;
+            font: 500 48px/14px $fontMain;
+            @include media('<widescreen') {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &__item-title {
+        font: 700 24px/1 $fontMain;
+        color: $colorFontMain;
+        text-transform: uppercase;
+        width: 101%;
+        min-height: rem(48);
+        margin-bottom: 0;
+    }
+    &__item-time {
+        font: 400 12px/24px $fontMain;
+        color: $colorFontNews;
+        text-transform: uppercase;
+        margin-bottom: rem(12);
+        display: block;
+    }
+    &__item-image {
+        margin-bottom: rem(15);
+    }
+    &__item-text {
+        font: 400 12px/14px $fontMain;
+        color: $colorFontNews;
+        word-spacing: rem(6);
+        min-height: rem(55);
+        @include media('<1400px')  {
+            min-height: rem(84);
+        }
+    }
+    &__item-link {
+        display: flex;
+        justify-content: flex-end;
+        .news-link {
+            @include animate(color);
+            font: 400 12px/14px $fontMain;
+            color: $colorFontAccent;
+            text-transform: uppercase;
+            &:hover {
+                color: darken($colorFontAccent, 10%);
+            }
+        }
+    }
+}

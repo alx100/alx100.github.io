@@ -1,0 +1,513 @@
+.project__item {
+    &-info {
+        position: absolute;
+    }
+    &-title {
+        font: 300 24px/14px $fontMain;
+        color: $colorFontMain;
+        text-transform: uppercase;
+    }
+    &-descr {
+        margin-top: rem(15);
+    }
+    &-text {
+        font: 200 12px/12px $fontMain;
+        color: $colorFontMain;
+        text-transform: uppercase;
+    }
+    &-text--bold {
+        font-weight: 600;
+    }
+    &-view {
+        @include animate(color);
+        position: absolute;
+        font: 200 18px/12px $fontMain;
+        color: $colorFontMain;
+        text-transform: uppercase;
+        &::before {
+            @include animate(transform);
+            content: '\e801';
+            color: $colorBrandSecondary;
+            font-family: 'dsgn-icons';
+            font-size: rem(16);
+            position: absolute;
+            top: 0;
+            transform: translateX(-29px);
+        }
+        &:hover {
+            color: $colorBrandSecondary;
+            &::before {
+                transform: translateX(-35px);
+            }
+        }
+    }
+    &-like {
+        position: absolute;
+        .item-like__icon {
+            @include size(24px, 21px);
+            display: block;
+            &:hover::before {
+                color: $colorFontAccent;
+                transform: scale(1.1);
+            }
+            &::before {
+                @include animate(transform color);
+                content: '\e803';
+                color: $colorFontMain;
+                font-family: 'dsgn-icons';
+                font-size: rem(23);
+                position: absolute;
+                top: -2px;
+            }
+        }
+        .item-like__counter {
+            display: block;
+            font: 300 11px/12px $fontMain;
+            color: $colorFontAccent;
+            margin-top: rem(7);
+        }
+    }
+    &-1 {
+        width: 31%;
+        height: rem(500);
+        background-color: $colorBrandSecondary;
+        color: #fff;
+        text-transform: uppercase;
+        @include media('<mid-desktop') {
+            width: 50%;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        @include media('<=phone') {
+            height: rem(350);
+        }
+        svg {
+            display: block;
+            width: 100%;
+            min-height: rem(500);
+            line {
+                stroke: $colorBgMain;
+                stroke-width: rem(1);
+            }
+            @include media('<=phone') {
+                display: none;
+            }
+        }
+        .project__title {
+            position: absolute;
+            bottom: 30%;
+            right: 9%;
+            font: 500 48px/14px $fontMain;
+            @include media('<=phone') {
+                font-size: 33px;
+                right: initial;
+                bottom: 74%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .project__list {
+            position: absolute;
+            top: 33.5%;
+            left: 35.5%;
+            line-height: rem(13);
+            @include media('<=phone') {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 35.5%;
+            }
+            &-link {
+                @include animate(color);
+                position: relative;
+                color: #fff;
+                font: 500 13px/13px $fontMain;
+                @include media('<=phone') {
+                    font: 500 18px/1.7 $fontMain;
+                }
+                &::before {
+                    @include animate(transform opacity);
+                    content: '\e801';
+                    font-family: 'dsgn-icons';
+                    position: absolute;
+                    top: rem(1);
+                    opacity: 0;
+                    color: #fff;
+                    @include media('<=phone') {
+                        top: -3px;
+                    }
+                }
+                &:hover {
+                    color: #000;
+                    &::before {
+                        transform: translateX(-29px);
+                        opacity: 1;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &-2 {
+        width: 38%;
+        height: rem(500);
+        background: #fefefe no-repeat 100% 50%;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        .project__item-info {
+            top: 18%;
+            left: 18%;
+            @include media('<smart') {
+                left: 10%;
+            }
+        }
+        .project__item-view {
+            left: 24.5%;
+            top: 52%;
+            @include media('<smart') {
+                left: 15.5%;
+            }
+            @include media('<phone') {
+                left: 17.5%;
+            }
+        }
+        .project__item-like {
+            top: 77.5%;
+            left: 30.5%;
+        }
+    }
+    &-3 {
+        width: 31%;
+        height: rem(250);
+        background: $colorBgItem1 no-repeat 90% 50%;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        .project__item-info {
+            top: 16%;
+            left: 10%;
+            width: rem(160);
+        }
+        .item-descr__info {
+            text-transform: none;
+        }
+        .project__item-view {
+            left: 15.5%;
+            top: 58.5%;
+            @include media('<phone') {
+                left: 17.5%;
+            }
+        }
+        .project__item-like {
+            top: 73.5%;
+            left: 22%;
+        }
+    }
+    &-4 {
+        width: 20%;
+        height: rem(464);
+        background: #6d7e88  no-repeat 50% 0;
+        background-size: cover;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+            background-size: contain;
+            background-position: -7px 110px;
+        }
+        @include media('retina2x','<mid-desktop') {
+            background-size: contain;
+        }
+        @include media('<smart') {
+            width: 100%;
+            background-position: bottom;
+        }
+        .project__item-info {
+            top: 10%;
+            left: 12%;
+        }
+        .project__item-title,
+        .project__item-text,
+        .item-like__icon::before {
+            color: #fff;
+        }
+        .project__item-view {
+            left: 20.5%;
+            top: 35.5%;
+            color: #fff;
+            &:hover {
+                color: $colorBrandSecondary;
+            }
+        }
+        .project__item-like {
+            top: 45%;
+            left: 34%;
+            @include media('<smart') {
+                top: 65%;
+            }
+        }
+    }
+    &-5 {
+        width: 49%;
+        height: rem(464);
+        background: $colorBgItem3 no-repeat 30% 55%;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+            background-size: contain;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        .project__item-info {
+            top: 20.5%;
+            left: 49.5%;
+            @include media('<mid-desktop') {
+                top: 6.5%;
+                left: 36.5%;
+            }
+        }
+        .project__item-view {
+            left: 77%;
+            top: 21%;
+            @include media('<mid-desktop') {
+                left: 16.5%;
+                top: 85.5%;
+            }
+        }
+        .project__item-like {
+            top: 29.5%;
+            left: 81.5%;
+            @include media('<mid-desktop') {
+                top: 83.5%;
+                left: 75%;
+            }
+        }
+    }
+    &-6 {
+        width: 31%;
+        height: rem(465);
+        background: #f7f7f3 no-repeat 50% 5%;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<widescreen') {
+            background-position-y: 65%;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+           
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        .project__item-info {
+            top: 74.5%;
+            left: 13.5%;
+            @include media('<1400px') {
+                top: 8%;
+                left: 11.5%;
+            }
+        }
+        .project__item-view {
+            left: 56.5%;
+            top: 81%;
+            @include media('<1400px') {
+                left: 17.5%;
+                top: 82%;
+            }
+        }
+        .project__item-like {
+            top: 80.5%;
+            left: 83%;
+        }
+    }
+    &-7 {
+        width: 49%;
+        height: rem(300);
+        background: #fcfcfc no-repeat 50% 0;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+            background-size: contain;
+            background-position-y: 5%;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        .project__item-info {
+            top: 68%;
+            left: 20.5%;
+            @include media('<widescreen') {
+                left: 10.5%;
+            }
+            @include media('<mid-desktop') {
+                top: 47%;
+                left: 11.5%;
+            }
+        }
+        .project__item-view {
+            left: 53%;
+            top: 78%;
+            @include media('<mid-desktop') {
+                left: 21%;
+                top: 79%;
+            }
+        }
+        .project__item-like {
+            top: 76%;
+            left: 74%;
+        }
+    }
+    &-8 {
+        width: 20%;
+        height: rem(300);
+        background: #cecece no-repeat 50% 0;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+            height: rem(465);
+            background-position: 0 50%;
+        }
+        @include media('<smart') {
+            width: 100%;
+            height: rem(300);
+        }
+        .project__item-info {
+            top: 28.5%;
+            left: 53%;
+        }
+        .project__item-view {
+            left: 51%;
+            top: 61%;
+            line-height: rem(18);
+        }
+        .project__item-like {
+            top: 75%;
+            left: 64%;
+        }
+    }
+    &-9 {
+        width: 31%;
+        height: rem(250);
+        background: #fff no-repeat 0 50%;
+        @include media('retina2x') {
+            background-size: contain;
+        }
+        @include media('<mid-desktop') {
+            width: 50%;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        .project__item-info {
+            top: 21.5%;
+            left: 53.5%;
+            @include media('<mid-desktop') {
+                top: 8%;
+                left: 47.5%;
+            }
+        }
+        .project__item-view {
+            left: 61%;
+            top: 60%;
+        }
+        .project__item-like {
+            top: 75%;
+            left: 69%;
+        }
+    }
+    &-10 {
+        width: 31%;
+        height: rem(300);
+        background: $colorBrandSecondary;
+        @include media('<mid-desktop') {
+            width: 50%;
+        }
+        @include media('<smart') {
+            width: 100%;
+        }
+        svg {
+            display: block;
+            width: 100%;
+            min-height: rem(300);
+            line {
+                stroke: $colorBgMain;
+                stroke-width: rem(1);
+            }
+            @include media('<=phone') {
+                display: none;
+            }
+        }
+        .project__title {
+            position: absolute;
+            top: 20%;
+            left: 21%;
+            font: 300 14px/14px $fontMain;
+            text-transform: uppercase;
+            @include media('<=phone') {
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 25px;
+            }
+
+        }
+        .project__list {
+            position: absolute;
+            top: 25.5%;
+            left: 21.5%;
+            line-height: rem(13);
+            @include media('<=phone') {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 35.5%;
+            }
+            &-link {
+                @include animate(color);
+                position: relative;
+                color: #fff;
+                font: 500 13px/13px $fontMain;
+                @include media('<=phone') {
+                    font: 500 18px/1.7 $fontMain;
+                }
+                &::before {
+                    @include animate(transform opacity);
+                    content: '\e801';
+                    font-family: 'dsgn-icons';
+                    position: absolute;
+                    top: -3px;
+                    opacity: 0;
+                    color: #fff;
+                }
+                &:hover {
+                    color: #000;
+                    &::before {
+                        transform: translateX(-29px);
+                        opacity: 1;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
