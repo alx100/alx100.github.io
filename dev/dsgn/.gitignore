@@ -27,7 +27,6 @@ node_modules/
 
 # markup
 /build/
-/assets/
 .sass-cache
 node_modules
 *.map

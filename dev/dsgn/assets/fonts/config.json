@@ -1,0 +1,110 @@
+{
+  "name": "dsgn-icons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 61665,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e566d3f1d24f22981f6552d5188e7265",
+      "css": "gplus",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "7d2b28f67f8e1b2814b9d353c4b22348",
+      "css": "arrow-right",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M1266.7 466.7H0V533.3H1266.7V466.7ZM732.4 952L1219.1 466 1267.7 514.7 781.1 1000.7ZM732.4 48L1219.1 534 1267.7 485.3 781.1-0.7Z",
+        "width": 1267
+      },
+      "search": [
+        "arrow-right"
+      ]
+    },
+    {
+      "uid": "a57808c53f89e9fdb9f79a013f6aef81",
+      "css": "arrow-left",
+      "code": 59394,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 466.7H1266.7V533.3H0V466.7ZM534 952L48 466-0.7 514.7 485.3 1000.7ZM534 48L48 534-0.7 485.3 485.3-0.7Z",
+        "width": 1267
+      },
+      "search": [
+        "arrow-left"
+      ]
+    },
+    {
+      "uid": "372aaa4959f2f40d99511a34693b8d3c",
+      "css": "heart",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M1055.9 491.2L569.7 1000 83.5 491.2A290 290 0 0 1 83.5 84.1 283.2 283.2 0 0 1 486.7 84.1L569.7 185.9 652.7 84.1A283.2 283.2 0 0 1 1055.9 84.1 290 290 0 0 1 1055.9 491.2ZM747.4 100.8L569.5 257.7 439.2 100.8A226.8 226.8 0 0 0 96.8 148.3C43.1 229.7 28.5 330.9 96.8 400.3L569.5 904.9 1042.2 400.4A180.7 180.7 0 0 0 1042.2 148.4C973.9 78.5 815.7 31 747.4 100.6Z",
+        "width": 1141
+      },
+      "search": [
+        "heart"
+      ]
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b904d9d8b3c7c0bb0d7588e842e19ff4",
+      "css": "slide-left",
+      "code": 59396,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M397.2 0L405 6.3 7.5 503.1-0.2 496.9ZM397.2 1000L405 993.7 7.5 496.9-0.2 503.1Z",
+        "width": 405
+      },
+      "search": [
+        "slide-left"
+      ]
+    },
+    {
+      "uid": "36636b1836110346d142de14ea2240d9",
+      "css": "slide-right",
+      "code": 59397,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M7.5 0L-0.2 6.3 397.2 503.1 405 496.9ZM7.5 1000L-0.2 993.7 397.2 496.9 405 503.1Z",
+        "width": 405
+      },
+      "search": [
+        "slide-right"
+      ]
+    }
+  ]
+}
