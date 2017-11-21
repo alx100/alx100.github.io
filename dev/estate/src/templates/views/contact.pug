@@ -1,0 +1,97 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+  +head('Nous joindre / Contact Us')
+  body.body-wrapper
+    //- include ../partials/preloader
+    header.nav
+      .container
+        .nav__row
+          .nav__item
+            .nav__item-head 
+              p Seulement 4 logements disponibles
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="discover.html") Découvrir le projet
+              li.nav__item-link  
+                a(href="map.html") Connaître le quartier
+          .nav__item-mobile
+            a(href="contact.html", class="item-mobile__link")
+              i.icon-geo
+
+          .nav__logo
+            a(href="index.html", class="nav__logo-link")
+              img(src="assets/images/logo.svg", alt="Le5000")
+
+          .nav__item-mobile
+            a(href="#", class="item-mobile__link nav-opener") 
+              span.nav-opener__text menu
+              i.icon-close
+
+          .nav__item
+            .nav__item-head 
+              p
+                a(href="tel:4189327360") 418 932-7360 
+                a(href="mailto:info@le5000.ca") info@le5000.ca
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="plan.html") Plans des unités
+              li.nav-active.nav__item-link 
+                a(href="contact.html") Nous joindre
+    .pb-container
+      .pb-row.contact
+        .pb-row-inner.contact-row.container
+          .pb-cell.contact-block
+            .pb-cell-inner
+              h2 Laissez-nous vous en dire plus!
+              p Le projet vous intéresse? Vous avez des questions? Ça tombe bien: nous sommes là pour vous! Nous pouvons prévoir une rencontre ou un appel téléphonique, à votre convenance, afin de vous en apprendre plus sur notre projet et trouver l'unité qui vous conviendra.
+              address 
+                |5000, rue Saint-Georges <br>
+                |Lévis (Québec)  G6C 1E1
+              a(href="map.html" class="contact-route") Itinéraire
+              
+              .contact-link
+                a(href="href=tel:41893273607") Tél. 418 932-9607
+                a(href="mailto:info@le5000.ca") info@le5000.com
+
+          .pb-cell
+            .pb-cell-inner
+              .form-block
+                div(role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr")
+                div.screen-reader-response
+                form(action="/contact-us/#wpcf7-f4-o1" method="post" class="wpcf7-form" novalidate="novalidate")
+                  h4 NOUS JOINDRE
+                  div(style="display: none")
+                    input(type="hidden")
+                    input(type="hidden")
+                    input(type="hidden")
+                    input(type="hidden")
+                    input(type="hidden")
+                  p
+                    span(class="wpcf7-form-control-wrap your-name")
+                      input(type="text" name="your-name"  placeholder="Nom" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false")
+                      span(role="alert" class="wpcf7-not-valid-tip") * Champ obligatoire  
+                  p
+                    span(class="wpcf7-form-control-wrap your-surname")
+                      input(type="text" name="your-name"  placeholder="Le nom" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false")
+                      span(role="alert" class="wpcf7-not-valid-tip") * Champ obligatoire
+                  p
+                    span(class="wpcf7-form-control-wrap your-telephone")
+                      input(type="tel" name="your-name"  placeholder="Téléphone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false")
+                      span(role="alert" class="wpcf7-not-valid-tip") * Champ obligatoire
+                  p
+                    span(class="wpcf7-form-control-wrap your-email")
+                      input(type="email" name="your-email"  placeholder="Email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false")
+                      span(role="alert" class="wpcf7-not-valid-tip") * Champ obligatoire 
+                  p
+                    span(class="wpcf7-form-control-wrap your-message")
+                      textarea(name="your-message" cols="40" rows="10" placeholder="Votre message" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false")
+                      span(role="alert" class="wpcf7-not-valid-tip") * Champ obligatoire 
+                  p
+                    input(type="submit" value="Envoyer" class="wpcf7-form-control wpcf7-submit")
+
+    +bottomLink
+    include ../partials/footer
+    include ../partials/foot

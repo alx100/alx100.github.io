@@ -1,0 +1,33 @@
+.not-found {
+  position: relative;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #38485c;
+  background-color: $colorMain;
+  min-height: 850px;
+  padding-top: 242px;
+}
+
+.not-found__block {
+  margin: 10% auto; 
+  color: #fff;
+  text-align: center;
+  @include media('<=tablet') {
+    margin: 0;
+    @include acenter;
+  }
+  h1 {
+    font: 600 90px $fontHeading;
+    margin-bottom: 20px;
+
+    @include media('<=phone') {
+      font-size: 60px;
+    }
+  }
+  p {
+    font: 600 40px $fontHeading;
+    letter-spacing: 2px;
+    @include media('<=phone') {
+      font-size: 30px;
+    }
+  }
+}

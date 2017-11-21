@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Accueil / Homepage</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="theme-color" content="#9fedf2"/>
+    <link media="all" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i&amp;amp;subset=latin-ext"/>
+    <link media="all" rel="stylesheet" href="assets/css/vendor.min.css"/>
+    <link media="all" rel="stylesheet" href="assets/css/style.min.css"/>
+    <script>
+      //- var map;
+      function initMap() {
+        var styles = [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ],
+      
+        getMap = document.getElementById('map'),
+        lat = map_lat,
+        lng = map_lng,
+        zoom = getMap.dataset.zoom,
+        dot = {
+          url: 'assets/images/dot.png'
+        },
+        image = {
+          url: 'assets/images/icon-27.svg',
+          scaledSize: new google.maps.Size(30, 40),
+        },
+        coordinates = { lat: +lat, lng: +lng },
+        map = new google.maps.Map(getMap, {
+            disableDefaultUI: true,
+             styles: styles,
+            center: coordinates,
+            zoom: 15
+        });
+        marker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            optimized: false,
+            icon: image
+          }),
+          infowindow = new google.maps.InfoWindow(),
+          service = new google.maps.places.PlacesService(map);
+      
+        service.nearbySearch({
+          location: coordinates,
+          radius: 5000,
+          type: ['store']
+        }, callback);
+      
+      
+        let list = document.querySelector('.search-list');
+        let listItems = document.querySelectorAll('.search-list__item');
+      
+        list.onclick = function (e) {
+          let target = e.target.closest('li');
+          let searchResult = target.dataset.search;
+      
+      
+          if (target.classList.contains('active')) {
+            return;
+          } else {
+            removeClass(listItems, 'active');
+            target.classList.add('active');
+          }
+      
+          map = new google.maps.Map(getMap, {
+            disableDefaultUI: true,
+            center: coordinates,
+            styles: styles,
+            zoom: +zoom
+          });
+      
+          marker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            optimized: false,
+            icon: image
+          });
+      
+          service.nearbySearch({
+            location: coordinates,
+            radius: 5000,
+            type: [searchResult]
+          }, callback);
+        };
+      
+        function removeClass(elements, className) {
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.remove(className);
+          }
+        }
+      
+      
+        function callback(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (let i = 0; i < results.length; i++) {
+              createMarker(results[i]);
+            }
+          }
+        }
+      
+        function createMarker(place) {
+          let placeLoc = place.geometry.location;
+          let marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            icon: dot
+          });
+      
+          google.maps.event.addListener(marker, 'click', function () {
+            infowindow.setContent(place.name);
+            infowindow.open(map, this);
+          });
+        }
+      } 
+      
+    </script>
+    <style type="text/css">
+      .header {
+        background-image:  url(assets/images/home-bg-mobile.jpg);
+      }
+      
+      @media (min-width: 415px) {
+        .header {
+          background-image:  url(assets/images/home-bg-tablet.jpg);
+        }
+      }
+      
+      //- @media (min-width: 769px) and (min-height: 618px) {
+      //-   .header {
+      //-     background-image:  url(http://via.placeholder.com/980x800);
+      //-   }
+      //- } 
+      
+      //- @media (min-width: 769px) and (min-height: 801px) {
+      //-   .header {
+      //-     background-image:  url(http://via.placeholder.com/980x1200);
+      //-   }
+      //- } 
+      
+      @media (min-width: 981px) {
+        .header {
+          background-image:  url(assets/images/home-bg-landscape.jpg);
+        }
+      } 
+      
+      //- @media (min-width: 981px) and (min-height: 807px) {
+      //-   .header {
+      //-     background-image:  url(http://via.placeholder.com/1280x1208);
+      //-   }
+      //- } 
+      
+       @media (min-width: 1281px) {
+        .header {
+          background-image:  url(assets/images/home-bg-hd.jpg);
+        }
+      } 
+      
+      
+      
+      
+      .map-item__image {
+        background-image:  url(assets/images/home-map-rect.jpg);
+      }
+      @media (min-width: 1281px) {
+        .map-item__image {
+          background-image:  url(assets/images/home-map.jpg);
+        }
+      }
+      
+      
+      
+      .app__bg {
+        background-image:  url(assets/images/home-bg-section-mobile.jpg);
+      }
+        @media (min-width: 415px) {
+        .app__bg {
+          background-image:  url(assets/images/home-bg-section-tablet.jpg);
+        }
+      }
+        @media (min-width: 981px) {
+        .app__bg {
+          background-image:  url(assets/images/home-bg-section-landscape.jpg);
+        }
+      } 
+       @media (min-width: 1281px) {
+        .app__bg {
+          background-image:  url(assets/images/home-bg-section-hd.jpg);
+        }
+      } 
+      
+      
+      .map-title  {
+        background-image:  url(http://via.placeholder.com/414x297);
+      }
+        @media (min-width: 415px) {
+        .map-title  {
+          background-image:  url(http://via.placeholder.com/980x681);
+        }
+      }
+        @media (min-width: 981px) {
+        .map-title  {
+          background-image:   url(http://via.placeholder.com/1280x681);
+        }
+      } 
+       @media (min-width: 1281px) {
+        .map-title  {
+          background-image:  url(assets/images/map-bg-hd.jpg);
+        }
+      } 
+      
+      
+        .unit-banner   {
+        background-image:  url(assets/images/unit-bg-mobile.jpg);
+      }
+        @media (min-width: 415px) {
+         .unit-banner   {
+          background-image:  url(assets/images/unit-bg-tablet.jpg);
+        }
+      }
+        @media (min-width: 981px) {
+         .unit-banner   {
+          background-image:  url(assets/images/unit-bg-landscape.jpg);
+        }
+      } 
+       @media (min-width: 1281px) {
+         .unit-banner   {
+          background-image:  url(assets/images/unit-bg-hd.jpg);
+        }
+      } 
+      
+      
+       .discover-title   {
+        background-image:  url(http://via.placeholder.com/414x297);
+      }
+        @media (min-width: 415px) {
+         .discover-title   {
+          background-image:   url(http://via.placeholder.com/980x681);
+        }
+      }
+        @media (min-width: 981px) {
+         .discover-title   {
+          background-image:  url(http://via.placeholder.com/1280x681);
+        }
+      } 
+       @media (min-width: 1281px) {
+         .discover-title   {
+          background-image:  url(assets/images/discover-bg-hd.jpg);
+        }
+      } 
+      
+      
+      
+      
+        .plan__section::before   {
+        background-image:  url(assets/images/plan-bg-mobile.jpg);
+      }
+        @media (min-width: 415px) {
+          .plan__section::before    {
+          background-image:  url(assets/images/plan-bg-tablet.jpg);
+        }
+      }
+      
+         @media (min-width: 641px) and (min-height: 626px) {
+        .plan__section::before  {
+          background-image: url(http://via.placeholder.com/980x800);
+        }
+      } 
+      
+        @media (min-width: 641px) and (min-height: 801px) {
+        .plan__section::before  {
+          background-image: url(http://via.placeholder.com/980x1223);
+        }
+      } 
+      
+      
+        @media (min-width: 981px) {
+          .plan__section::before    {
+          background-image:  url(assets/images/plan-bg-landscape.jpg);
+        }
+      }
+      
+       @media (min-width: 981px) and (min-height: 817px) {
+        .plan__section::before  {
+          background-image: url(http://via.placeholder.com/1280x1223);
+        }
+      } 
+      
+       @media (min-width: 1281px) {
+          .plan__section::before   {
+          background-image:  url(assets/images/plan-bg-hd.jpg);
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="nav__row">
+          <div class="nav__item">
+            <div class="nav__item-head"> 
+              <p>Seulement 4 logements disponibles</p>
+            </div>
+            <ul class="nav__item-list"> 
+              <li>
+                <div class="nav__item-link"><a href="discover.html">Découvrir le projet</a></div>
+              </li>
+              <li>
+                <div class="nav__item-link"> <a href="map.html">Connaître le quartier</a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__item-mobile"><a class="item-mobile__link" href="contact.html"><i class="icon-geo"></i></a></div>
+          <div class="nav__logo"><a class="nav__logo-link" href="index.html"><img src="assets/images/logo.svg" alt="Le5000"></a></div>
+          <div class="nav__item-mobile"><a class="item-mobile__link nav-opener" href="#"> <span class="nav-opener__text">menu</span><i class="icon-close"></i></a></div>
+          <div class="nav__item">
+            <div class="nav__item-head"> 
+              <p><a href="tel:4189327360">418 932-7360 </a><a href="mailto:info@le5000.ca">info@le5000.ca</a></p>
+            </div>
+            <ul class="nav__item-list"> 
+              <li>
+                <div class="nav__item-link"> <a href="plan.html">Plans des unités</a></div>
+              </li>
+              <li>
+                <div class="nav__item-link"> <a href="contact.html">Nous joindre</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="pb-container">
+      <div class="pb-row">
+        <div class="pb-row-inner header">
+          <div class="pb-cell">
+            <div class="pb-cell-inner wow fadeIn" data-wow-duration="2s">
+              <h3 class="header__subtitile">Appartement à louer à Lévis</h3>
+              <h1 class="header__title">Habitez une classe à part.</h1>
+              <div class="scroll-btn"><i class="icon-scroll"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row">
+        <div class="pb-row-inner app__links wow fadeIn" data-wow-duration="2s" data-wow-offset="10">
+          <div class="pb-cell">
+            <div class="pb-cell-inner"><a href="discover.html">
+                <div class="app__links-image"><img src="assets/images/icon-5.svg" alt="icon"></div>
+                <h3 class="app__links-title">Un style contemporain et un confort bien pensé.</h3>
+                <p class="app__links-text">Découvrir le projet</p></a></div>
+          </div>
+          <div class="pb-cell">
+            <div class="pb-cell-inner"><a href="map.html">
+                <div class="app__links-image"><img src="assets/images/icon-3.svg" alt="icon"></div>
+                <h3 class="app__links-title">Près d’une foule de services utiles.</h3>
+                <p class="app__links-text">Connaître le quartier</p></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row"> 
+        <div class="pb-row-inner wow fadeIn" data-wow-duration="3s">
+          <div class="pb-cell">
+            <div class="pb-cell-inner">
+              <div class="pb-widget">
+                <div class="pb-widget-inner app__title">
+                  <h2>Des appartements alliant luxe et tranquillité.</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row app__review">
+        <div class="pb-row-inner">
+          <div class="pb-cell">
+            <div class="pb-cell-inner">
+              <div class="app-slider">
+                <div class="app-slider__item">
+                  <div class="slide-title">
+                    <div class="slide-badge badge"><span>3 ½</span></div>
+                    <h3 class="slide-title__heading">Offrez vous une vie à aire ouverte.</h3>
+                    <p class="slide-title__text">À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel</p><a class="slide-title__link" href="plan.html">Voir les plans des unités </a>
+                  </div>
+                  <div class="slide-image"><img src="assets/images/home-slide6.jpg" alt="image description"></div>
+                </div>
+                <div class="app-slider__item">
+                  <div class="slide-title">
+                    <div class="slide-badge badge"><span>4 ½</span></div>
+                    <h3 class="slide-title__heading">Offrez vous une vie à aire ouverte.</h3>
+                    <p class="slide-title__text">À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel</p><a class="slide-title__link" href="plan.html">Voir les plans des unités </a>
+                  </div>
+                  <div class="slide-image"><img src="assets/images/home-slide2.jpg" alt="image description"></div>
+                </div>
+                <div class="app-slider__item">
+                  <div class="slide-title">
+                    <div class="slide-badge badge"><span>5 ½</span></div>
+                    <h3 class="slide-title__heading">Offrez vous une vie à aire ouverte.</h3>
+                    <p class="slide-title__text">À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel</p><a class="slide-title__link" href="plan.html">Voir les plans des unités </a>
+                  </div>
+                  <div class="slide-image"><img src="assets/images/home-slide3.jpg" alt="image description"></div>
+                </div>
+                <div class="app-slider__item">
+                  <div class="slide-title">
+                    <div class="slide-badge badge"><span>3 ½</span></div>
+                    <h3 class="slide-title__heading">Offrez vous une vie à aire ouverte.</h3>
+                    <p class="slide-title__text">À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel</p><a class="slide-title__link" href="plan.html">Voir les plans des unités </a>
+                  </div>
+                  <div class="slide-image"><img src="assets/images/home-slide4.jpg" alt="image description"></div>
+                </div>
+                <div class="app-slider__item">
+                  <div class="slide-title">
+                    <div class="slide-badge badge"><span>4 ½</span></div>
+                    <h3 class="slide-title__heading">Offrez vous une vie à aire ouverte.</h3>
+                    <p class="slide-title__text">À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel</p><a class="slide-title__link" href="plan.html">Voir les plans des unités </a>
+                  </div>
+                  <div class="slide-image"><img src="assets/images/home-slide5.jpg" alt="image description"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row app__map">
+        <div class="pb-row-inner">
+          <div class="pb-cell">
+            <div class="pb-cell-inner">
+              <div class="app__map-row container wow fadeIn" data-wow-duration="2s">
+                <div class="map-item">
+                  <div class="map-badge badge"><img src="assets/images/pin2.svg" width="33" alt="image description"></div>
+                  <h3 class="map-item__title">Une vie simplifée par la proximité.</h3>
+                  <p>Lévis est une ville active. Non seulement elle présente tous les services essentiels, mais elle propose également de belles découvertes.</p><a class="map-item__link" href="map.html">Découvrir le quartier</a>
+                </div>
+                <div class="map-item map-item__image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row app__bg">
+        <div class="pb-row-inner">
+          <div class="pb-cell">
+            <div class="pb-cell-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row app__habite-bg">
+        <div class="pb-row-inner habite-row container wow fadeInUp" data-wow-duration="1s">
+          <div class="pb-cell">
+            <div class="pb-cell-inner">
+              <div class="pb-widget">
+                <div class="pb-widget-inner">
+                  <h2>Habitez une classe à part.</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pb-cell">
+            <div class="pb-cell-inner">
+              <h3>Suspendisse volutpat ac turpis a tristique. Nullam eleifend metus tellus, a maximus tortor vehicula nec.ligula dapibus posuere.</h3>
+              <p>Morbi a volutpat arcu. Etiam eget pulvinar quam. Cras elit metus, gravida in ipsum non, suscipit faucibus mauris. Cras ultrices eget risus sit amet viverra. Sed nulla nibh, sollicitudin at purus at, laoreet.</p>
+              <p>Integer vitae erat vel magna bibendum tincidunt nec non leo. Nulla vel iaculis ligula. Curabitur mollis arcu lorem, tincidunt laoreet mi molestie ac.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo"><a href="index.html"><img src="assets/images/logo.svg" alt="le5000"></a></div>
+        <div class="footer-row">
+          <ul class="footer-row__item">
+            <li> 
+              <address>5000, rue Saint-Georges</address>
+            </li>
+            <li>
+              <address>Lévis (Québec)  G6C 1E1</address>
+            </li>
+          </ul>
+          <ul class="footer-row__item">
+            <li><a href="tel:41893273607">Tél. 418 932-9607</a></li>
+            <li><a href="mailto:info@le5000.ca">info@le5000.com</a></li>
+          </ul>
+          <ul class="footer-row__item">
+            <li><a href="discover.html">Découvrir le projet  </a></li>
+            <li><a href="map.html">Connaître le quartier</a></li>
+          </ul>
+          <ul class="footer-row__item">
+            <li><a href="plan.html">Plans des unités</a></li>
+            <li><a href="contact.html">Nous joindre</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom"><span class="footer-bottom__text">Le 5000 © 2017 </span><a class="footer-bottom__text" href="http://turbulences.ca/" target="_blank">Design site web: Turbulences</a></div>
+      </div>
+    </footer>
+    <script src="assets/js/vendor.min.js" defer=""></script>
+    <script src="assets/js/app.js" defer=""></script>
+  </body>
+</html>

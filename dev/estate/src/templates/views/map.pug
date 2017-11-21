@@ -1,0 +1,100 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+  +head('Connaître le quartier / Neighborhood')
+  body
+    //- include ../partials/preloader
+    header.nav
+      .container
+        .nav__row
+          .nav__item
+            .nav__item-head 
+              p Seulement 4 logements disponibles
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="discover.html") Découvrir le projet
+              li.nav-active.nav__item-link  
+                a(href="map.html") Connaître le quartier
+          .nav__item-mobile
+            a(href="contact.html", class="item-mobile__link")
+              i.icon-geo
+
+          .nav__logo
+            a(href="index.html", class="nav__logo-link")
+              img(src="assets/images/logo.svg", alt="Le5000")
+
+          .nav__item-mobile
+            a(href="#", class="item-mobile__link nav-opener") 
+              span.nav-opener__text menu
+              i.icon-close
+
+          .nav__item
+            .nav__item-head 
+              p
+                a(href="tel:4189327360") 418 932-7360 
+                a(href="mailto:info@le5000.ca") info@le5000.ca
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="plan.html") Plans des unités
+              li.nav__item-link 
+                a(href="contact.html") Nous joindre
+    .pb-container
+      
+      .pb-row.map-title
+        .pb-row-inner.container
+          .pb-cell
+            .pb-cell-inner
+              h1(class="wow fadeIn", data-wow-duration="2s") Si près, si pratique.
+      
+      .pb-row.about
+        div(class="pb-row-inner container about__row wow fadeIn", data-wow-duration="2s")
+          .pb-cell
+            .pb-cell-inner
+              img(src="assets/images/map-post.jpg", alt="image description")
+
+          .pb-cell
+            .pb-cell-inner
+              .about__descr
+                h2 Le 5 000 est situé en plein cœur de Lévis, près du boulevard Guillaume-Couture et de la route du Président-Kennedy. 
+                p Véritable ville animée, Lévis abrite non seulement des expériences gastronomiques uniques, mais également l’ensemble complet des services courants et de première nécessité dont vous avez besoin au quotidien.
+        
+      .pb-row.map
+        div(class="pb-row-inner container wow fadeIn", data-wow-duration="2s")
+          .pb-cell
+            .pb-cell-inner
+              .map-wrapper
+                ul#list.search-list
+                  li(data-search = "shopping_mall", class = "search-list__item") 
+                    i.icon-basket
+                    |Épicéerie
+                    i.icon-dot
+                  li(data-search = "store", class = "search-list__item active") 
+                    i.icon-bag
+                    |magasin
+                    i.icon-dot
+                  li(data-search = "restaurant", class = "search-list__item")
+                    i.icon-cafe
+                    |restaurant
+                    i.icon-dot
+                  li(data-search = "pharmacy", class = "search-list__item") 
+                    i.icon-med
+                    |Santé
+                    i.icon-dot
+                  li(data-search = "school", class = "search-list__item") 
+                    i.icon-edu
+                    |École
+                    i.icon-dot
+                  li(data-search = "bank", class = "search-list__item") 
+                    i.icon-bank
+                    |banque
+                    i.icon-dot
+                div(id="map", data-lat="46.792226", data-lng="-71.1879289", data-zoom="15")
+
+
+
+
+    +bottomLink
+    include ../partials/footer 
+    include ../partials/foot-map

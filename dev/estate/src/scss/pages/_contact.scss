@@ -1,0 +1,285 @@
+
+.contact {
+    position: relative;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #38485c;
+    background-color: $colorMain;
+    // min-height: 967px;
+    min-height: 100vh;
+    padding-top: 242px;
+    padding-bottom: 78px;
+    .container {
+        max-width: 1230px;
+        @include media('<=phone') {
+            padding: 0 20px;
+        }
+    }
+    @include media('<tablet') {
+        padding-top: 117px;
+    }
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    @include media('<sm-desktop') {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pb-cell {
+        width: 50%;
+        @include media('<sm-desktop') {
+            width: 64%;
+            margin-bottom: 40px;
+        }
+        @include media('<=tablet') {
+            width: 82%;
+        }
+        @include media('<=phone') {
+            width: 100%;
+        }
+    }
+    .contact-block {
+        color: #fff;
+        text-align: left;
+        width: 35%;
+        @include media('<sm-desktop') {
+            width: 73%;
+        }
+        @include media('<=tablet') {
+            width: 82%;
+        }
+        @include media('<=phone') {
+            width: 100%;
+        }
+        h2 {
+            font: 400 60px $fontHeading;
+            margin-bottom: 7px;
+            @include media('<=phone') {
+                font-size: 40px;
+            }
+        }
+        p {
+            font: 600 14px/20px $fontMain;
+            margin-bottom: 19px;
+        }
+        address {
+            font: 600 16px/22px $fontMain;
+            margin-bottom: 8px;
+        }
+        a.contact-route {
+            font: 600 14px/22px $fontMain;
+            
+            color: #fff;
+            text-decoration: underline;
+            display: inline-block;
+            margin-bottom: 60px;
+            &:hover {
+                opacity: 0.8;
+            }
+            @include media('<=phone')  {
+                margin-bottom: 35px;
+            }
+        }
+        .contact-link {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            @include media('<=desktop') {
+                width: 100%;
+            }
+            @include media('<=phone') {
+                flex-direction: column;
+            }
+            a {
+                display: inline-block;
+                font: 600 18px $fontCapital;
+                letter-spacing: 2px;
+                position: relative;
+                color: #fff;
+                &:hover {
+                    opacity: 0.8;
+                }
+                &:first-child{
+                    @include media('<=phone') {
+                        margin-bottom: 50px;
+                    }
+                }
+                &:last-child{
+                    @include media('<=phone') {
+                        margin-bottom: 0;
+                    }
+                }
+                &:last-child::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    height: 1px;
+                    width: 55px;
+                    background-color: #fff;
+                    top: -15px;
+                }
+            }
+        }
+    }
+    .form-block {
+        padding: 40px 44px 44px;
+
+        @include media('<=phone') {
+            padding: 30px 20px 35px;
+        }
+        background-color: #fff;
+        h4 {
+            font: 400 18px $fontCapital;
+            letter-spacing: 1px;
+            margin-bottom: 27px;
+            width: 100%;
+        }
+        label {
+            display: none;
+        }
+    }
+}
+
+.wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p {
+        width: 48%;
+        margin-bottom: 27px;
+        position: relative;
+    
+        @include media('<smart') {
+            width: 100%;
+        }
+        &:first-child,
+        &:nth-of-type(3) {
+            margin-right: 5px;
+            @include media('<smart') {
+                margin-right: 0;
+            }
+        }
+        &:nth-of-type(5) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .wpcf7-not-valid-tip {
+            font: 600 10px $fontMain;
+            color: $colorAccent;
+            position: absolute;
+            left: 0;
+            display: none;
+        }
+        &:nth-of-type(6) {
+            position: relative;
+            margin-bottom: 0;
+            input {
+                max-width: 240px;
+                width: 100%;
+                position: relative;
+                display: block;
+                font: 400 25px $fontHeading;
+                border: none;
+                background-color: $colorAccent;
+                padding: 17px;
+                text-align: left;
+                &:hover {
+                    @include animate(color);
+                    color: #fff;
+                }
+                &:focus {
+                    box-shadow: none !important;
+                } 
+                @include media('<smart') {
+                    max-width: 100%;
+                }
+            }
+            &::after {
+                content: '\e806';
+                @include acenter-vert;
+                right: 26px;
+                font-family: 'le-icon';
+                display: block;
+                font-size: 12px;
+                color: $colorMain;
+            }
+            &:hover::after {
+                @include animate(color);
+                color: #fff;
+            }
+        }
+    }
+    input,
+    textarea {
+        border: none;
+        position: relative;
+        background-color: #eff5f9;
+        border-bottom: 1px solid $colorMain;
+        padding: 10px 18px;
+        width: 100%;
+        max-width: 240px;
+        &:focus {
+            @include animate(all);
+            box-shadow: 0 1px 0 0 $colorMain;
+            outline: none;
+        }
+        @include media('<smart') {
+            max-width: 100%;
+        }
+        font: 400 14px $fontMain;
+        @include placeholder {
+            color: $colorMain;
+        }
+    }
+    textarea {
+        max-width: 506px;
+        min-height: 279px;
+        width: 100%;
+        resize: none;
+    }
+}
+
+.ajax-loader {
+    display: none !important;
+}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+    display: none !important;   
+}
+
+div.wpcf7-response-output {
+    margin: 2em 0em 1em !important;
+    padding: 0.2em 1em;
+}
+
+.addtoany_list a, .widget .addtoany_list a{
+    padding: 0px 9px !important;
+    &:first-child {
+        padding-left: 0 !important;;
+    }
+}
+
+.addtoany_list.a2a_kit_size_32 a>span{
+    height: 45px !important;
+    line-height: 45px !important;
+    width: 45px !important;
+    border-radius: 50% !important;
+    background-color: #fff !important;
+    position: relative !important;
+
+    &.a2a_label {
+        display: none !important;
+    }
+    svg {
+        width: 28px !important;
+        height: 32px !important;
+        position: absolute !important;
+        top: 16% !important;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+        path {
+            fill: #0a1e38 !important;
+        }
+    }
+   
+}

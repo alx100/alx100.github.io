@@ -1,0 +1,99 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+	+head('Découvrir Le Projet / Discover the project')
+	body
+		//- include ../partials/preloader
+		header.nav
+				.container
+					.nav__row
+						.nav__item
+							.nav__item-head 
+								p Seulement 4 logements disponibles
+							ul.nav__item-list 
+								li 
+									a(href="discover.html", class="nav__item-link") Découvrir le projet
+								li 
+									a(href="map.html", class="nav__item-link") Connaître le quartier
+						.nav__item-mobile
+							a(href="contact.html", class="item-mobile__link")
+								i.icon-geo
+
+						.nav__logo
+							a(href="index.html", class="nav__logo-link")
+								img(src="assets/images/logo.svg", alt="Le5000")
+
+						.nav__item-mobile
+							a(href="#", class="item-mobile__link nav-opener") 
+								span.nav-opener__text menu
+								i.icon-close
+
+						.nav__item
+							.nav__item-head 
+								p
+									a(href="tel:4189327360") 418 932-7360 
+									a(href="mailto:info@le5000.ca") info@le5000.ca
+							ul.nav__item-list 
+								li 
+									a(href="plan.html", class="nav__item-link") Plans des unités
+								li 
+									a(href="contact.html", class="nav__item-link") Nous joindre
+		.pb-container
+			.pb-row
+				.pb-row-inner.text-slider-section
+					.pb-cell
+						.pb-cell-inner
+							.container.flex
+								.text-side
+									.text-side-main
+										.top
+											.link-holder
+												a(href="#", class="inverse-link") &lt; Retour au plan d’étage
+											.text-side-badge.badge
+												span.badge-content 4 ½
+											h1 Logement 312
+											ul
+												li Superficie brute de 958 PI<sup>2</sup>
+												li Superficie terrasse 65 PI<sup>2</sup>
+												li Prix du loyer 000 $
+											p Cras ornare in dui in feugiat. Curabitur eu aliquam ipsum. In hac habitasse platea dictumst. Donec suscipit sollicitudin turpis, auctor vulputate nisi tempor nec.
+										.slider-holder
+											.unit-slider
+												.s-element
+													img(src="assets/images/unit-plan1.jpg", alt="Le5000")
+													a(href="assets/images/unit-plan1.jpg", class="image-popup-link")  
+														i.icon-zoom
+												.s-element
+													img(src="assets/images/unit-plan1.jpg", alt="Le5000")
+													a(href="assets/images/unit-plan1.jpg", class="image-popup-link") 
+														i.icon-zoom
+												.s-element
+													img(src="assets/images/unit-plan1.jpg", alt="Le5000")
+													a(href="assets/images/unit-plan1.jpg", class="image-popup-link") 
+														i.icon-zoom
+										.bottom
+											.links-holder 
+												a(href="#", class="inverse-link decorated") Télécharger le plan
+												a(href="#", class="inverse-link decorated") Louer cette unité
+											.text-side-footer
+												p Partager le plan
+												ul.socials
+													li 
+														a(href="mailto:info@le5000.ca", class="soc-link")
+															i.icon-mail
+													li 
+														a(href="https://www.facebook.com/", class="soc-link", target="_blank")
+															i.icon-facebook
+													li 
+														a(href="https://twitter.com/", class="soc-link", target="_blank")
+															i.icon-twitter
+			.pb-row
+				.pb-row-inner.banner-section
+					.pb-cell
+						.pbcell-inner
+							.unit-banner
+		+bottomLink
+		include ../partials/footer  
+		include ../partials/foot

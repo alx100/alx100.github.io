@@ -1,0 +1,167 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+  +head('Accueil / Homepage')
+  body
+    //- include ../partials/preloader
+    header.nav
+        .container
+          .nav__row
+            .nav__item
+              .nav__item-head 
+                p Seulement 4 logements disponibles
+              ul.nav__item-list 
+                li
+                  .nav__item-link
+                    a(href="discover.html") Découvrir le projet
+                li
+                  .nav__item-link 
+                    a(href="map.html") Connaître le quartier
+            .nav__item-mobile
+              a(href="contact.html", class="item-mobile__link")
+                i.icon-geo
+
+            .nav__logo
+              a(href="index.html", class="nav__logo-link")
+                img(src="assets/images/logo.svg", alt="Le5000")
+
+            .nav__item-mobile
+              a(href="#", class="item-mobile__link nav-opener") 
+                span.nav-opener__text menu
+                i.icon-close
+
+            .nav__item
+              .nav__item-head 
+                p
+                  a(href="tel:4189327360") 418 932-7360 
+                  a(href="mailto:info@le5000.ca") info@le5000.ca
+              ul.nav__item-list 
+                li
+                  .nav__item-link 
+                    a(href="plan.html") Plans des unités
+                li
+                  .nav__item-link 
+                    a(href="contact.html") Nous joindre
+    .pb-container
+      .pb-row
+        div(class="pb-row-inner header")
+          .pb-cell
+            div(class="pb-cell-inner wow fadeIn", data-wow-duration="2s")
+              h3(class="header__subtitile") Appartement à louer à Lévis
+              h1(class="header__title") Habitez une classe à part.
+              div(class="scroll-btn")
+                i.icon-scroll
+      .pb-row
+        div(class="pb-row-inner app__links wow fadeIn", data-wow-duration="2s", data-wow-offset="10")
+          .pb-cell
+            .pb-cell-inner
+              a(href="discover.html")
+                .app__links-image
+                  img(src="assets/images/icon-5.svg", alt="icon")
+                h3.app__links-title Un style contemporain et un confort bien pensé.
+                p.app__links-text Découvrir le projet
+
+          .pb-cell
+            .pb-cell-inner
+              a(href="map.html")
+                .app__links-image
+                  img(src="assets/images/icon-3.svg", alt="icon")
+                h3.app__links-title Près d’une foule de services utiles.
+                p.app__links-text Connaître le quartier
+      .pb-row 
+        .pb-row-inner(class="wow fadeIn", data-wow-duration="3s")
+          .pb-cell
+            .pb-cell-inner
+              .pb-widget
+                div(class="pb-widget-inner app__title")
+                  h2 Des appartements alliant luxe et tranquillité.
+      .pb-row.app__review
+        .pb-row-inner
+          .pb-cell
+            .pb-cell-inner
+              .app-slider
+
+                .app-slider__item
+                  .slide-title
+                    .slide-badge.badge
+                      span 3 ½
+                    h3.slide-title__heading Offrez vous une vie à aire ouverte.
+                    p.slide-title__text À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel
+                    a(href="plan.html", class="slide-title__link") Voir les plans des unités 
+                  .slide-image
+                    img(src="assets/images/home-slide6.jpg", alt="image description")
+
+                .app-slider__item
+                  .slide-title
+                    .slide-badge.badge
+                      span 4 ½
+                    h3.slide-title__heading Offrez vous une vie à aire ouverte.
+                    p.slide-title__text À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel
+                    a(href="plan.html", class="slide-title__link") Voir les plans des unités 
+                  .slide-image
+                    img(src="assets/images/home-slide2.jpg", alt="image description")
+
+                .app-slider__item
+                  .slide-title
+                    .slide-badge.badge
+                      span 5 ½
+                    h3.slide-title__heading Offrez vous une vie à aire ouverte.
+                    p.slide-title__text À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel
+                    a(href="plan.html", class="slide-title__link") Voir les plans des unités 
+                  .slide-image
+                    img(src="assets/images/home-slide3.jpg", alt="image description")
+                
+                .app-slider__item
+                  .slide-title
+                    .slide-badge.badge
+                      span 3 ½
+                    h3.slide-title__heading Offrez vous une vie à aire ouverte.
+                    p.slide-title__text À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel
+                    a(href="plan.html", class="slide-title__link") Voir les plans des unités 
+                  .slide-image
+                    img(src="assets/images/home-slide4.jpg", alt="image description")
+
+                .app-slider__item
+                  .slide-title
+                    .slide-badge.badge
+                      span 4 ½
+                    h3.slide-title__heading Offrez vous une vie à aire ouverte.
+                    p.slide-title__text À partir de 895$ par mois. Integer diam  ante. Curabitur sagittis, tellus vel
+                    a(href="plan.html", class="slide-title__link") Voir les plans des unités 
+                  .slide-image
+                    img(src="assets/images/home-slide5.jpg", alt="image description")
+
+      .pb-row.app__map
+        .pb-row-inner
+          .pb-cell
+            .pb-cell-inner
+              div(class="app__map-row container wow fadeIn", data-wow-duration="2s")
+                .map-item
+                  .map-badge.badge
+                    img(src="assets/images/pin2.svg", width="33" alt="image description")
+                  h3.map-item__title Une vie simplifée par la proximité.
+                  p Lévis est une ville active. Non seulement elle présente tous les services essentiels, mais elle propose également de belles découvertes.
+                  a(href="map.html", class="map-item__link") Découvrir le quartier
+                .map-item.map-item__image
+      .pb-row.app__bg
+        .pb-row-inner
+          .pb-cell
+            .pb-cell-inner
+      .pb-row.app__habite-bg
+        div(class="pb-row-inner habite-row container wow fadeInUp", data-wow-duration="1s")
+          .pb-cell
+            .pb-cell-inner
+              .pb-widget
+                .pb-widget-inner
+                  h2 Habitez une classe à part.
+
+          .pb-cell
+            .pb-cell-inner
+              h3 Suspendisse volutpat ac turpis a tristique. Nullam eleifend metus tellus, a maximus tortor vehicula nec.ligula dapibus posuere.
+              p Morbi a volutpat arcu. Etiam eget pulvinar quam. Cras elit metus, gravida in ipsum non, suscipit faucibus mauris. Cras ultrices eget risus sit amet viverra. Sed nulla nibh, sollicitudin at purus at, laoreet.
+              p Integer vitae erat vel magna bibendum tincidunt nec non leo. Nulla vel iaculis ligula. Curabitur mollis arcu lorem, tincidunt laoreet mi molestie ac.
+    //- +bottomLink
+    include ../partials/footer
+    include ../partials/foot

@@ -1,0 +1,137 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+  +head('Plans des unités / Floor Plans')
+  body
+    //- include ../partials/preloader
+    header.nav
+      .container
+        .nav__row
+          .nav__item
+            .nav__item-head 
+              p Seulement 4 logements disponibles
+            ul.nav__item-list 
+              li
+                .nav__item-link 
+                  a(href="discover.html") Découvrir le projet
+              li 
+                .nav__item-link 
+                  a(href="map.html") Connaître le quartier
+          .nav__item-mobile
+            a(href="contact.html", class="item-mobile__link")
+              i.icon-geo
+
+          .nav__logo
+            a(href="index.html", class="nav__logo-link")
+              img(src="assets/images/logo.svg", alt="Le5000")
+
+          .nav__item-mobile
+            a(href="#", class="item-mobile__link nav-opener") 
+              span.nav-opener__text menu
+              i.icon-close
+
+          .nav__item
+            .nav__item-head 
+              p
+                a(href="tel:4189327360") 418 932-7360 
+                a(href="mailto:info@le5000.ca") info@le5000.ca
+            ul.nav__item-list 
+              li.nav-active
+                .nav__item-link  
+                  a(href="plan.html") Plans des unités
+              li
+                .nav__item-link  
+                  a(href="contact.html") Nous joindre
+    main.plan__section
+      .container
+        .plan.tabs
+          ul.plan__list
+            li.plan__list-item
+              a(href="#tab5", class="plan__list-link") 5
+            li.plan__list-item
+              a(href="#tab4", class="plan__list-link") 4
+            li.plan__list-item
+              a(href="#tab3", class="plan__list-link") 3
+            li.plan__list-item
+              a(href="#tab2", class="plan__list-link") 2
+            li.plan__list-item
+              a(href="#tab1", class="plan__list-link") 1
+
+          #tab5.plan__tab 
+            h2 Plan du 5<sup>e</sup> étage 
+            .filter
+              span(data-rooms="three" class="item") 3 ½
+              span(data-rooms="four" class="item") 4 ½
+              span(data-rooms="four-half" class="item") 4 ½ +
+              span(data-rooms="five" class="item") 5 ½
+              span(class="item filter__all") Tout voir
+            .plan-tab__image
+              include ../partials/floorSvg5
+            .legend
+              span À louer  
+              span.legend__text  Loué        
+
+          #tab4.plan__tab 
+            h2 Plan du 4<sup>e</sup> étage 
+            .filter
+              span(data-rooms="three" class="item") 3 ½
+              span(data-rooms="four" class="item") 4 ½
+              span(data-rooms="four-half" class="item") 4 ½ +
+              span(data-rooms="five" class="item") 5 ½
+              span(class="item filter__all") Tout voir
+            .plan-tab__image
+              include ../partials/floorSvg4
+            .legend
+              span À louer  
+              span.legend__text  Loué 
+
+          #tab3.plan__tab 
+            h2 Plan du 3<sup>e</sup> étage 
+            .filter
+              span(data-rooms="three" class="item") 3 ½
+              span(data-rooms="four" class="item") 4 ½
+              span(data-rooms="four-half" class="item") 4 ½ +
+              span(data-rooms="five" class="item") 5 ½
+              span(class="item filter__all") Tout voir
+            .plan-tab__image
+              include ../partials/floorSvg3
+            .legend
+              span À louer  
+              span.legend__text  Loué 
+
+          #tab2.plan__tab 
+            h2 Plan du 2<sup>e</sup> étage
+            .filter
+              span(data-rooms="three" class="item")  3 ½
+              span(data-rooms="four" class="item") 4 ½
+              span(data-rooms="four-half" class="item") 4 ½ +
+              span(data-rooms="five" class="item") 5 ½
+              span(class="item filter__all") Tout voir
+            .plan-tab__image
+              include ../partials/floorSvg2
+            .legend
+              span À louer  
+              span.legend__text  Loué 
+
+          #tab1.plan__tab 
+            h2 Plan du 1<sup>e</sup> étage
+            .filter
+              span(data-rooms="three" class="item") 3 ½
+              span(data-rooms="four" class="item") 4 ½
+              span(data-rooms="four-half" class="item") 4 ½ +
+              span(data-rooms="five" class="item") 5 ½
+              span(class="item filter__all") Tout voir
+            .plan-tab__image
+              include ../partials/floorSvg1
+            .legend
+              span À louer  
+              span.legend__text  Loué 
+
+
+
+
+    +bottomLink
+    include ../partials/footer
+    include ../partials/foot

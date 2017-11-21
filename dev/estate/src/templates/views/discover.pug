@@ -1,0 +1,141 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+  +head('Découvrir Le Projet / Discover the project')
+  body
+    //- include ../partials/preloader
+    header.nav
+      .container
+        .nav__row
+          .nav__item
+            .nav__item-head 
+              p Seulement 4 logements disponibles
+            ul.nav__item-list 
+              li.nav-active.nav__item-link   
+                a(href="discover.html") Découvrir le projet
+              li.nav__item-link
+                a(href="map.html") Connaître le quartier
+          .nav__item-mobile
+            a(href="contact.html", class="item-mobile__link")
+              i.icon-geo
+
+          .nav__logo
+            a(href="index.html", class="nav__logo-link")
+              img(src="assets/images/logo.svg", alt="Le5000")
+
+          .nav__item-mobile
+            a(href="#", class="item-mobile__link nav-opener") 
+              span.nav-opener__text menu
+              i.icon-close
+
+          .nav__item
+            .nav__item-head 
+              p
+                a(href="tel:4189327360") 418 932-7360 
+                a(href="mailto:info@le5000.ca") info@le5000.ca
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="plan.html") Plans des unités
+              li.nav__item-link 
+                a(href="contact.html") Nous joindre
+    .pb-container
+      .pb-row.discover-title
+        .pb-row-inner.container
+          .pb-cell
+            .pb-cell-inner
+              h1(class="wow fadeIn", data-wow-duration="2s") Vivez. Tout simplement.
+    
+      .pb-row.project
+        div(class="pb-row-inner container project__row wow fadeIn", data-wow-duration="2s")
+          .pb-cell
+            .pb-cell-inner
+              img(src="assets/images/discover-post.jpg", alt="image description")
+
+          .pb-cell
+            .pb-cell-inner
+              h2 Le 5 000, c’est 65 appartements locatifs de luxe répartis sur cinq étages, en unités de 3 ½ à 5 ½.  
+              p Présentant un style contemporain recherché, une grande fenestration et des aires ouvertes pratiques, les logements proposent une qualité irréprochable grâce à la structure de béton de l’immeuble.
+      
+      .pb-row.project-slider
+        div(class="pb-row-inner container wow fadeIn", data-wow-duration="2s", data-wow-offset="10")
+          .pb-cell
+            .pb-cell-inner
+              ul.project-slider__list.project-slider__active
+                li.project-slider__item
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-6.svg", alt="image description")     
+                    p Secteur paisible                   
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-8.svg", alt="image description")     
+                    p Ascenseur    
+
+                li.project-slider__item
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-2.svg", alt="image description")     
+                    p Air climatisé                  
+                  .item-content.item-content__double
+                    .item-content__image
+                      img(src="assets/images/icon-11.svg", alt="image description")     
+                    p Stationnement intérieur avec lave-auto   
+
+                li.project-slider__item
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-1.svg", alt="image description")     
+                    p Grands balcons                   
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-9.svg", alt="image description")     
+                    p Caméra de surveillance   
+
+                li.project-slider__item
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-7.svg", alt="image description")     
+                    p Terrasse sur le toit                   
+                  .item-content
+                    .item-content__image
+                      img(src="assets/images/icon-10.svg", alt="image description")     
+                    p Intercom de sécurité   
+      
+      .pb-row.discover-units
+        .pb-row-inner.container.discover-units__row
+          .pb-cell
+            .pb-cell-inner
+              div(class="discover-item wow fadeInUp", data-wow-duration="1s")
+                .discover-item-inner
+                  .badge.discover-badge
+                    span.discover-badge__count 3 ½
+                  h3 27 unités 3 ½ d’une superficie de 725 pi<sup>2</sup> à 925 pi<sup>2</sup>
+                  p À partir de 895$ par mois
+                  a(href="#") En savoirpluss
+              div(class="discover-item wow fadeInUp", data-wow-duration="1s", data-wow-delay=".3s")
+                .discover-item-inner
+                  .badge.discover-badge
+                    span.discover-badge__count 4 ½
+                  h3 33 unités 4 ½ d’une superficie de 925 pi<sup>2</sup> à 1 105 pi<sup>2</sup>
+                  p À partir de 895$ par mois
+                  a(href="#") En savoirplus
+              div(class="discover-item wow fadeInUp", data-wow-duration="1s", data-wow-delay=".6s")
+                .discover-item-inner
+                  .badge.discover-badge.discover-badge__custom
+                    span.discover-badge__count 4 ½ +
+                  h3 33 unités 4 ½ + d’une superficie de 925 pi<sup>2</sup> à 1 105 pi<sup>2</sup>
+                  p À partir de 895$ par mois
+                  a(href="#") En savoirplus
+              div(class="discover-item wow fadeInUp", data-wow-duration="1s", data-wow-delay=".9s")
+                .discover-item-inner
+                  .badge.discover-badge
+                    span.discover-badge__count 5 ½
+                  h3 5 unités 5 ½ d’une superficie de 1 350 pi<sup>2</sup>
+                  p À partir de 895$ par mois
+                  p(class="no-link") En savoirplus
+
+    +bottomLink
+    include ../partials/footer  
+    include ../partials/foot

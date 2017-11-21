@@ -1,0 +1,48 @@
+.nav-opened {
+    @include media('<=tablet') {
+        overflow: hidden;
+    }
+    .nav {
+        @include media('<=tablet') {
+            position: fixed;
+            top: 0;
+            z-index: 1300;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $colorMain;
+            height: 100vh;
+        }
+        @include media('<=tablet', 'landscape') {
+            position: fixed;
+            top: 0;
+            z-index: 13;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            background-color: $colorMain;
+            height: 100vh;
+        }
+    }
+    .nav__item {
+        display: block;
+    }
+    .nav-opener {
+        .nav-opener__text {
+            @include animate(opacity);
+            opacity: 0;
+            display: none;
+        }
+        .icon-close {
+            @include animate(opacity);
+            opacity: 1;
+            display: block;
+        }
+    }
+}
+
+.hide-btn {
+    .link-fixed {
+        display: none;
+    }
+}

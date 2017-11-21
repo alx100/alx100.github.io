@@ -1,0 +1,379 @@
+.text-slider-section {
+    justify-content: space-between;
+    background-color: $colorMain;
+    padding-top: 247px;
+    @include media('<sm-desktop') {
+        padding-top: 200px;
+    }
+    @include media('<tablet') {
+        padding-top: 100px;
+    }
+    @include media('<phone') {
+        padding-top: 90px;
+    }
+    .flex {
+        display: flex;
+        @include media('<sm-desktop') {
+            padding: 0 20px;
+        }
+    }
+}
+
+.text-side {
+    width: 100%;
+    @extend %clearfix;
+    color: #fff;
+    .link-holder {
+        display: inline-block;
+        max-width: 475px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 4px;
+        margin-bottom: 34px;
+        @include media('<phone') {
+            margin-bottom: 24px;
+        }
+    }
+    .inverse-link {
+        @include animate (opacity);
+        color: #fff;
+        letter-spacing: 0.2px;
+        &:hover {
+            opacity: .7;
+        }
+        &.decorated {
+            position: relative;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -13px;
+                width: 54px;
+                height: 1px;
+                background-color: #fff;
+                @include media('<tablet') {
+                    top: -16px;
+                }
+            }
+        }
+    }
+    h1 {
+        font-size: 60px;
+        margin: 0;
+        margin-bottom: 5px;
+        @include media('<tablet') {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+    }
+    li {
+        font-family: $fontMain;
+        font-size: 16px;
+        width: 100%;
+        line-height: 22px;
+    }
+    p { 
+        font-family: $fontMain;
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+    }
+    .text-side-main {
+        @extend %clearfix;
+        position: relative;
+        padding-bottom: 340px;
+        @include media('<xxl') {
+            padding-bottom: 250px;
+        }
+        @include media('<sm-desktop') {
+            padding-bottom: 0;
+        }
+        .top {
+            float: left;
+            position: relative;
+            max-width: 475px;
+            @include media('<sm-desktop') {
+                max-width: 100%;
+                float: none;
+            }
+            p {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                @include media('<phone') {
+                    margin-bottom: 26px;
+                }
+            }
+        }
+        sup {
+            font-size: 60%;
+        }
+    }
+    .text-side-badge {
+        right: 34px;
+        top: 100px;
+        line-height: 0;
+        position: absolute;
+        top: 45px;
+        @include media('<sm-desktop') {
+            display: none;
+        }
+        .badge-content {
+            font-size: 45px;
+            font-family: $fontHeading;
+            line-height: 126px;
+        }
+    }
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width: 475px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        @include media('<sm-desktop') {
+            position: static;
+            max-width: 100%;
+            float: none;
+            margin-bottom: 30px
+        }
+        @include media('<phone') {
+            margin-bottom: 0;
+        }
+        .links-holder {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 153px;
+            @include media('<xxl') {
+                margin-bottom: 80px;
+            }
+            @include media('<sm-desktop') {
+                margin-bottom: 50px;
+            }
+            @include media('<phone') {
+                margin-bottom: 0;
+            }
+        }
+        .inverse-link {
+            display: inline-block;
+            width: 50%;
+            @include media('<phone') {
+                width: 100%;
+                margin-bottom: 41px;
+                &:last-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .text-side-footer {
+        width: 100%;
+        margin-bottom: 72px;
+        @include media('<xxl') {
+            margin-bottom: 45px
+        }
+        @include media('<sm-desktop') {
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .socials {
+            li {
+                display: inline-block;
+                margin-right: 15px;
+                width: auto;
+                &:first-child .soc-link {
+                    font-size: 15px;
+                    i:before {
+                        position: relative;
+                        left: -3px;
+                    }
+                }
+            }
+            .soc-link {
+                @include animate (opacity);
+                display: inline-block;
+
+                width: 45px;
+                height: 45px;
+                font-size: 21px;
+                line-height: 45px;
+                color: inherit;
+                background-color: #fff;
+                color: $colorMain;
+                border-radius: 100%;
+                text-align: center;
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+.slider-holder {
+    float: right;
+    position: relative;
+    top: 410px;
+    margin-top: -410px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    @include media('<xxl') {
+        width: 49%;
+    }
+    @include media('<sm-desktop') {
+        width: 100%;
+        float: none;
+        margin-top: 0px;
+        top: 0;
+        margin-bottom: 46px;
+    }
+    @include media('<phone') {
+        margin-bottom: 34px;
+    }
+    .image-popup-link {
+        @include animate (opacity);
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0px 13px 47px 14px rgba(195, 195, 195, 0.3);
+        top: 13px;
+        right: 20px;
+        color: $colorAccent;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        @include media('<tablet') {
+            top: 6px;
+            right: 7px;
+        }
+        &:hover {
+            opacity: .7;
+        }
+        &:focus {
+            outline: 0;
+        }
+        i:before {
+            position: relative;
+            top: 0.5px;
+            left: 0.5px;
+        }
+    }
+}
+
+.unit-slider {
+    display: none;
+    &.slick-initialized {
+        display: block;
+    }
+    .slick-list {
+        overflow: visible;
+    }
+    .slick-slide {
+        padding: 46px 56px;
+        @include media('<tablet') {
+            padding: 44px 21px;
+        }
+        @include media('<phone') {
+            padding: 44px 11px;
+        }
+    }
+    .slick-dots {
+        bottom: 36px;
+        li {
+            width: 12px;
+            height: 12px;
+            button {
+                @include animate (background);
+                position: relative;
+                margin: 0;
+                padding: 0;
+                top: 2px;
+                left: 2px;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: #c2c7cd;
+                &:before {
+                    display: none;
+                }
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+        }
+        .slick-active {
+            button {
+                background-color: $colorMain;
+            }
+        }
+    }
+    .s-element {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.banner-section {
+    position: relative;
+    @include media('<sm-desktop') {
+        top: 0;
+        margin-bottom: 0;
+    }
+    .unit-banner {
+        height: 641px;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        @include media('<widescreen') {
+            height: 490px;
+        }
+        @include media('<sm-desktop') {
+            height: 390px;
+        }
+        @include media('<phone') {
+            height: 207px;
+        }
+    }
+}
+
+.slick-loading .slick-list {
+    background: none;
+}
+
+body {
+    position: relative;
+}
+
+.mfp-iframe-holder .mfp-close, 
+.mfp-image-holder .mfp-close {
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    right: 6%;
+   
+    @include media('<tablet') {
+        display: none;
+    }
+}
+
+img.mfp-img {
+    @include media('<phone') {
+        padding: 40px 30px;
+    }
+}
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer;
+}

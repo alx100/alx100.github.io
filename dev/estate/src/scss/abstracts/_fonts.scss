@@ -1,0 +1,95 @@
+
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../fonts/Canela-Regular.woff2') format('woff2'),
+       url('../fonts/Canela-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecento';
+  src: url('../fonts/Novecento-CondMedium.eot');
+  src: url('../fonts/Novecento-CondMedium.woff2') format('woff2'),
+       url('../fonts/Novecento-CondMedium.woff') format('woff'),
+       url('../fonts/Novecento-CondMedium.ttf') format('truetype'),
+       url('../fonts/Novecento-CondMedium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'le-icon';
+  src:  url('../fonts/le-icon.woff2?69481906') format('woff2'),
+        url('../fonts/le-icon.woff?69481906') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'le-icon';
+    src: url('../font/le-icon.svg?69481906#le-icon') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "le-icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-dot:before { content: '\e800'; } /* '' */
+.icon-geo-light:before { content: '\e801'; } /* '' */
+.icon-close:before { content: '\e802'; } /* '' */
+.icon-geo:before { content: '\e803'; } /* '' */
+.icon-humb:before { content: '\e804'; } /* '' */
+.icon-arrow-down:before { content: '\e805'; } /* '' */
+.icon-arrow-right:before { content: '\e806'; } /* '' */
+.icon-scroll:before { content: '\e807'; } /* '' */
+.icon-bag:before { content: '\e808'; } /* '' */
+.icon-cafe:before { content: '\e809'; } /* '' */
+.icon-gym:before { content: '\e80a'; } /* '' */
+.icon-med:before { content: '\e80d'; } /* '' */
+.icon-edu:before { content: '\e80e'; } /* '' */
+.icon-bank:before { content: '\e80f'; } /* '' */
+.icon-zoom:before { content: '\e810'; } /* '' */
+.icon-basket:before { content: '\e811'; } /* '' */
+.icon-mail:before { content: '\e812'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook-1:before { content: '\f09a'; } /* '' */
+.icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-facebook:before { content: '\f300'; } /* '' */

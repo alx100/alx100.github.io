@@ -1,0 +1,56 @@
+include ../mixins/head
+include ../mixins/bottomLink
+
+doctype html
+html(lang='fr')
+  +head('404 / Pas trouvé')
+  body
+    //- include ../partials/preloader
+    header.nav
+      .container
+        .nav__row
+          .nav__item
+            .nav__item-head 
+              p Seulement 4 logements disponibles
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="discover.html") Découvrir le projet
+              li.nav__item-link  
+                a(href="map.html") Connaître le quartier
+          .nav__item-mobile
+            a(href="contact.html", class="item-mobile__link")
+              i.icon-geo
+
+          .nav__logo
+            a(href="index.html", class="nav__logo-link")
+              img(src="assets/images/logo.svg", alt="Le5000")
+
+          .nav__item-mobile
+            a(href="#", class="item-mobile__link nav-opener") 
+              span.nav-opener__text menu
+              i.icon-close
+
+          .nav__item
+            .nav__item-head 
+              p
+                a(href="tel:4189327360") 418 932-7360 
+                a(href="mailto:info@le5000.ca") info@le5000.ca
+            ul.nav__item-list 
+              li.nav__item-link 
+                a(href="plan.html") Plans des unités
+              li.nav__item-link 
+                a(href="contact.html") Nous joindre
+    .pb-container
+      .pb-row.not-found
+        .pb-row-inner.container
+          .not-found__block
+            h1 404
+            p Pas trouvé
+
+
+
+
+
+    +bottomLink
+    include ../partials/footer
+    include ../partials/foot

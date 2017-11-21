@@ -1,0 +1,40 @@
+html, 
+body {
+    overflow-x: hidden;
+     background-color: $colorBg;
+     position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1230px;
+    padding: 0 15px;
+}
+
+.badge {
+    position: absolute;
+    span {
+        color: $colorAccent;
+    }
+    &::before {
+        @include size(126px);
+        @include acenter;
+        content: "";
+        display: block;
+        border: 2px solid $colorAccent;
+        border-radius: 50%;
+    }
+}
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    img {
+        @include acenter;
+        display: block;
+    }
+}

@@ -1,0 +1,274 @@
+.plan__section {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 234px;
+    padding-bottom: 96px;
+    // @include media('<=widescreen') {
+    //     min-height: 916px; 
+    // }
+    .container {
+        position: relative;
+    }
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include media('<smart') {
+            height: 380px;
+        }
+       
+
+    }
+    @include media('<tablet') {
+        min-height: 840px;
+        padding-top: 130px;
+        padding-bottom: 0;
+    }
+    @include media('<smart') {
+        min-height: 333px;
+        padding-top: 84px;
+    }
+    .container {
+        max-width: 1310px;
+        @include media('<smart') {
+            padding: 0;
+        }
+    }
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    @include media('<smart') {
+        flex-direction: column;
+    }
+    .plan__list {
+        @include media('<phone') {
+            padding-bottom: 10px;
+        }
+        &-item {
+            @include size(80px);
+            @include animate(all);
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #fff;
+            margin-bottom: 46px;
+            &:last-child {
+                margin-bottom: 0;
+                @include media('<smart') {
+                    margin-bottom: 65px;
+                }
+                @include media('<phone') {
+                    margin-bottom: 15px;
+                }
+            }
+            &.active {
+                background-color: $colorMain;
+                .plan__list-link {
+                    color: #fff;
+                }
+            }
+            &:hover {
+                background-color: $colorMain;
+                border: 1px solid $colorMain;
+                .plan__list-link {
+                    color: #fff;
+                }
+            }
+            @include media('<smart') {
+                margin-left: 30px;
+            }
+            @include media('<smart') {
+                @include size(35px);
+                margin-bottom: 14px;
+            }
+        }
+        &-link {
+            @include size(100%);
+            @include animate(all);
+            display: block;
+            color: $colorMain;
+            text-align: center;
+            font: 400 48px/80px $fontHeading;
+            @include media('<smart') {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+    }
+    .plan__tab {
+        background-color: #fff;
+        display: none;
+        max-height: 586px;
+        min-width: 515px;
+        padding: 46px 30px 94px 30px;
+        border-bottom: 4px solid $colorAccent;
+        @include media('<=tablet') {
+            min-width: 0;
+        }
+        @include media('<phone') {
+            padding: 30px 20px 50px 20px;
+            align-self: center;
+            min-height: 396px;
+        }
+        h2 {
+            font: 400 40px/45px $fontHeading;
+            margin-bottom: 18px;
+            margin-left: 10px;
+            @include media('<phone') {
+                font-size: 35px;
+            }
+        }
+        .filter {
+            margin-bottom: 62px;
+            margin-left: 10px;
+            @include media('<phone') {
+                margin-bottom: 40px;
+            }
+            @include media('<380px') {
+                margin-bottom: 25px
+            }
+            span {
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                font: 600 16px $fontCapital;
+                padding: 10px 17px;
+                border-top: 1px solid $colorMain;
+                border-bottom: 1px solid $colorMain;
+                border-right: 1px solid $colorMain;
+                &:hover {
+                    opacity: 0.7;
+                }
+                &:first-child {
+                    border-left: 1px solid $colorMain;
+                }
+                &:last-child {
+                    font: 600 14px $fontMain;
+                    text-decoration: underline;
+                    border: none;
+                    margin-left: 10px;
+                    @include media('<=375px') {
+                        margin-left: 3px;
+                    }
+                    @include media('<=360px') {
+                        margin-left: -11px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            span.filter__active {
+                background-color: #b2c0e1;
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $colorMain;
+                }
+                &.filter__all {
+                    background-color: #fff;
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .plan-tab__image {
+            max-width: 450px;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            @include media('<smart') {
+                max-width: 90%;
+            }
+            @include media('<phone') {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.hover-areas {
+    a:hover {
+        text {
+            opacity: 0.5;
+        }
+    }
+    .show-free {
+        path {
+            fill: #b2c0e1;
+            &:hover {
+                fill: #b2c0e1;
+            }
+        }
+    }
+    path {
+        fill: #fff;
+        transition: fill .3s;
+        &.booked {
+            fill: #dcdcdc;
+            &:hover {
+                fill: #dcdcdc;
+            }
+        }
+    }
+    text {
+        pointer-events: none;
+    }
+}
+
+.help-path {
+    pointer-events: none;
+}
+
+.svg-holder {
+    width: 100%;
+    margin: 0 auto;
+    svg {
+        width: 450px;
+        height: 290px;
+        @include media('<smart') {
+            width: 100%;
+            
+        }
+        @include media('<=phone') {
+            height: auto;
+        }
+    }
+}
+
+.legend {
+    span {
+        display: inline-block;
+        font: 400 14px $fontMain;
+        letter-spacing: 1px;
+        margin-left: 42px;
+        position: relative;
+        &::before {
+            content: '';
+            @include size(20px);
+            position: absolute;
+            display: block;
+            border: 1px solid $colorMain;
+            top: -3px;
+            left: -27px;
+            background-color: #fff;
+        }
+    }
+    .legend__text::before {
+        background-color: #dcdcdc;
+    }
+}

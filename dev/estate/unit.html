@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Découvrir Le Projet / Discover the project</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="theme-color" content="#9fedf2"/>
+    <link media="all" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i&amp;amp;subset=latin-ext"/>
+    <link media="all" rel="stylesheet" href="assets/css/vendor.min.css"/>
+    <link media="all" rel="stylesheet" href="assets/css/style.min.css"/>
+    <script>
+      //- var map;
+      function initMap() {
+        var styles = [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ],
+      
+        getMap = document.getElementById('map'),
+        lat = map_lat,
+        lng = map_lng,
+        zoom = getMap.dataset.zoom,
+        dot = {
+          url: 'assets/images/dot.png'
+        },
+        image = {
+          url: 'assets/images/icon-27.svg',
+          scaledSize: new google.maps.Size(30, 40),
+        },
+        coordinates = { lat: +lat, lng: +lng },
+        map = new google.maps.Map(getMap, {
+            disableDefaultUI: true,
+             styles: styles,
+            center: coordinates,
+            zoom: 15
+        });
+        marker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            optimized: false,
+            icon: image
+          }),
+          infowindow = new google.maps.InfoWindow(),
+          service = new google.maps.places.PlacesService(map);
+      
+        service.nearbySearch({
+          location: coordinates,
+          radius: 5000,
+          type: ['store']
+        }, callback);
+      
+      
+        let list = document.querySelector('.search-list');
+        let listItems = document.querySelectorAll('.search-list__item');
+      
+        list.onclick = function (e) {
+          let target = e.target.closest('li');
+          let searchResult = target.dataset.search;
+      
+      
+          if (target.classList.contains('active')) {
+            return;
+          } else {
+            removeClass(listItems, 'active');
+            target.classList.add('active');
+          }
+      
+          map = new google.maps.Map(getMap, {
+            disableDefaultUI: true,
+            center: coordinates,
+            styles: styles,
+            zoom: +zoom
+          });
+      
+          marker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            optimized: false,
+            icon: image
+          });
+      
+          service.nearbySearch({
+            location: coordinates,
+            radius: 5000,
+            type: [searchResult]
+          }, callback);
+        };
+      
+        function removeClass(elements, className) {
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.remove(className);
+          }
+        }
+      
+      
+        function callback(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (let i = 0; i < results.length; i++) {
+              createMarker(results[i]);
+            }
+          }
+        }
+      
+        function createMarker(place) {
+          let placeLoc = place.geometry.location;
+          let marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            icon: dot
+          });
+      
+          google.maps.event.addListener(marker, 'click', function () {
+            infowindow.setContent(place.name);
+            infowindow.open(map, this);
+          });
+        }
+      } 
+      
+    </script>
+    <style type="text/css">
+      .header {
+        background-image:  url(assets/images/home-bg-mobile.jpg);
+      }
+      
+      @media (min-width: 415px) {
+        .header {
+          background-image:  url(assets/images/home-bg-tablet.jpg);
+        }
+      }
+      
+      //- @media (min-width: 769px) and (min-height: 618px) {
+      //-   .header {
+      //-     background-image:  url(http://via.placeholder.com/980x800);
+      //-   }
+      //- } 
+      
+      //- @media (min-width: 769px) and (min-height: 801px) {
+      //-   .header {
+      //-     background-image:  url(http://via.placeholder.com/980x1200);
+      //-   }
+      //- } 
+      
+      @media (min-width: 981px) {
+        .header {
+          background-image:  url(assets/images/home-bg-landscape.jpg);
+        }
+      } 
+      
+      //- @media (min-width: 981px) and (min-height: 807px) {
+      //-   .header {
+      //-     background-image:  url(http://via.placeholder.com/1280x1208);
+      //-   }
+      //- } 
+      
+       @media (min-width: 1281px) {
+        .header {
+          background-image:  url(assets/images/home-bg-hd.jpg);
+        }
+      } 
+      
+      
+      
+      
+      .map-item__image {
+        background-image:  url(assets/images/home-map-rect.jpg);
+      }
+      @media (min-width: 1281px) {
+        .map-item__image {
+          background-image:  url(assets/images/home-map.jpg);
+        }
+      }
+      
+      
+      
+      .app__bg {
+        background-image:  url(assets/images/home-bg-section-mobile.jpg);
+      }
+        @media (min-width: 415px) {
+        .app__bg {
+          background-image:  url(assets/images/home-bg-section-tablet.jpg);
+        }
+      }
+        @media (min-width: 981px) {
+        .app__bg {
+          background-image:  url(assets/images/home-bg-section-landscape.jpg);
+        }
+      } 
+       @media (min-width: 1281px) {
+        .app__bg {
+          background-image:  url(assets/images/home-bg-section-hd.jpg);
+        }
+      } 
+      
+      
+      .map-title  {
+        background-image:  url(http://via.placeholder.com/414x297);
+      }
+        @media (min-width: 415px) {
+        .map-title  {
+          background-image:  url(http://via.placeholder.com/980x681);
+        }
+      }
+        @media (min-width: 981px) {
+        .map-title  {
+          background-image:   url(http://via.placeholder.com/1280x681);
+        }
+      } 
+       @media (min-width: 1281px) {
+        .map-title  {
+          background-image:  url(assets/images/map-bg-hd.jpg);
+        }
+      } 
+      
+      
+        .unit-banner   {
+        background-image:  url(assets/images/unit-bg-mobile.jpg);
+      }
+        @media (min-width: 415px) {
+         .unit-banner   {
+          background-image:  url(assets/images/unit-bg-tablet.jpg);
+        }
+      }
+        @media (min-width: 981px) {
+         .unit-banner   {
+          background-image:  url(assets/images/unit-bg-landscape.jpg);
+        }
+      } 
+       @media (min-width: 1281px) {
+         .unit-banner   {
+          background-image:  url(assets/images/unit-bg-hd.jpg);
+        }
+      } 
+      
+      
+       .discover-title   {
+        background-image:  url(http://via.placeholder.com/414x297);
+      }
+        @media (min-width: 415px) {
+         .discover-title   {
+          background-image:   url(http://via.placeholder.com/980x681);
+        }
+      }
+        @media (min-width: 981px) {
+         .discover-title   {
+          background-image:  url(http://via.placeholder.com/1280x681);
+        }
+      } 
+       @media (min-width: 1281px) {
+         .discover-title   {
+          background-image:  url(assets/images/discover-bg-hd.jpg);
+        }
+      } 
+      
+      
+      
+      
+        .plan__section::before   {
+        background-image:  url(assets/images/plan-bg-mobile.jpg);
+      }
+        @media (min-width: 415px) {
+          .plan__section::before    {
+          background-image:  url(assets/images/plan-bg-tablet.jpg);
+        }
+      }
+      
+         @media (min-width: 641px) and (min-height: 626px) {
+        .plan__section::before  {
+          background-image: url(http://via.placeholder.com/980x800);
+        }
+      } 
+      
+        @media (min-width: 641px) and (min-height: 801px) {
+        .plan__section::before  {
+          background-image: url(http://via.placeholder.com/980x1223);
+        }
+      } 
+      
+      
+        @media (min-width: 981px) {
+          .plan__section::before    {
+          background-image:  url(assets/images/plan-bg-landscape.jpg);
+        }
+      }
+      
+       @media (min-width: 981px) and (min-height: 817px) {
+        .plan__section::before  {
+          background-image: url(http://via.placeholder.com/1280x1223);
+        }
+      } 
+      
+       @media (min-width: 1281px) {
+          .plan__section::before   {
+          background-image:  url(assets/images/plan-bg-hd.jpg);
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="nav__row">
+          <div class="nav__item">
+            <div class="nav__item-head"> 
+              <p>Seulement 4 logements disponibles</p>
+            </div>
+            <ul class="nav__item-list"> 
+              <li> <a class="nav__item-link" href="discover.html">Découvrir le projet</a></li>
+              <li> <a class="nav__item-link" href="map.html">Connaître le quartier</a></li>
+            </ul>
+          </div>
+          <div class="nav__item-mobile"><a class="item-mobile__link" href="contact.html"><i class="icon-geo"></i></a></div>
+          <div class="nav__logo"><a class="nav__logo-link" href="index.html"><img src="assets/images/logo.svg" alt="Le5000"></a></div>
+          <div class="nav__item-mobile"><a class="item-mobile__link nav-opener" href="#"> <span class="nav-opener__text">menu</span><i class="icon-close"></i></a></div>
+          <div class="nav__item">
+            <div class="nav__item-head"> 
+              <p><a href="tel:4189327360">418 932-7360 </a><a href="mailto:info@le5000.ca">info@le5000.ca</a></p>
+            </div>
+            <ul class="nav__item-list"> 
+              <li> <a class="nav__item-link" href="plan.html">Plans des unités</a></li>
+              <li> <a class="nav__item-link" href="contact.html">Nous joindre</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="pb-container">
+      <div class="pb-row">
+        <div class="pb-row-inner text-slider-section">
+          <div class="pb-cell">
+            <div class="pb-cell-inner">
+              <div class="container flex">
+                <div class="text-side">
+                  <div class="text-side-main">
+                    <div class="top">
+                      <div class="link-holder"><a class="inverse-link" href="#">&lt; Retour au plan d’étage</a></div>
+                      <div class="text-side-badge badge"><span class="badge-content">4 ½</span></div>
+                      <h1>Logement 312</h1>
+                      <ul>
+                        <li>Superficie brute de 958 PI<sup>2</sup></li>
+                        <li>Superficie terrasse 65 PI<sup>2</sup></li>
+                        <li>Prix du loyer 000 $</li>
+                      </ul>
+                      <p>Cras ornare in dui in feugiat. Curabitur eu aliquam ipsum. In hac habitasse platea dictumst. Donec suscipit sollicitudin turpis, auctor vulputate nisi tempor nec.</p>
+                    </div>
+                    <div class="slider-holder">
+                      <div class="unit-slider">
+                        <div class="s-element"><img src="assets/images/unit-plan1.jpg" alt="Le5000"><a class="image-popup-link" href="assets/images/unit-plan1.jpg"> <i class="icon-zoom"></i></a></div>
+                        <div class="s-element"><img src="assets/images/unit-plan1.jpg" alt="Le5000"><a class="image-popup-link" href="assets/images/unit-plan1.jpg"> <i class="icon-zoom"></i></a></div>
+                        <div class="s-element"><img src="assets/images/unit-plan1.jpg" alt="Le5000"><a class="image-popup-link" href="assets/images/unit-plan1.jpg"> <i class="icon-zoom"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <div class="links-holder"> <a class="inverse-link decorated" href="#">Télécharger le plan</a><a class="inverse-link decorated" href="#">Louer cette unité</a></div>
+                      <div class="text-side-footer">
+                        <p>Partager le plan</p>
+                        <ul class="socials">
+                          <li> <a class="soc-link" href="mailto:info@le5000.ca"><i class="icon-mail"></i></a></li>
+                          <li> <a class="soc-link" href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a></li>
+                          <li> <a class="soc-link" href="https://twitter.com/" target="_blank"><i class="icon-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row">
+        <div class="pb-row-inner banner-section">
+          <div class="pb-cell">
+            <div class="pbcell-inner">
+              <div class="unit-banner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="link-fixed"><a href="contact.html">Je veux en savoir plus
+        <div class="link-fixed__arrow"><i class="icon-arrow-right"></i></div></a></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo"><a href="index.html"><img src="assets/images/logo.svg" alt="le5000"></a></div>
+        <div class="footer-row">
+          <ul class="footer-row__item">
+            <li> 
+              <address>5000, rue Saint-Georges</address>
+            </li>
+            <li>
+              <address>Lévis (Québec)  G6C 1E1</address>
+            </li>
+          </ul>
+          <ul class="footer-row__item">
+            <li><a href="tel:41893273607">Tél. 418 932-9607</a></li>
+            <li><a href="mailto:info@le5000.ca">info@le5000.com</a></li>
+          </ul>
+          <ul class="footer-row__item">
+            <li><a href="discover.html">Découvrir le projet  </a></li>
+            <li><a href="map.html">Connaître le quartier</a></li>
+          </ul>
+          <ul class="footer-row__item">
+            <li><a href="plan.html">Plans des unités</a></li>
+            <li><a href="contact.html">Nous joindre</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom"><span class="footer-bottom__text">Le 5000 © 2017 </span><a class="footer-bottom__text" href="http://turbulences.ca/" target="_blank">Design site web: Turbulences</a></div>
+      </div>
+    </footer>
+    <script src="assets/js/vendor.min.js" defer=""></script>
+    <script src="assets/js/app.js" defer=""></script>
+  </body>
+</html>
