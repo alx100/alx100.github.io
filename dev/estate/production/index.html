@@ -215,7 +215,7 @@
         let listItems = document.querySelectorAll('.search-list__item');
       
         list.onclick = function (e) {
-          let target = e.target.closest('li');
+          let target = $(e.target).closest('li')[0];
           let searchResult = target.dataset.search;
       
       
@@ -457,7 +457,6 @@
     </style>
   </head>
   <body>
-    <div id="preloader"><img src="assets/images/preloader.gif" alt="preloader"></div>
     <header class="nav">
       <div class="container">
         <div class="nav__row">
@@ -628,6 +627,8 @@
         </div>
       </div>
     </div>
+    <div class="link-fixed"><a href="contact.html">Je veux en savoir plus
+        <div class="link-fixed__arrow"><i class="icon-arrow-right"></i></div></a></div>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo"><a href="index.html"><img src="assets/images/logo.svg" alt="le5000"></a></div>

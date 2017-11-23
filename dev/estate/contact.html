@@ -215,7 +215,7 @@
         let listItems = document.querySelectorAll('.search-list__item');
       
         list.onclick = function (e) {
-          let target = e.target.closest('li');
+          let target = $(e.target).closest('li')[0];
           let searchResult = target.dataset.search;
       
       
