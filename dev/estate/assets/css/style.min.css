@@ -429,19 +429,21 @@ body {
 
 #preloader {
   position: fixed;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  z-index: 1000; }
-  #preloader img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    display: block; }
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #eff5f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .header {
   width: 100%;
@@ -510,6 +512,7 @@ body {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+    display: none;
     bottom: 7.5%;
     border-radius: 50%;
     background-color: #fff;

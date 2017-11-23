@@ -5,7 +5,7 @@ doctype html
 html(lang='fr')
   +head('Accueil / Homepage')
   body
-    //- include ../partials/preloader
+    include ../partials/preloader
     header.nav
         .container
           .nav__row
@@ -54,7 +54,7 @@ html(lang='fr')
               div(class="scroll-btn")
                 i.icon-scroll
       .pb-row
-        div(class="pb-row-inner app__links wow fadeIn", data-wow-duration="2s", data-wow-offset="10")
+        div(class="pb-row-inner app__links wow fadeInUp", data-wow-duration="2s", data-wow-offset="10")
           .pb-cell
             .pb-cell-inner
               a(href="discover.html")
