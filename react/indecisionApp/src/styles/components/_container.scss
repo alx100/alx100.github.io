@@ -1,0 +1,6 @@
+.container {
+  max-width: 60rem;
+  min-width: 32rem - 2*$m-size;
+  margin: 0 auto;
+  padding: 0 $m-size;
+}

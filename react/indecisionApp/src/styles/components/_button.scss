@@ -1,0 +1,59 @@
+.big-button {
+  background: $purple;
+  border: none;
+  border-bottom: .6rem solid darken($purple, 10%);
+  color: #fff;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  width: 100%;
+  transition: all .3s;
+  &:hover {
+    background: lighten($purple, 10%);
+    border-bottom: .6rem solid $purple;
+    // font-size: 1.05*$l-size;
+  }
+  &:disabled {
+    opacity: .5;
+    &:hover{
+      border-bottom: .6rem solid darken($purple, 10%);
+      background: $purple;
+      font-size: $l-size;
+    }
+  }
+}
+
+.button {
+  background: $purple;
+  border: none;
+  border-bottom: .3rem solid darken($purple, 10%);
+  color: #fff;
+  font-weight: 500;
+  padding: $s-size;
+  transition: all .3s;
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+  transition: all .3s;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.button--add {
+  &:hover {
+    background: lighten($purple, 10%);
+    border-bottom: .3rem solid $purple;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button  {
+    margin-bottom: $xl-size;
+  }
+}
