@@ -1,0 +1,9 @@
+.container{
+	 @extend %clearfix;
+			padding: 0 15px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+#wrapper{
+	overflow: hidden;
+}

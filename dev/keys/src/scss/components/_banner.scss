@@ -1,0 +1,142 @@
+.banner {
+    position: relative;
+    z-index: 9;
+    height: 650px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &.banner-sm{
+        height: 467px;
+        .top{
+            text-align: center;
+        }    
+          @include media('<desktop') {
+        height: 400px;
+    }
+    @include media('<tablet') {
+        height: 300px;  
+    }   
+    @include media('<phone') {
+        height: 250px;  
+    }   
+    }
+    @include media('<desktop') {
+        height: 400px;
+    }
+    @include media('<tablet') {
+    	height: 300px;	
+    }	
+    @include media('<phone') {
+    	height: 250px;	
+    }	
+}
+
+.banner-inner {
+    width: 100%;
+    padding: 30px 0 15px;
+}
+
+.slogan-holder {
+    color: $white;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 36px;
+    letter-spacing: 1.1px;
+    @include media('<widescreen') {
+        font-size: 30px;
+    }
+    @include media('<tablet') {
+        font-size: 24px;
+    }
+    @include media('<phone') {
+        font-size: 16px;
+    }
+    strong {
+        margin-bottom: 0;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .top {
+        font-size: 40px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 400;
+        @include media('<widescreen') {
+            font-size: 38px;
+        }
+        @include media('<tablet') {
+            font-size: 24px;
+        }
+        @include media('<phone') {
+            font-size: 16px;
+        }
+    }
+    .h1 {
+        text-transform: uppercase;
+        display: block;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+        @include media('<widescreen') {
+            font-size: 60px;
+        }
+        @include media('<tablet') {
+            font-size: 40px;
+        }
+        @include media('<phone') {
+            font-size: 24px;
+        }
+        .small {
+            font-size: 41px;
+            font-weight: 400;
+            display: inline-block;
+            @include media('<widescreen') {
+                font-size: 30px;
+            }
+            @include media('<tablet') {
+                font-size: 24px;
+            }
+            @include media('<phone') {
+                font-size: 16px;
+            }
+        }
+    }
+    .marked {
+        display: inline-block;
+        font-size: 46px;
+        text-transform: uppercase;
+        margin-left: -15px;
+        letter-spacing: 1px;
+        background-color: $red;
+        font-weight: 400;
+        padding: 10px 35px 10px 15px;
+        margin-bottom: 15px;
+        @include media('<widescreen') {
+            font-size: 32px;
+            padding: 15px;
+        }
+        @include media('<tablet') {
+            font-size: 24px;
+        }
+        @include media('<phone') {
+            font-size: 15px;
+        }
+    }
+    .small {
+        font-size: 36px;
+        display: block;
+        font-weight: 400;
+        text-transform: none;
+        @include media('<widescreen') {
+            font-size: 24px;
+        }
+        @include media('<tablet') {
+            font-size: 18px;
+        }
+        @include media('<phone') {
+            font-size: 13px;
+        }
+    }
+}

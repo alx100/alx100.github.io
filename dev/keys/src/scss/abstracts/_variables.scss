@@ -1,0 +1,75 @@
+// Colors
+$black:                                    #221f1f;
+$white:                                    #fff;
+$dark:                                     #43403f;
+$dark1:                                    #1c1c1a;
+$gray:                                     #eaeaea;
+$gray-light:                               #dfdddf;
+$red:                                      #e32b18;
+$orange:                                   #ee9b11;
+$gray-semi-light:                          #e4e4e4;
+
+
+$base-font-sans-serif:                     'centrale_sans','Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-sans-serif2:                     'fredoka','Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-serif:                           'centrale_sans','Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+// Body
+$base-text-color:                           $black ;
+$base-background-color:                     $white;
+$base-font-size:                            14px;
+$base-line-height:                          1.21;
+$base-font-family:                          $base-font-sans-serif ;
+
+$vertical-rhythm:                           ($base-line-height * 1em);
+
+$base-min-width:                            320px;
+
+// Liks
+$base-link-color:                           $red;
+
+// Buttons
+$btn-color:                                 $white ;
+$btn-background:                            tranparent ;
+$btn-padding:                               8px;
+$btn-font-size:                             inherit ;
+
+// Forms
+$form-element-padding:                      $btn-padding ;
+$form-element-border-color:                 rgba($gray, .8);
+$form-element-focus-border-color:           $gray;
+$placeholder-color:                         rgba($gray, .8);
+
+// Headers
+$h1-font-size:                              99px ;
+$h2-font-size:                              22px ;
+$h3-font-size:                              27px ;
+$h4-font-size:                              20px ;
+$h5-font-size:                              17px ;
+$h6-font-size:                              15px ;
+
+$headings-font-family:                      $base-font-sans-serif2 ;
+$headings-color:                            inherit ;
+
+$animation-speed:                            0.3s;
+ 
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'widescreen': 1200px,
+  'widescreen-lg': 1400px,
+  'widescreen-xl': 1500px,
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);

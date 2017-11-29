@@ -1,0 +1,169 @@
+.contact {
+    position: relative;
+    overflow: hidden;
+    .container {}
+    .col1,
+    .col2 {
+        float: left;
+        width: 50%;
+        padding: 15px 15px;
+    }
+    .position7 {
+        position: absolute;
+      top: 6%;
+    right: 3.5%;
+    width: 316px;
+        display: inline-block;
+        z-index: -1;
+        transform: rotate(-16deg);
+        @include media('<desktop') {
+            right: 0;
+            top: 5%;
+            width: 180px;
+        }
+    }
+    .position8 {
+        position: absolute;
+       
+        display: inline-block;
+        z-index: -1;
+        transform: rotate(22deg);
+            right: 5%;
+    width: 423px;
+    bottom: -181px;
+    transform: rotate(11deg);
+        @include media('<desktop') {
+            left: 0;
+            top: 0%;
+            width: 150px;
+        }
+    }
+    .position9 {
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+        top: 18%;
+        left: 0%;
+        width: 11%;
+        min-width: 65px;
+        @include media('<1440px') {
+            bottom: 0px;
+            top: auto;
+        }
+    }
+}
+
+.contact-form {
+    padding: 97px 0 68px;
+    @include media('<widescreen') {
+    	padding: 40px 0;
+    }	
+    @include media('<desktop') {
+    	padding: 35px 0 30px;
+    }		
+    @extend %clearfix;
+    input,
+    textarea {
+        @include animate(border-color);
+        display: inline-block;
+        height: 49px;
+        line-height: 49px;
+        padding: 0px 15px 0 26px;
+        color: $red;
+        border: 2px solid $red;
+        border-radius: 30px;
+        margin-bottom: 12px;
+        background-color: #e6e6e6;
+        font-size: 14px;
+        max-width: 435px;
+        width: 100%;
+        font-weight: 600;
+        @include media('<widescreen') {
+            max-width: none;
+        }
+        &:focus {
+            outline: none;
+            border: 2px solid rgba($red, .5);
+        }
+        @include placeholder {
+            color: $red;
+            letter-spacing: 1px;
+        }
+    }
+    textarea {
+        height: 235px;
+        resize: none;
+        border-radius: 21px;
+    }
+    .col {
+        @extend %clearfix;
+        padding: 21px 95px 0 0;
+        max-width: 555px;
+        float: left;
+        width: auto;
+        width: 50%;
+        @include media('<widescreen') {
+            padding-right: 40px;
+        }
+        @include media('<desktop') {
+            padding-right: 20px;
+        }
+        @include media('<tablet') {
+            width: 100%;
+            max-width: none;
+            padding:0;
+        }
+        &+.col {
+            padding-top: 2px;
+        }
+        p {
+            margin-bottom: 20px;
+            @include media('<desktop') {
+                margin-bottom: 7px;
+            }
+            &:last-of-type {
+                margin-bottom: 37px;
+            }
+        }
+        button {
+            @include animate(background-color color);
+            float: right;
+            margin-right: 26px;
+            display: inline-block;
+            height: 44px;
+            line-height: 41px;
+            padding: 0px 15px 0 15px;
+            text-align: center;
+            color: $red;
+            border: 2px solid $red;
+            border-radius: 30px;
+            margin-bottom: 11px;
+            background-color: #e6e6e6;
+            font-size: 14px;
+            min-width: 158px;
+            font-weight: 600;
+            margin-top: 9px;
+            @include media('<widescreen') {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+    .h2 {
+        font-size: 27px;
+        line-height: 1.2;
+        letter-spacing: 0.8px;
+        @include media('<desktop') {
+            font-size: 22px;
+            margin-bottom: 10px;
+            br {
+                display: none;
+            }
+        }
+        @include media('<tablet') {
+            font-size: 18px;
+        }
+    }
+}

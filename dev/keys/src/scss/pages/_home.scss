@@ -1,0 +1,503 @@
+.icon-row {
+    background-color: $red;
+    padding: 38px 0 47px;
+    color: $white;
+    text-transform: uppercase;
+    @include media('<tablet') {
+        padding: 25px;
+    }
+    .icon-holder {
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .text {
+            display: block;
+            font-size: 18px;
+            letter-spacing: 1px;
+            @include media('<desktop') {
+                font-size: 16px;
+            }
+            @include media('<tablet') {
+                font-size: 14px;
+                letter-spacing: -0.5px;
+            }
+        }
+        img {
+            vertical-align: top;
+        }
+    }
+    .icon-item {
+        padding: 0 30px;
+        margin-bottom: 20px;
+        @include media('<desktop') {
+            padding: 0 10px;
+        }
+        @include media('<tablet') {
+            width: 33.3%;
+        }
+        @include media('<phone') {
+            width: 100%;
+        }
+    }
+    .img-holder {
+        height: 77px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+
+.description {
+    position: relative;
+    padding: 60px 0 104px;
+    @include media('<widescreen') {
+        padding-top: 30px;
+    }
+    @include media('<desktop') {
+        padding: 20px 0 50px;
+    }
+    &.description2 {
+        padding: 142px 0 108px;
+        @include media('<widescreen') {
+            padding-top: 30px;
+        }
+        @include media('<desktop') {
+            padding: 20px 0 50px;
+        }
+        .left-side {
+            padding-top: 0px;
+            padding-left: 48px;
+            @include media('<tablet') {
+                padding-left: 0;
+                padding-bottom: 15px;
+            }
+            img {
+                @include media('<tablet') {
+                    width: 100%;
+                }
+            }
+        }
+        .rigth-side {
+            padding-top: 50px;
+            text-align: right;
+            padding-top: 35px;
+            strong {
+                display: inline-block;
+                max-width: 400px;
+            }
+            .h2 {
+                font-size: 27px;
+                line-height: 1.2;
+                margin-bottom: 63px;
+                @include media('<desktop') {
+                    margin-bottom: 20px;
+                }
+                @include media('<tablet') {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .position1 {
+        position: absolute;
+        top: 8%;
+        left: -100px;
+        transform: rotate(8deg);
+        z-index: -1;
+    }
+    .col {
+        float: left;
+        &.w50 {
+            width: 50%;
+            @include media('<tablet') {
+                width: 100%;
+            }
+        }
+    }
+    .left-side {
+        padding: 136px 50px 15px 0;
+        @include media('<widescreen') {
+            padding: 50px 10px 10px;
+        }
+        @include media('<tablet') {
+            padding: 15px 0 50px;
+        }
+        p {
+            margin-bottom: 16px;
+            @include media('<tablet') {
+                margin-bottom: 7px;
+            }
+        }
+        .h2 {
+            margin-bottom: 52px;
+            text-transform: uppercase;
+            font-size: 27px;
+            line-height: 1.4;
+            @include media('<widescreen') {
+                margin-bottom: 20px;
+            }
+            @include media('<tablet') {
+                font-size: 20px;
+            }
+        }
+        .red {
+            color: $red;
+        }
+    }
+    .right-side {
+        @include media('<tablet') {
+            padding: 20px 30px;
+        }
+        img {
+            margin-top: -50px;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+    }
+}
+
+.decoration-row {
+    height: 130px;
+    background-color: #afa39d;
+    background-image: url('../images/illustration3.svg');
+    background-size: 176px 50px;
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    animation-name: car;
+    animation-duration: 30000s;
+    @include media('<desktop') {
+        height: 100px;
+        background-size: 130px 40px;
+    }
+    @include media('<tablet') {
+        height: 50px;
+        background-size: 120px 30px;
+    }
+}
+
+.gallery-holder {
+    padding: 95px 0 81px;
+    color: red;
+    max-width: 750px;
+    margin: 0 auto;
+    @include media('<desktop') {
+        padding: 45px;
+    }
+    .owl-item {
+        width: 25%;
+        text-align: center;
+        padding: 0 15px;
+        img {
+            height: 97px;
+            width: auto;
+            vertical-align: top;
+            display: inline-block;
+            @include media('<desktop') {
+                height: auto;
+                max-height: 97%;
+                width: auto;
+            }
+        }
+    }
+    .owl-nav {
+        @extend %clearfix;
+        position: absolute;
+        top: 34%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        font-size: 0;
+        .owl-prev {
+            @include animate(opacity);
+            position: absolute;
+            left: -185px;
+            transform: translateY(-50%) rotate(45deg);
+            font-size: 0;
+            border: 8px solid $red;
+            border-right: none;
+            border-top: none;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            opacity: 1;
+            &:hover {
+                background-color: transparent;
+                opacity: 0.7;
+            }
+            @include media('<widescreen') {
+                left: -30px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .owl-next {
+            @include animate(opacity);
+            opacity: 1;
+            position: absolute;
+            transform: translateY(-50%) rotate(-135deg);
+            right: -185px;
+            width: 50px;
+            height: 50px;
+            font-size: 0;
+            border: 8px solid $red;
+            border-right: none;
+            border-top: none;
+            background-color: transparent;
+            &:hover {
+                background-color: transparent;
+                opacity: 0.7;
+            }
+            @include media('<widescreen') {
+                right: -30px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@keyframes car {
+    0 {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: 1000000px center;
+    }
+}
+
+.home-page {
+    position: relative;
+    .position3 {
+        position: absolute;
+        bottom: -303px;
+        left: 0;
+        display: inline-block;
+        @include media('<1500px') {
+            left: -130px;
+        }
+        @include media('<widescreen') {
+            bottom: -322px;
+            width: 200px;
+            left: 0;
+        }
+        @include media('<desktop') {
+            width: 11%;
+            min-width: 65px;
+            bottom: -50px;
+            top: auto;
+        }
+    }
+}
+
+.red {
+    color: $red;
+}
+
+.btn-row {
+    background-color: #afa39d;
+    overflow: hidden;
+    .text-holder {
+        padding: 0 36px 0 15px;
+        position: relative;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 2;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 58.5%;
+        float: left;
+        @include media('<widescreen') {
+            height: 90px;
+        }
+        @include media('<desktop') {
+            width: 50%;
+            padding: 0 15px;
+        }
+        @include media('<tablet') {
+            height: auto;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .h3 {
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            @include media('<widescreen') {
+                font-size: 20px;
+            }
+            @include media('<tablet') {
+                height: auto;
+                width: 100%;
+                padding: 20px 30px;
+                text-align: center;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 9999px;
+            background-color: #43403f;
+            z-index: -1;
+            @include media('<tablet') {
+                height: auto;
+                width: auto;
+                right: -15px;
+                left: -15px;
+                width: auto;
+            }
+        }
+    }
+    .btn-holder {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 130px;
+        padding: 0 30px 0 51px;
+        @include media('<widescreen') {
+            padding: 0 15px;
+            height: 90px;
+        }
+        @include media('<desktop') {
+            width: 50%
+        }
+        @include media('<tablet') {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.btn-primary {
+    @include animate(opacity);
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    border: 2px solid #43403f;
+    border-radius: 45px;
+    padding: 15px 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: $base-font-sans-serif2;
+    letter-spacing: 0.5px;
+    &:hover {
+        opacity: .7;
+    }
+    @include media('<widescreen') {
+        font-size: 14px;
+    }
+}
+
+//reproduction
+.text-center {
+    text-align: center;
+}
+
+main {
+    position: relative;
+    z-index: 5;
+}
+
+.reproduction {
+    position: relative;
+    padding-top: 89px;
+    @include media('<desktop') {
+        padding-top: 40px;
+    }
+    .position7 {
+        position: absolute;
+        top: 26%;
+        right: 8.5%;
+        width: 433px;
+        height: 483px;
+        display: inline-block;
+        z-index: -1;
+        transform: rotate(12deg);
+        @include media('<desktop') {
+            right: 0;
+            top: 5%;
+            width: 200;
+        }
+    }
+    .h1 {
+        font-size: 102px;
+        color: rgba(#43403f, .3);
+        margin-bottom: 0 !important;
+        @include media('<desktop') {
+            font-size: 50px;
+        }
+    }
+    .position8 {
+        position: absolute;
+        top: 34%;
+        left: 9.5%;
+        width: 326px;
+        height: 470px;
+        display: inline-block;
+        z-index: -1;
+        transform: rotate(22deg);
+        @include media('<desktop') {
+            left: 0;
+            top: 50%;
+            width: 200;
+        }
+    }
+    .h2 {
+        max-width: 600px;
+        margin: 0 auto 40px;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 1.3;
+        @include media('<desktop') {
+            font-style: 20px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+    }
+    .h3 {
+        font-size: 27px;
+        margin-top: -8px;
+        @include media('<desktop') {
+            font-style: 18px !important;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        &.marked {
+            color: red;
+            font-weight: 400;
+        }
+    }
+    .text-section {
+        max-width: 570px;
+        margin: 0 auto;
+        margin-bottom: 42px;
+        @include media('<tablet') {
+            margin-bottom: 20px;
+        }
+    }
+    p.marked {
+        margin-top: 93px;
+        color: $red;
+        font-size: 14px;
+        margin-bottom: 85px;
+        @include media('<desktop') {
+            margin: 40px 0;
+        }
+        @include media('<tablet') {
+            margin: 20px 0;
+        }
+    }
+}

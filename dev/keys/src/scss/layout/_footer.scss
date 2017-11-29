@@ -1,0 +1,131 @@
+#footer {
+    background-color: #43403f;
+    padding: 81px 6px 36px 0;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    @include media('<desktop') {
+        padding: 40px 0 20px;
+        font-size: 12px;    
+    }
+    @include media('<640px') {
+        padding-left: 80px;
+        font-size: 11px;    
+    }
+    .position4 {
+        position: absolute;
+        bottom: -94px;
+        left: 0;
+        transform: rotate(-17deg);
+        opacity: .15;
+        @include media('<widescreen') {
+            width: 200px;
+            bottom: -50px;
+            left: 15%;
+        }
+        @include media('<tablet') {
+            left: 0;
+        }
+        @include media('<phone') {
+            left: -150px;
+            z-index: 1;
+        }
+    }
+    .position5 {
+        position: absolute;
+        bottom: -46px;
+        left: 500px;
+        transform: rotate(-7deg);
+        opacity: .15;
+        @include media('<widescreen') {
+            width: 150px;
+            bottom: 0px;
+            left: 50%;
+        }
+        @include media('<tablet') {
+            opacity: 0;
+        }
+    }
+    .container {
+        position: relative;
+    }
+    .contact-data {
+        float: right;
+        width: 100%;
+        text-align: right;
+        color: $white;
+        font-size: 13px;
+        letter-spacing: -0.5px;
+        max-width: 400px;
+        float: right;
+        text-transform: uppercase;
+        @include media('<desktop') {
+            font-size: 12px; 
+        }   
+        @include media('<tablet') {
+            font-size: 11px;    
+        }    
+
+        a {
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .row {
+            margin-bottom: 15px;
+            width: 100%;
+            display: inline-block;
+            @include media('<desktop') {
+                margin-bottom: 10px;    
+            }   
+            @include media('<tablet') {
+                margin-bottom: 7px; 
+            }    
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+        address {
+            font-style: normal;
+            max-width: 240px;
+            float: right;
+            display: inline-block;
+        }
+    }
+}
+
+.nav-footer {
+    @extend %listreset;
+    float: right;
+    margin-bottom: 90px;
+    width: 100%;
+    text-align: right;
+    @include media('<desktop') {
+        margin-bottom: 30px;
+    }
+    li {
+        display: inline-block;
+        padding-left: 57px;
+        font-size: 13px;
+        line-height: 20px;    
+        @include media('<desktop') {
+            padding-left: 10px;
+            font-size: 12px;    
+
+        }
+        @include media('<640px') {
+            width: 100%;
+            font-size: 11px;    
+        }
+    }
+    a {
+        @include animate(background-color color);    
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover{
+            color:rgba($white, .5);
+        }
+    }
+}
