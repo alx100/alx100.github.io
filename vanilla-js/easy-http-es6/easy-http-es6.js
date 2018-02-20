@@ -6,7 +6,7 @@
  * @author Alex Stotsky
  * @license MIT
  * 
- * */
+ **/
 
 class EasyHTTP {
 
@@ -16,7 +16,7 @@ class EasyHTTP {
       fetch(url)
       .then(res => res.json())
       .then(data => resolve(data))
-      .then(err => reject(err));  
+      .catch(err => reject(err));  
     });
   }
   
@@ -32,7 +32,7 @@ class EasyHTTP {
       })
       .then(res => res.json())
       .then(data => resolve(data))
-      .then(err => reject(err));  
+      .catch(err => reject(err));  
     });
   }
 
@@ -48,7 +48,7 @@ class EasyHTTP {
       })
       .then(res => res.json())
       .then(data => resolve(data))
-      .then(err => reject(err));  
+      .catch(err => reject(err));  
     });
   }
 
@@ -63,7 +63,7 @@ class EasyHTTP {
       })
       .then(res => res.json())
       .then(() => resolve('Resource Deleted'))
-      .then(err => reject(err));  
+      .catch(err => reject(err));  
     });
   }
 
