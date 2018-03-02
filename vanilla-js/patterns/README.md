@@ -1,0 +1,1 @@
+Examples of JS patterns
