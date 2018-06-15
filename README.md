@@ -1,1 +1,1 @@
-### Examples of my works and various coding experiments.
+### Examples of my works and various coding experiments
