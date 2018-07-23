@@ -1,5 +1,7 @@
 import React from 'react';
 
+import logProps from '../hoc/log-props';
+
 function Counter({ count, onCountUp, onCountDown }) {
   return (
     <div className="counter btn-group">
@@ -10,4 +12,4 @@ function Counter({ count, onCountUp, onCountDown }) {
   );
 }
 
-export default Counter;
+export default logProps(Counter);
