@@ -1,0 +1,33 @@
+<svg id="Groupe_57" data-name="Groupe 57" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a1a6bc;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #8d93ae;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #878daa;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_7_Copy_2" data-name="Rectangle 7 Copy 2" class="cls-1" width="16" height="1" transform="translate(6.99 17.803) rotate(-45)"/>
+  <g id="Rectangle_23_Copy_2" data-name="Rectangle 23 Copy 2" class="cls-2">
+    <rect class="cls-4" width="25" height="25" rx="12.5"/>
+    <rect class="cls-5" x="0.5" y="0.5" width="24" height="24" rx="12"/>
+  </g>
+  <path id="add" class="cls-3" d="M6.479,3.988H3.989v2.49a.49.49,0,1,1-.977,0V3.988H.521a.49.49,0,1,1,0-.978h2.49V.521a.49.49,0,1,1,.977,0v2.49h2.49a.49.49,0,1,1,0,.978Z" transform="translate(5 5)"/>
+  <path id="minus" class="cls-3" d="M3.419.857H.447A.438.438,0,0,1,0,.428.438.438,0,0,1,.447,0H5.553A.438.438,0,0,1,6,.428a.438.438,0,0,1-.447.429Z" transform="translate(14 16)"/>
+</svg>

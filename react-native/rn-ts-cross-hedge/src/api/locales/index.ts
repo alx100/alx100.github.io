@@ -1,13 +1,27 @@
-import { EN_RESOURCES } from "../../locales/en";
+import * as EN_RESOURCES from "../../assets/locales/en.json";
+import { Languages } from "../../redux/reducers/localeReducer";
 import callApi from "../callApi";
 
-interface EnLocaleResponse {
+export interface LocaleResponse {
     locale: Record<string, string>;
 }
 
-export const getEnLocale = () =>
-    callApi<never, EnLocaleResponse>("testUrl", {
+export const getLocale = (lang: Languages): Promise<LocaleResponse> =>
+    callApi<never, LocaleResponse>("testUrl", {
         mock: {
-            locale: EN_RESOURCES
+            data: {
+                locale: getResources(lang)
+            }
         }
     });
+
+const getResources = (lang: Languages) => {
+    switch (lang) {
+        case "en":
+            return EN_RESOURCES;
+        case "fr":
+            return {};
+        case "es":
+            return {};
+    }
+};
