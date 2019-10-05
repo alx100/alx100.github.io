@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/user/Projects/cross-hedge/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/user/Projects/cross-hedge/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/alexpritula/Documents/cross-hedge/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/alexpritula/Documents/cross-hedge/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/jasage/Desktop/Code&Care/cross-hedge/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/jasage/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/cf85b3d04b8abd09143ae0e6277ab6d6/res/color-v23/abc_color_highlight_material.xml"
+    }
+]

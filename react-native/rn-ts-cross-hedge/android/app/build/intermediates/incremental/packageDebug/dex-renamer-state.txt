@@ -1,0 +1,4 @@
+#Fri Dec 14 10:56:37 EET 2018
+base.0=/Users/user/Projects/cross-hedge/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/user/Projects/cross-hedge/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

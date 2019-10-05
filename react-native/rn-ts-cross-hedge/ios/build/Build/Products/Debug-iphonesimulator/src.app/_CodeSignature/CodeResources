@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Base.lproj/LaunchScreen.nib</key>
+		<data>
+		zaiWKyzdI53O2bVEX4zWPuBWhuY=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		cyl10EIK5o1gAgNFhO/yVh2O218=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>SF UI Display Black.otf</key>
+		<data>
+		CJTo5F4Nf09IQo4SLR0PmllQ1lE=
+		</data>
+		<key>SF UI Display Bold.otf</key>
+		<data>
+		k43hkurcxe3ArHsZJYr0DPC1rW4=
+		</data>
+		<key>SF UI Display Heavy.otf</key>
+		<data>
+		+9gd+mX3WgCArMCJ5byHVYeZbxY=
+		</data>
+		<key>SF UI Display Light.otf</key>
+		<data>
+		fvNNlupyOwhKvZV1c6yrJ6jMj0c=
+		</data>
+		<key>SF UI Display Medium.otf</key>
+		<data>
+		JP7UHlW/bfpcer8FOgMX0GFqM40=
+		</data>
+		<key>SF UI Display Regular.otf</key>
+		<data>
+		YwDm46LTYYgyMGbyyGuyXhRa418=
+		</data>
+		<key>SF UI Display Semibold.otf</key>
+		<data>
+		vHHcLhGkihu5Br/IVv51l1DTdZE=
+		</data>
+		<key>SF UI Display Thin.otf</key>
+		<data>
+		WomYvH8rS9ZniVbw5EH3f8qJOEU=
+		</data>
+		<key>SF UI Display Ultralight.otf</key>
+		<data>
+		OBb5n9G76niVUEYJLW2n61/Q88Q=
+		</data>
+		<key>SF UI Text Bold Italic.otf</key>
+		<data>
+		ljizUiaC4zDJapqJYVWcNce/144=
+		</data>
+		<key>SF UI Text Bold.otf</key>
+		<data>
+		gscrj0GeKAHJIeSt19EfQUPaBrY=
+		</data>
+		<key>SF UI Text Heavy Italic.otf</key>
+		<data>
+		DrVKSzwrrIx3ZRF9geOESh49VA0=
+		</data>
+		<key>SF UI Text Heavy.otf</key>
+		<data>
+		f4VBY87y0TBhNzRyJZrr5iFMeAA=
+		</data>
+		<key>SF UI Text Italic.otf</key>
+		<data>
+		o7GTpGlXHL1AxbpD2BqAd+lUq6s=
+		</data>
+		<key>SF UI Text Light Italic.otf</key>
+		<data>
+		+sHT0bIp6l9+5x9pfedjnvXjNZU=
+		</data>
+		<key>SF UI Text Light.otf</key>
+		<data>
+		uSQa+SG2K5w8IJGTG72xhpjshsE=
+		</data>
+		<key>SF UI Text Medium Italic.otf</key>
+		<data>
+		yGtm3/OrRBX6OGEoWm36Kap5fpc=
+		</data>
+		<key>SF UI Text Medium.otf</key>
+		<data>
+		4HQgmJ1tQH3M4RPz8jh0ztlBNLU=
+		</data>
+		<key>SF UI Text Regular.otf</key>
+		<data>
+		VXi16QjgrOUS5/lwUJ3Cpe24gMg=
+		</data>
+		<key>SF UI Text Semibold Italic.otf</key>
+		<data>
+		XAlR4Y3/GragcW1XUaYR+1a91E8=
+		</data>
+		<key>SF UI Text Semibold.otf</key>
+		<data>
+		eFMphgrDkOnjr0P/bCoI+kR0QZs=
+		</data>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>Base.lproj/LaunchScreen.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zaiWKyzdI53O2bVEX4zWPuBWhuY=
+			</data>
+			<key>hash2</key>
+			<data>
+			4voiQvEZDGO0OG3o/jYA/XuB32DFsNloGtxg/3yoFN8=
+			</data>
+		</dict>
+		<key>SF UI Display Black.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CJTo5F4Nf09IQo4SLR0PmllQ1lE=
+			</data>
+			<key>hash2</key>
+			<data>
+			OTEo6EIBh9S9k20GzWk0Gw2/oqQ8VW4BW19vgyQmV1k=
+			</data>
+		</dict>
+		<key>SF UI Display Bold.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k43hkurcxe3ArHsZJYr0DPC1rW4=
+			</data>
+			<key>hash2</key>
+			<data>
+			7gjFds8OZVvVst/Mk0LdM2YHxkoYcGgd5r5zh4JTBnA=
+			</data>
+		</dict>
+		<key>SF UI Display Heavy.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+9gd+mX3WgCArMCJ5byHVYeZbxY=
+			</data>
+			<key>hash2</key>
+			<data>
+			6S7fL4eyO3HuJYb1X1JlD/ZY4/sZj33ewtgoHWIOOz8=
+			</data>
+		</dict>
+		<key>SF UI Display Light.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fvNNlupyOwhKvZV1c6yrJ6jMj0c=
+			</data>
+			<key>hash2</key>
+			<data>
+			jwBmvCmBBLg0P4ptbzO5Vhu43voNnwp0M8HsWDt7jTc=
+			</data>
+		</dict>
+		<key>SF UI Display Medium.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JP7UHlW/bfpcer8FOgMX0GFqM40=
+			</data>
+			<key>hash2</key>
+			<data>
+			stVLE89QhQqA19o3KRQ61oM+L5BPO5K/d+ILzY0Yymo=
+			</data>
+		</dict>
+		<key>SF UI Display Regular.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YwDm46LTYYgyMGbyyGuyXhRa418=
+			</data>
+			<key>hash2</key>
+			<data>
+			tJ0eSfj4utDccUj1k15owMdTdotyaGr7UDviu5JblAk=
+			</data>
+		</dict>
+		<key>SF UI Display Semibold.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vHHcLhGkihu5Br/IVv51l1DTdZE=
+			</data>
+			<key>hash2</key>
+			<data>
+			BCA8kLDhnRQEW1fm4JRFyZ926u8Xgb39LQqXX8mtvMs=
+			</data>
+		</dict>
+		<key>SF UI Display Thin.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WomYvH8rS9ZniVbw5EH3f8qJOEU=
+			</data>
+			<key>hash2</key>
+			<data>
+			yiKZhFW6/UDT9e96F4Qd96EKlhhR+RYh5F91LdgpcLI=
+			</data>
+		</dict>
+		<key>SF UI Display Ultralight.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OBb5n9G76niVUEYJLW2n61/Q88Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			YDELM0ROoOEXMJxzkBCuuksnB12/DWCXaUIbeHL/aS0=
+			</data>
+		</dict>
+		<key>SF UI Text Bold Italic.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ljizUiaC4zDJapqJYVWcNce/144=
+			</data>
+			<key>hash2</key>
+			<data>
+			tdueH4IYyJuqUyALN2nBIkHE02iC+fPxyIuxzm/W8TU=
+			</data>
+		</dict>
+		<key>SF UI Text Bold.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gscrj0GeKAHJIeSt19EfQUPaBrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			dTP3yDXQLIBmX58Z5kr9tavrQSL0oLaQxKfZkpX2uLI=
+			</data>
+		</dict>
+		<key>SF UI Text Heavy Italic.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DrVKSzwrrIx3ZRF9geOESh49VA0=
+			</data>
+			<key>hash2</key>
+			<data>
+			LSfalRDVm87zEOnZg0JtFfB5Dna0hMUZ0Yhelysqy3c=
+			</data>
+		</dict>
+		<key>SF UI Text Heavy.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f4VBY87y0TBhNzRyJZrr5iFMeAA=
+			</data>
+			<key>hash2</key>
+			<data>
+			2AHw2QUUiAOs36k2/Ljm5PhINfBXAu1rv7ochriiCM0=
+			</data>
+		</dict>
+		<key>SF UI Text Italic.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o7GTpGlXHL1AxbpD2BqAd+lUq6s=
+			</data>
+			<key>hash2</key>
+			<data>
+			o+Fih/H+8M9P0zhFAjV+9SrmAnV2amvJZFsqnaljJfo=
+			</data>
+		</dict>
+		<key>SF UI Text Light Italic.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+sHT0bIp6l9+5x9pfedjnvXjNZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			cLKUOPQ94V5rEnse8ZxOjrZeMZ7rTQ1zuxT3eiiyVyA=
+			</data>
+		</dict>
+		<key>SF UI Text Light.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uSQa+SG2K5w8IJGTG72xhpjshsE=
+			</data>
+			<key>hash2</key>
+			<data>
+			wrTLDWBzsA65Vx4Vzi+FklbWAw6AuQu53caj0sI5J7A=
+			</data>
+		</dict>
+		<key>SF UI Text Medium Italic.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yGtm3/OrRBX6OGEoWm36Kap5fpc=
+			</data>
+			<key>hash2</key>
+			<data>
+			833P1tNRElMPt7GXudGbxIHYW1JdnMz5YBU8DM2dK0Y=
+			</data>
+		</dict>
+		<key>SF UI Text Medium.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4HQgmJ1tQH3M4RPz8jh0ztlBNLU=
+			</data>
+			<key>hash2</key>
+			<data>
+			oO2Sf26lbKijTJbrb0+e7zskGb0dmTjoLaHdYLMNBOQ=
+			</data>
+		</dict>
+		<key>SF UI Text Regular.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VXi16QjgrOUS5/lwUJ3Cpe24gMg=
+			</data>
+			<key>hash2</key>
+			<data>
+			YNUJPlj2SOBnasEsmJv+XOU7aufjyX2HmJa88vjhVYo=
+			</data>
+		</dict>
+		<key>SF UI Text Semibold Italic.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XAlR4Y3/GragcW1XUaYR+1a91E8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ox/0plBS0SE6yk/zPbPqTgGdYwo6KKy14pmiJT4y1aU=
+			</data>
+		</dict>
+		<key>SF UI Text Semibold.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eFMphgrDkOnjr0P/bCoI+kR0QZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			nlcCLdfGAJ88S9kjAMpu3E4Ydx3CnwKrGV5aPyObtYE=
+			</data>
+		</dict>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^.*</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^embedded\.provisionprofile$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
