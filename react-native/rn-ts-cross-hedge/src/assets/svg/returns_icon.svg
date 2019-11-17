@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #8d93ae;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #8c92ae;
+        stroke: #fff;
+        stroke-width: 0.5px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_56" data-name="Groupe 56" transform="translate(0 -1)">
+    <g id="Rectangle_23_Copy" data-name="Rectangle 23 Copy" class="cls-1" transform="translate(0 1)">
+      <rect class="cls-3" width="25" height="25" rx="12.5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="24" height="24" rx="12"/>
+    </g>
+    <path id="Fill_3" data-name="Fill 3" class="cls-2" d="M16.616,0c-1.008.047-1.974.095-2.937.142-.15.007-.3.015-.38.2s.01.292.115.4c.3.31.59.624.889.927l-3,3.134-.237.248L8.191,8.066,4.574,4.283a.614.614,0,0,0-.45-.193.628.628,0,0,0-.45.193L.186,7.931a.689.689,0,0,0,0,.941l.157.164a.614.614,0,0,0,.45.193.628.628,0,0,0,.45-.193L4.124,6.023,7.741,9.807a.615.615,0,0,0,.45.193.628.628,0,0,0,.45-.193L8.8,9.643l3.328-3.481.237-.248,2.993-3.13.872.9c.08.084.16.175.276.175a.3.3,0,0,0,.143-.044.466.466,0,0,0,.22-.438c.042-.985.087-1.966.133-2.951C17.01.135,16.891,0,16.616,0Z" transform="translate(4 9)"/>
+  </g>
+</svg>

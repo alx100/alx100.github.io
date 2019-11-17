@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jasage/Desktop/Code&Care/cross-hedge/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/jasage/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/a7ab3c4be65ea02f7bf246eb6feba2bc/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/user/Projects/cross-hedge/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/user/Projects/cross-hedge/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/alexpritula/Documents/cross-hedge/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/alexpritula/Documents/cross-hedge/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/jasage/Desktop/Code&Care/cross-hedge/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/jasage/Desktop/Code&Care/cross-hedge/node_modules/react-native-image-picker/android/build/intermediates/bundles/debug/res/xml/provider_paths.xml"
+    }
+]
